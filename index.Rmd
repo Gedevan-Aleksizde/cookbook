@@ -4,7 +4,7 @@ author: 'ill-identified^[twitter ID: \@ill-identified]'
 date: "更新時刻 `r Sys.time()`"
 site: bookdown::bookdown_site
 description: ""
-documentclass: bxjsreport
+documentclass: ltjsreport
 classoption: a4paper
 link-citations: true
 linkcolor: blue

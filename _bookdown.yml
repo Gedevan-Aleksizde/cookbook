@@ -1,0 +1,29 @@
+book_filename: cook.Rmd
+output_dir: "docs"
+delete_merged_file: true
+clean: null
+before_chapter_scrip: null
+after_chapter_script: null
+new_session: false
+rmd_subdir: null
+language:                 
+  label:
+    fig: '図 '
+    tab: '表 '
+    eq: '式 '
+    thm: '定理 '
+    lem: '補題 '
+    cor: '系 '
+    prp: '命題 '
+    cnj: '予想 '
+    def: '定義 '
+    exm: '例 '
+    exr: '練習 '
+    proof: '証明. '
+    remark: '用例. '
+    solution: '解答. '
+  ui:
+    edit: "Edit"
+    chapter_name: ''
+    section_name: "SS "
+    appendix_name: '補遺'

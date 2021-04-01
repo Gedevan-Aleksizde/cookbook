@@ -1,0 +1,28 @@
+rmdja::gitbook_ja:
+  keep_md: true
+  split_by: section
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">ザ・クックブック</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: pdf
+    sharing:
+      github: yes
+      twitter: yes
+      facebook: yes
+      all: ['linkedin', 'weibo', 'instapaper', 'vk']
+    history: "https://github.com/Gedevan-Aleksizde/cookbook/commits/master/%s"
+rmdja::pdf_book_ja:
+  toc_depth: 2
+  latex_engine: lualatex
+  keep_tex: true
+  tombow: false
+  add_folio: true
+  includes:
+    in_header: header.tex
+    after_body: after.tex
+  citation_package: biblatex
