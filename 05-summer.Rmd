@@ -100,7 +100,7 @@ display_difficulty(3, 2)
 
 ## シャルティバルシュチャイ (立: Šaltibarščiai) \index{シャルティバルシュチャイ}\index{Šaltibarščiai|see{シャルティバルシュチャイ}}
 
-ボルシチに似ているが肉を使わない, 冷たい料理.「液体のサラダ」とでもいうべき料理(図\@ref(saltibarsciai-finished))
+ボルシチに似ているが肉を使わない, 冷たい料理.「液体のサラダ」とでもいうべき料理(図\@ref(fig:saltibarsciai-finished))
 
 ```{r saltibarsciai-finished, fig.cap="ふかし芋入りのシャルティバルシュチャイ"}
 knitr::include_graphics("img/saltibarsciai/finished.jpg")

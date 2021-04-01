@@ -68,7 +68,7 @@ display_difficulty(3, 3)
 
 である. 脂っこさと煮込んだ野菜の甘味が重要なのはおそらく両国共通. ここではクロポテンコのレシピに近いものを紹介する (図\@ref(fig:finished-borscht)).
 
-```{r finished-borscht, fig.cap="ボルシチ"}
+```{r finished-borscht, fig.cap="スペアリブのボルシチ"}
 knitr::include_graphics("img/borscht/finished.jpg")
 ```
 
