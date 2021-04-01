@@ -1,10 +1,10 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "更新時刻 2021-04-01 16:08:25"
+date: "最終更新時刻 2021-04-02 00:08:29, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
-documentclass: bxjsreport
+documentclass: ltjsreport
 classoption: a4paper
 link-citations: true
 linkcolor: blue
@@ -2399,7 +2399,7 @@ TODO: 画像
 
 ## ゴウォンプキ (波: Gołąbki) \index{ゴウォンプキ}\index{gołąbki|see{ゴウォンプキ}}
 
-ポーランドのロールキャベツ. 日本のと似ているが, 米を多く混ぜる, トマトソースと一緒に煮込む, という特徴がある. ロシアの `\aruby{голубцы}{ガルプツィ}`{=latex}` \index{голубцы|see{ゴウォンプキ}} もほぼ同じ.
+ポーランドのロールキャベツ. 日本のと似ているが, 米を多く混ぜる, トマトソースと一緒に煮込む, という特徴がある. ロシアの `\aruby{голубцы}{ガルプツィ}`{=latex} \index{голубцы|see{ゴウォンプキ}} もほぼ同じ.
 \index{ガルプツィ|see{ゴウォンプキ}}
 
 \begin{figure}
@@ -2787,7 +2787,7 @@ TODO: 画像
 
 おそらくは, 豚を解体し, 肉は塩漬けに, 血と腸はソーセージにして残った頭と足も食べるために考案された料理だろう. このような豚の屠殺を zabíjačka といい, 現在でもチェコの田舎では中世の農村さながらの豚の解体祭りをするらしい. 煮凝りにせず, 単に柔らかくなるまで塩水で煮ただけで食べる ovar という料理もある[@faktor2007Traditional].
 
-周辺各国にも類似した料理が存在する. ロシア (Холодец, студень),,
+周辺各国にも類似した料理が存在する. ロシア (Холодец, студень),
 ベラルーシ,
 ウクライナ (холодець),
 ポーランドなどでも類似した料理が存在する. これらは豚の頭や足を使うこと, 卵や野菜を入れる点で共通している.
@@ -2872,7 +2872,7 @@ TODO: 画像
 
 さらに大きな違いとして, ジョージアでは `\aruby{ღომი}{ゴーミ}`{=latex} というトウモロコシ粉のポリッジにチーズを乗せた料理と一緒に食べることが多い.
 
-画像は粟で同様のものが作れないか試した際のものである. 粟に対して3倍程度の水を加え, 1時間ほど浸してから弱火で加熱しながらかき混ぜる. 途中で小麦粉を足す. 最後にスライスしたチーズを乗せる.
+図\@ref(fig:kharcho-finished)は粟で同様のものが作れないか試した際のものである. 粟に対して3倍程度の水を加え, 1時間ほど浸してから弱火で加熱しながらかき混ぜる. 途中で小麦粉を足す. 最後にスライスしたチーズを乗せる.
 
 沸騰して跳ねることがあるため暑い日でも服を着て調理すべきである.
 
@@ -3014,7 +3014,7 @@ TODO: 画像
 
 ## シャルティバルシュチャイ (立: Šaltibarščiai) \index{シャルティバルシュチャイ}\index{Šaltibarščiai|see{シャルティバルシュチャイ}}
 
-ボルシチに似ているが肉を使わない, 冷たい料理.「液体のサラダ」とでもいうべき料理(図\@ref(saltibarsciai-finished))
+ボルシチに似ているが肉を使わない, 冷たい料理.「液体のサラダ」とでもいうべき料理(図\@ref(fig:saltibarsciai-finished))
 
 \begin{figure}
 
@@ -3213,7 +3213,7 @@ TODO: 画像
 
 }
 
-\caption{ボルシチ}(\#fig:finished-borscht)
+\caption{スペアリブのボルシチ}(\#fig:finished-borscht)
 \end{figure}
 
 
@@ -3874,8 +3874,18 @@ COVID-19 に対する効果は明らかになっていない.
 
 * Random Innkeeper の動画 (英語音声, 日本語字幕あり) https://www.youtube.com/watch?v=dKNu_qnQZkM
 
-## パン粉のドーナツ (捷, 16世紀)
+## パン粉のドーナツと林檎のポリッジ (捷, 15世紀)
 
+この料理は šišky と表現されているため, 辞書的には「団子」「ダンプリング」である(図\@ref(fig:breadcrumbs-dumpling-finished)). しかし, バターで焼き上げる工程があるためここでは「ドーナツ」と書いた.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/breadcrumbs-dumplings/finished} 
+
+}
+
+\caption{パン粉のドーナツと林檎のポリッジ}(\#fig:breadcrumbs-dumpling-finished)
+\end{figure}
 
 
 \begin{tabular}[t]{rl}
@@ -3887,9 +3897,57 @@ COVID-19 に対する効果は明らかになっていない.
 \bottomrule
 \end{tabular}
 
-* パン粉
+### 材料
 
+正確に量らずに作ったので適切な比率は不明. 適宜継ぎ足してほしい.
 
+* ドーナツ
+  * 卵 2-3個
+  * パン粉 適量
+  * 砂糖 適量
+  * 干しぶどう 適量
+  * バター
+* ポリッジ
+  * りんご
+  * シナモンスティック
+  * 白ワイン
+  * バター
+
+### 作り方
+
+ドーナツ
+
+1. ボウルに卵を割り, よくかき混ぜる
+1. 砂糖と干しブドウを入れる
+1. パン粉を少しづつ入れながらかき混ぜる
+1. 固まってきたらこねて生地にする
+1. 団子の大きさにする
+    * あまり大きすぎると中まで火が通らない.
+1. フライパンを火にかけ, バターを多めに溶かす
+1. 表面に焼き目が付く程度に団子を数分焼く
+1. フライパンから取り出し, 油を切る
+
+ポリッジ
+
+1. りんごの皮をむき, みじん切りにする
+1. 鍋を弱火にかけ, バターを溶かす
+1. りんごを入れて焦げ付かないように加熱する
+1. シナモンスティックを入れる
+1. 必要に応じて水を足し, りんごが柔らかく崩れるまで加熱する
+1. 白ワインを注ぎ, さらに数分加熱する
+
+ポリッジの上にドーナツを乗せると良いだろう.
+
+### 補足
+
+日本のパン粉は粗いので袋にいれて叩くなどして粒を細かくしてから使うと良い. しかし当然ながら小麦粉よりは目が粗いので, あまりきめの細かい生地にはならない.
+
+りんごのポリッジは @Ju2018 pp. 78-79 に類似したイングランドのレシピが見られる.
+
+### 参考文献
+
+* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* @Ju2018
 
 ## プレッツェル (捷, 15世紀: pleclík)
 
@@ -3999,6 +4057,15 @@ COVID-19 に対する効果は明らかになっていない.
 ### 参考資料
 
 * Random Innkeeper の動画 https://www.youtube.com/watch?v=XSOw8thwkgU
+
+## (予定) 4食のポリッジ
+
+@feyfrlikova2015Kuchyne p. 66 がたぶん元ネタ
+
+### 参考資料
+
+* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* @feyfrlikova2015Kuchyne
 
 ## 豚肉のビールソース和え (vepřovina divoká, 捷, 16世紀) \index{vepřovina divoká|see{豚肉のビールソース和え}}
 
@@ -4271,7 +4338,7 @@ COVID-19 に対する効果は明らかになっていない.
 * Random Innkeeper の動画 https://www.youtube.com/watch?v=vaBtiTrlmVc
 * 自作記録 https://under-identified.hatenablog.com/entry/2019/04/13/220424 
 
-## ハンガリー風牛肉 (捷, 15世紀, hovězí po Uhersku) \index{hovězí po Uhersku|see{ハンガリー風牛肉}}
+## 「ハンガリー風」ローストビーフ #1 (捷, 15世紀, Pečeně hovězí po Uhersku) \index{Pečeně hovězí po Uhersku|see{ハンガリー風ローストビーフ (15世紀)}}
 
 チェコの文献に見られる最も古いレシピの1つ. ハンガリーに同じ料理があったのかは不明 (図\@ref(fig:hungraian-beef15)).
 
@@ -4330,12 +4397,16 @@ COVID-19 に対する効果は明らかになっていない.
     * もし酸味が強すぎるなら砂糖で調整する
 1. 牛肉にソースをかける
 
+### 補足
+
+@feyfrlikova2015Kuchyne pp. 80-81 にこのレシピの現代語訳が記載されている. 疫病に関する本に記載されていたレシピの1つであるという.
+
 ### 参考資料
 
-* Random Innkeeper の動画
-* @feyfrlikova2015Kuchyne pp. 80-81 
+* Random Innkeeper の動画 https://www.youtube.com/watch?v=QnSHjogWAMA
+* @feyfrlikova2015Kuchyne  
 
-## 「ハンガリー風」ローストビーフ (捷, 16世紀, hovězie po Uhersku) \index{hovězie po Uhersku|see{ハンガリー風ローストビーフ}}
+## 「ハンガリー風」ローストビーフ #2 (捷, 16世紀, Hovězie po Uhersku) \index{Hovězie po Uhersku|see{ハンガリー風ローストビーフ (16世紀)}}
 
 これもチェコの料理. 現代的なローストビーフとあまり変わらない味付けであり, 現代人にとってのハードルは低いと思われる (図\@ref(fig:hungarian-beef16)).
 
@@ -4525,7 +4596,7 @@ TODO: 画像
 
 }
 
-\caption{現代モラヴィア風}(\#fig:roast-duck-cz-finished)
+\caption{中世風}(\#fig:roast-duck-cz-finished)
 \end{figure}
 
 \begin{figure}
@@ -4700,7 +4771,7 @@ TODO: 画像
 ### 参考資料
 
 * Random Innkeeper https://www.youtube.com/watch?v=pQthdIYfRR0
-* @Ju2018 p. 23
+* @Ju2018
 
 ## トゥ・フー (アッカド, バビロン第1王朝時代? `{\fontspec{Akkadian}`{=latex}𒌅𒌔𒌑`}`{=latex})
 

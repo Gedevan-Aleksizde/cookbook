@@ -4,7 +4,7 @@
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
-  a4paper]{bxjsreport}
+  a4paper]{ltjsreport}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex,ifthen}
@@ -25,12 +25,12 @@
 % if the preset is specified
 \ifxetex
   \usepackage[AutoFallBack=true]{zxjatype}
-  \usepackage[noto,]{zxjafont}
+  \usepackage[noto-otf,]{zxjafont}
   \usepackage{xeCJKfntef}
 \fi
 \ifluatex
   \usepackage{luatexja}
-  \usepackage[,noto]{luatexja-preset}
+  \usepackage[,noto-otf]{luatexja-preset}
   %\renewcommand{\kanjifamilydefault}{\gtdefault}
 \fi
 
@@ -124,7 +124,7 @@
 
 \title{ザ・クックブック}
 \author{ill-identified\footnote{twitter ID: @ill-identified}}
-\date{更新時刻 2021-04-01 16:08:25}
+\date{最終更新時刻 2021-04-02 00:08:29, 初公開: 2021/4/1}
 \usepackage{bxtexlogo}
 \colorlet{shadecolor}{gray!20}
 
@@ -4892,7 +4892,7 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
 
 ポーランドのロールキャベツ. 日本のと似ているが, 米を多く混ぜる,
 トマトソースと一緒に煮込む, という特徴がある. ロシアの
-\aruby{голубцы}{ガルプツィ}` \index{голубцы|see{ゴウォンプキ}}
+\aruby{голубцы}{ガルプツィ} \index{голубцы|see{ゴウォンプキ}}
 もほぼ同じ. \index{ガルプツィ|see{ゴウォンプキ}}
 
 \begin{figure}
@@ -5676,7 +5676,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 煮凝りにせず, 単に柔らかくなるまで塩水で煮ただけで食べる ovar
 という料理もある\autocite{faktor2007Traditional}.
 
-周辺各国にも類似した料理が存在する. ロシア (Холодец, студень),,
+周辺各国にも類似した料理が存在する. ロシア (Холодец, студень),
 ベラルーシ, ウクライナ (холодець),
 ポーランドなどでも類似した料理が存在する. これらは豚の頭や足を使うこと,
 卵や野菜を入れる点で共通している.
@@ -5833,7 +5833,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 さらに大きな違いとして, ジョージアでは \aruby{ღომი}{ゴーミ}
 というトウモロコシ粉のポリッジにチーズを乗せた料理と一緒に食べることが多い.
 
-画像は粟で同様のものが作れないか試した際のものである.
+図\ref{fig:kharcho-finished}は粟で同様のものが作れないか試した際のものである.
 粟に対して3倍程度の水を加え,
 1時間ほど浸してから弱火で加熱しながらかき混ぜる. 途中で小麦粉を足す.
 最後にスライスしたチーズを乗せる.
@@ -6096,7 +6096,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 \index{シャルティバルシュチャイ}\index{Šaltibarščiai|see{シャルティバルシュチャイ}}}{シャルティバルシュチャイ (立: Šaltibarščiai) }}\label{ux30b7ux30e3ux30ebux30c6ux30a3ux30d0ux30ebux30b7ux30e5ux30c1ux30e3ux30a4-ux7acb-ux161altibarux161ux10diai}}
 
 ボルシチに似ているが肉を使わない,
-冷たい料理.「液体のサラダ」とでもいうべき料理(図\ref{saltibarsciai-finished})
+冷たい料理.「液体のサラダ」とでもいうべき料理(図\ref{fig:saltibarsciai-finished})
 
 \begin{figure}
 
@@ -6422,7 +6422,7 @@ másle)
 
 }
 
-\caption{ボルシチ}\label{fig:finished-borscht}
+\caption{スペアリブのボルシチ}\label{fig:finished-borscht}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7620,9 +7620,22 @@ COVID-19 に対する効果は明らかになっていない.
   \url{https://www.youtube.com/watch?v=dKNu_qnQZkM}
 \end{itemize}
 
-\hypertarget{ux30d1ux30f3ux7c89ux306eux30c9ux30fcux30caux30c4-ux6377-16ux4e16ux7d00}{%
-\section{パン粉のドーナツ (捷,
-16世紀)}\label{ux30d1ux30f3ux7c89ux306eux30c9ux30fcux30caux30c4-ux6377-16ux4e16ux7d00}}
+\hypertarget{ux30d1ux30f3ux7c89ux306eux30c9ux30fcux30caux30c4ux3068ux6797ux6a8eux306eux30ddux30eaux30c3ux30b8-ux6377-15ux4e16ux7d00}{%
+\section{パン粉のドーナツと林檎のポリッジ (捷,
+15世紀)}\label{ux30d1ux30f3ux7c89ux306eux30c9ux30fcux30caux30c4ux3068ux6797ux6a8eux306eux30ddux30eaux30c3ux30b8-ux6377-15ux4e16ux7d00}}
+
+この料理は šišky と表現されているため,
+辞書的には「団子」「ダンプリング」である(図\ref{fig:breadcrumbs-dumpling-finished}).
+しかし, バターで焼き上げる工程があるためここでは「ドーナツ」と書いた.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/breadcrumbs-dumplings/finished} 
+
+}
+
+\caption{パン粉のドーナツと林檎のポリッジ}\label{fig:breadcrumbs-dumpling-finished}
+\end{figure}
 
 \begin{tabular}[t]{rl}
 \toprule
@@ -7633,10 +7646,118 @@ COVID-19 に対する効果は明らかになっていない.
 \bottomrule
 \end{tabular}
 
+\hypertarget{ux6750ux6599-30}{%
+\subsection{材料}\label{ux6750ux6599-30}}
+
+正確に量らずに作ったので適切な比率は不明. 適宜継ぎ足してほしい.
+
 \begin{itemize}
 \tightlist
 \item
-  パン粉
+  ドーナツ
+
+  \begin{itemize}
+  \tightlist
+  \item
+    卵 2-3個
+  \item
+    パン粉 適量
+  \item
+    砂糖 適量
+  \item
+    干しぶどう 適量
+  \item
+    バター
+  \end{itemize}
+\item
+  ポリッジ
+
+  \begin{itemize}
+  \tightlist
+  \item
+    りんご
+  \item
+    シナモンスティック
+  \item
+    白ワイン
+  \item
+    バター
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ux4f5cux308aux65b9-49}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-49}}
+
+ドーナツ
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ボウルに卵を割り, よくかき混ぜる
+\item
+  砂糖と干しブドウを入れる
+\item
+  パン粉を少しづつ入れながらかき混ぜる
+\item
+  固まってきたらこねて生地にする
+\item
+  団子の大きさにする
+
+  \begin{itemize}
+  \tightlist
+  \item
+    あまり大きすぎると中まで火が通らない.
+  \end{itemize}
+\item
+  フライパンを火にかけ, バターを多めに溶かす
+\item
+  表面に焼き目が付く程度に団子を数分焼く
+\item
+  フライパンから取り出し, 油を切る
+\end{enumerate}
+
+ポリッジ
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  りんごの皮をむき, みじん切りにする
+\item
+  鍋を弱火にかけ, バターを溶かす
+\item
+  りんごを入れて焦げ付かないように加熱する
+\item
+  シナモンスティックを入れる
+\item
+  必要に応じて水を足し, りんごが柔らかく崩れるまで加熱する
+\item
+  白ワインを注ぎ, さらに数分加熱する
+\end{enumerate}
+
+ポリッジの上にドーナツを乗せると良いだろう.
+
+\hypertarget{ux88dcux8db3-46}{%
+\subsection{補足}\label{ux88dcux8db3-46}}
+
+日本のパン粉は粗いので袋にいれて叩くなどして粒を細かくしてから使うと良い.
+しかし当然ながら小麦粉よりは目が粗いので,
+あまりきめの細かい生地にはならない.
+
+りんごのポリッジは \textcite{Ju2018} pp.~78-79
+に類似したイングランドのレシピが見られる.
+
+\hypertarget{ux53c2ux8003ux6587ux732e-1}{%
+\subsection{参考文献}\label{ux53c2ux8003ux6587ux732e-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Random Innkeeper の動画
+  \url{https://www.youtube.com/watch?v=J4iEFjWsMqM}
+\item
+  \textcite{Ju2018}
 \end{itemize}
 
 \hypertarget{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plecluxedk}{%
@@ -7692,8 +7813,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   固いものを細かく粉砕するグラインダー
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-49}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-49}}
+\hypertarget{ux4f5cux308aux65b9-50}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-50}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7777,8 +7898,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-30}{%
-\subsection{材料}\label{ux6750ux6599-30}}
+\hypertarget{ux6750ux6599-31}{%
+\subsection{材料}\label{ux6750ux6599-31}}
 
 \begin{itemize}
 \tightlist
@@ -7794,8 +7915,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   追加の砂糖
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-50}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-50}}
+\hypertarget{ux4f5cux308aux65b9-51}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-51}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7822,8 +7943,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   砂糖をまぶす
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-46}{%
-\subsection{補足}\label{ux88dcux8db3-46}}
+\hypertarget{ux88dcux8db3-47}{%
+\subsection{補足}\label{ux88dcux8db3-47}}
 
 火加減を間違えると固まりにくくなるが, 適切な方法はわからない.
 
@@ -7840,6 +7961,24 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \item
   Random Innkeeper の動画
   \url{https://www.youtube.com/watch?v=XSOw8thwkgU}
+\end{itemize}
+
+\hypertarget{ux4e88ux5b9a-4ux98dfux306eux30ddux30eaux30c3ux30b8}{%
+\section{(予定)
+4食のポリッジ}\label{ux4e88ux5b9a-4ux98dfux306eux30ddux30eaux30c3ux30b8}}
+
+\textcite{feyfrlikova2015Kuchyne} p.~66 がたぶん元ネタ
+
+\hypertarget{ux53c2ux8003ux8cc7ux6599-47}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-47}}
+
+\begin{itemize}
+\tightlist
+\item
+  Random Innkeeper の動画
+  \url{https://www.youtube.com/watch?v=J4iEFjWsMqM}
+\item
+  \textcite{feyfrlikova2015Kuchyne}
 \end{itemize}
 
 \hypertarget{ux8c5aux8089ux306eux30d3ux30fcux30ebux30bdux30fcux30b9ux548cux3048-vepux159ovina-divokuxe1-ux6377-16ux4e16ux7d00}{%
@@ -7868,8 +8007,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-31}{%
-\subsection{材料}\label{ux6750ux6599-31}}
+\hypertarget{ux6750ux6599-32}{%
+\subsection{材料}\label{ux6750ux6599-32}}
 
 \begin{itemize}
 \tightlist
@@ -7908,8 +8047,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   豚を茹でるのと並行してソースを作るため, 鍋が2つあるとよい
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-51}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-51}}
+\hypertarget{ux4f5cux308aux65b9-52}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-52}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7932,15 +8071,15 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-47}{%
-\subsection{補足}\label{ux88dcux8db3-47}}
+\hypertarget{ux88dcux8db3-48}{%
+\subsection{補足}\label{ux88dcux8db3-48}}
 
 本来のレシピではソースの材料はビール, 酢,
 パンしか言及されていなかったが,
 それだけではとうてい食べられたものではないため上記のスパイスで味付けしている.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-47}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-47}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-48}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-48}}
 
 \begin{itemize}
 \tightlist
@@ -7971,8 +8110,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-32}{%
-\subsection{材料}\label{ux6750ux6599-32}}
+\hypertarget{ux6750ux6599-33}{%
+\subsection{材料}\label{ux6750ux6599-33}}
 
 \begin{itemize}
 \tightlist
@@ -7998,8 +8137,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   砂糖
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-52}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-52}}
+\hypertarget{ux4f5cux308aux65b9-53}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-53}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8038,14 +8177,14 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   全て皿に盛り付ける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-48}{%
-\subsection{補足}\label{ux88dcux8db3-48}}
+\hypertarget{ux88dcux8db3-49}{%
+\subsection{補足}\label{ux88dcux8db3-49}}
 
 味の濃い食材がないため,
 鶏肉の下茹で時には十分に塩を入れて味付けしておく.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-48}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-48}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-49}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-49}}
 
 \begin{itemize}
 \tightlist
@@ -8081,8 +8220,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-33}{%
-\subsection{材料}\label{ux6750ux6599-33}}
+\hypertarget{ux6750ux6599-34}{%
+\subsection{材料}\label{ux6750ux6599-34}}
 
 \begin{itemize}
 \tightlist
@@ -8131,8 +8270,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   オーブン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-53}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-53}}
+\hypertarget{ux4f5cux308aux65b9-54}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-54}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8178,13 +8317,13 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   鶏肉を切り分け, 上からソースをかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-49}{%
-\subsection{補足}\label{ux88dcux8db3-49}}
+\hypertarget{ux88dcux8db3-50}{%
+\subsection{補足}\label{ux88dcux8db3-50}}
 
 オーブンがないのでかなり小さな鶏で試してみたが, ほとんど入らなかった.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-49}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-49}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-50}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-50}}
 
 \begin{itemize}
 \tightlist
@@ -8221,8 +8360,8 @@ slepičí s černou omáčkou)
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-34}{%
-\subsection{材料}\label{ux6750ux6599-34}}
+\hypertarget{ux6750ux6599-35}{%
+\subsection{材料}\label{ux6750ux6599-35}}
 
 \begin{itemize}
 \tightlist
@@ -8276,8 +8415,8 @@ slepičí s černou omáčkou)
   複数の鍋
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-54}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-54}}
+\hypertarget{ux4f5cux308aux65b9-55}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-55}}
 
 ミートローフの作り方
 
@@ -8330,14 +8469,14 @@ slepičí s černou omáčkou)
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-50}{%
-\subsection{補足}\label{ux88dcux8db3-50}}
+\hypertarget{ux88dcux8db3-51}{%
+\subsection{補足}\label{ux88dcux8db3-51}}
 
 鶏肉に一度火を通してからひき肉にするため, 十分細かくないと崩れやすい.
 よって手作業の場合は覚悟すること.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-50}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-50}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-51}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-51}}
 
 \begin{itemize}
 \tightlist
@@ -8349,10 +8488,10 @@ slepičí s černou omáčkou)
   \url{https://under-identified.hatenablog.com/entry/2019/04/13/220424}
 \end{itemize}
 
-\hypertarget{ux30cfux30f3ux30acux30eaux30fcux98a8ux725bux8089-ux6377-15ux4e16ux7d00-hovux11bzuxed-po-uhersku}{%
-\section{\texorpdfstring{ハンガリー風牛肉 (捷, 15世紀, hovězí po
-Uhersku)
-\index{hovězí po Uhersku|see{ハンガリー風牛肉}}}{ハンガリー風牛肉 (捷, 15世紀, hovězí po Uhersku) }}\label{ux30cfux30f3ux30acux30eaux30fcux98a8ux725bux8089-ux6377-15ux4e16ux7d00-hovux11bzuxed-po-uhersku}}
+\hypertarget{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-1-ux6377-15ux4e16ux7d00-peux10denux11b-hovux11bzuxed-po-uhersku}{%
+\section{\texorpdfstring{「ハンガリー風」ローストビーフ \#1 (捷, 15世紀,
+Pečeně hovězí po Uhersku)
+\index{Pečeně hovězí po Uhersku|see{ハンガリー風ローストビーフ (15世紀)}}}{「ハンガリー風」ローストビーフ \#1 (捷, 15世紀, Pečeně hovězí po Uhersku) }}\label{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-1-ux6377-15ux4e16ux7d00-peux10denux11b-hovux11bzuxed-po-uhersku}}
 
 チェコの文献に見られる最も古いレシピの1つ.
 ハンガリーに同じ料理があったのかは不明 (図\ref{fig:hungraian-beef15}).
@@ -8375,8 +8514,8 @@ Uhersku)
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-35}{%
-\subsection{材料}\label{ux6750ux6599-35}}
+\hypertarget{ux6750ux6599-36}{%
+\subsection{材料}\label{ux6750ux6599-36}}
 
 \begin{itemize}
 \tightlist
@@ -8423,8 +8562,8 @@ Uhersku)
   裏ごし器
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-55}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-55}}
+\hypertarget{ux4f5cux308aux65b9-56}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-56}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8464,21 +8603,29 @@ Uhersku)
   牛肉にソースをかける
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-51}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-51}}
+\hypertarget{ux88dcux8db3-52}{%
+\subsection{補足}\label{ux88dcux8db3-52}}
+
+\textcite{feyfrlikova2015Kuchyne} pp.~80-81
+にこのレシピの現代語訳が記載されている.
+疫病に関する本に記載されていたレシピの1つであるという.
+
+\hypertarget{ux53c2ux8003ux8cc7ux6599-52}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-52}}
 
 \begin{itemize}
 \tightlist
 \item
   Random Innkeeper の動画
+  \url{https://www.youtube.com/watch?v=QnSHjogWAMA}
 \item
-  \textcite{feyfrlikova2015Kuchyne} pp.~80-81
+  \textcite{feyfrlikova2015Kuchyne}
 \end{itemize}
 
-\hypertarget{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-ux6377-16ux4e16ux7d00-hovux11bzie-po-uhersku}{%
-\section{\texorpdfstring{「ハンガリー風」ローストビーフ (捷, 16世紀,
-hovězie po Uhersku)
-\index{hovězie po Uhersku|see{ハンガリー風ローストビーフ}}}{「ハンガリー風」ローストビーフ (捷, 16世紀, hovězie po Uhersku) }}\label{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-ux6377-16ux4e16ux7d00-hovux11bzie-po-uhersku}}
+\hypertarget{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-2-ux6377-16ux4e16ux7d00-hovux11bzie-po-uhersku}{%
+\section{\texorpdfstring{「ハンガリー風」ローストビーフ \#2 (捷, 16世紀,
+Hovězie po Uhersku)
+\index{Hovězie po Uhersku|see{ハンガリー風ローストビーフ (16世紀)}}}{「ハンガリー風」ローストビーフ \#2 (捷, 16世紀, Hovězie po Uhersku) }}\label{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-2-ux6377-16ux4e16ux7d00-hovux11bzie-po-uhersku}}
 
 これもチェコの料理.
 現代的なローストビーフとあまり変わらない味付けであり,
@@ -8502,8 +8649,8 @@ hovězie po Uhersku)
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-36}{%
-\subsection{材料}\label{ux6750ux6599-36}}
+\hypertarget{ux6750ux6599-37}{%
+\subsection{材料}\label{ux6750ux6599-37}}
 
 \begin{itemize}
 \tightlist
@@ -8532,8 +8679,8 @@ hovězie po Uhersku)
   ストレイナー/裏ごし器
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-56}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-56}}
+\hypertarget{ux4f5cux308aux65b9-57}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-57}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8577,8 +8724,8 @@ hovězie po Uhersku)
   ローストビーフを切り分け, ソースをかけ, リンゴを添える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-51}{%
-\subsection{補足}\label{ux88dcux8db3-51}}
+\hypertarget{ux88dcux8db3-53}{%
+\subsection{補足}\label{ux88dcux8db3-53}}
 
 日本の家庭にはローストビーフを作れるオーブンがないことが多い.
 オーブントースターや魚焼きグリルで代用すると,
@@ -8588,8 +8735,8 @@ hovězie po Uhersku)
 
 なぜリンゴを添えるのかはよくわからない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-52}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-52}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-53}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-53}}
 
 \begin{itemize}
 \tightlist
@@ -8616,8 +8763,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-37}{%
-\subsection{材料}\label{ux6750ux6599-37}}
+\hypertarget{ux6750ux6599-38}{%
+\subsection{材料}\label{ux6750ux6599-38}}
 
 \begin{itemize}
 \tightlist
@@ -8660,8 +8807,8 @@ TODO: 画像
   オーブン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-57}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-57}}
+\hypertarget{ux4f5cux308aux65b9-58}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-58}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8709,8 +8856,8 @@ TODO: 画像
   肉を切り分け, ソースをかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-52}{%
-\subsection{補足}\label{ux88dcux8db3-52}}
+\hypertarget{ux88dcux8db3-54}{%
+\subsection{補足}\label{ux88dcux8db3-54}}
 
 メースは当時最も高価な部類に入るスパイスであるので,
 ロールプレイがしたい人は注意. なお \textcite{feyfrlikova2015Kuchyne}
@@ -8718,8 +8865,8 @@ TODO: 画像
   ``Kingdom Come: Deliverance'' でも視覚的に再現されている},
 こちらを気にする必要はないと思われる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-53}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-53}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-54}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-54}}
 
 \begin{itemize}
 \tightlist
@@ -8754,8 +8901,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-38}{%
-\subsection{材料}\label{ux6750ux6599-38}}
+\hypertarget{ux6750ux6599-39}{%
+\subsection{材料}\label{ux6750ux6599-39}}
 
 \begin{itemize}
 \tightlist
@@ -8779,8 +8926,8 @@ TODO: 画像
   砂糖 大さじ1
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-58}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-58}}
+\hypertarget{ux4f5cux308aux65b9-59}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-59}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8813,13 +8960,13 @@ TODO: 画像
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-53}{%
-\subsection{補足}\label{ux88dcux8db3-53}}
+\hypertarget{ux88dcux8db3-55}{%
+\subsection{補足}\label{ux88dcux8db3-55}}
 
 赤ワインは蒸発しやすいので蓋をするなどして対処する.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-54}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-54}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-55}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-55}}
 
 \begin{itemize}
 \tightlist
@@ -8838,7 +8985,7 @@ TODO: 画像
 
 }
 
-\caption{現代モラヴィア風}\label{fig:roast-duck-cz-finished}
+\caption{中世風}\label{fig:roast-duck-cz-finished}
 \end{figure}
 
 \begin{figure}
@@ -8850,8 +8997,8 @@ TODO: 画像
 \caption{現代モラヴィア風}\label{fig:roast-duck-cz-moravia}
 \end{figure}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-55}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-55}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-56}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-56}}
 
 \begin{itemize}
 \tightlist
@@ -8883,8 +9030,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-39}{%
-\subsection{材料}\label{ux6750ux6599-39}}
+\hypertarget{ux6750ux6599-40}{%
+\subsection{材料}\label{ux6750ux6599-40}}
 
 \begin{itemize}
 \tightlist
@@ -8910,13 +9057,13 @@ TODO: 画像
   サフラン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-59}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-59}}
+\hypertarget{ux4f5cux308aux65b9-60}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-60}}
 
 参照動画を参考にせよ
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-56}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-56}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-57}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-57}}
 
 \begin{itemize}
 \tightlist
@@ -8950,8 +9097,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-40}{%
-\subsection{材料}\label{ux6750ux6599-40}}
+\hypertarget{ux6750ux6599-41}{%
+\subsection{材料}\label{ux6750ux6599-41}}
 
 \begin{itemize}
 \item
@@ -8999,8 +9146,8 @@ TODO: 画像
   パテにしたい場合は肉挽き器が必要
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-60}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-60}}
+\hypertarget{ux4f5cux308aux65b9-61}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-61}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9035,16 +9182,16 @@ TODO: 画像
   火を消し, 卵を加えてよく混ぜ, 余熱で調理する
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-54}{%
-\subsection{補足}\label{ux88dcux8db3-54}}
+\hypertarget{ux88dcux8db3-56}{%
+\subsection{補足}\label{ux88dcux8db3-56}}
 
 上記は本来のレシピだが, 見た目がとても悪い. ため,
 改善のためパテにする方法も提案されている.
 そのためにはレーズンとともに肉挽き器で細かく挽いた後,
 ラードを加えてよくこねる. パンに塗り, ハーブをふりかけて食べる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-57}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-57}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-58}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-58}}
 
 \begin{itemize}
 \tightlist
@@ -9072,8 +9219,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-41}{%
-\subsection{材料}\label{ux6750ux6599-41}}
+\hypertarget{ux6750ux6599-42}{%
+\subsection{材料}\label{ux6750ux6599-42}}
 
 \begin{itemize}
 \tightlist
@@ -9103,8 +9250,8 @@ TODO: 画像
   ベーコン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-61}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-61}}
+\hypertarget{ux4f5cux308aux65b9-62}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-62}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9122,23 +9269,23 @@ TODO: 画像
   蓋をして10分ほど弱火で蒸す
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-55}{%
-\subsection{補足}\label{ux88dcux8db3-55}}
+\hypertarget{ux88dcux8db3-57}{%
+\subsection{補足}\label{ux88dcux8db3-57}}
 
 元のレシピでは全ての材料を一度に入れるとしか書いてないらしい.
 パースニップを下敷きにするのは Random Innkeeper のアイディアである.
 
 \textcite{Ju2018} p.~23 でも中世イギリスのタラ料理が言及されている.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-58}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-58}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-59}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-59}}
 
 \begin{itemize}
 \tightlist
 \item
   Random Innkeeper \url{https://www.youtube.com/watch?v=pQthdIYfRR0}
 \item
-  \textcite{Ju2018} p.~23
+  \textcite{Ju2018}
 \end{itemize}
 
 \hypertarget{ux30c8ux30a5ux30d5ux30fc-ux30a2ux30c3ux30abux30c9-ux30d0ux30d3ux30edux30f3ux7b2c1ux738bux671dux6642ux4ee3-ux12305ux12314ux12311}{%
@@ -9167,8 +9314,8 @@ TODO: 画像
 
 材料と作り方は参考資料を参照せよ
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-59}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-59}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-60}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-60}}
 
 \begin{itemize}
 \tightlist
@@ -9201,8 +9348,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-42}{%
-\subsection{材料}\label{ux6750ux6599-42}}
+\hypertarget{ux6750ux6599-43}{%
+\subsection{材料}\label{ux6750ux6599-43}}
 
 \begin{itemize}
 \tightlist
@@ -9220,8 +9367,8 @@ TODO: 画像
   オリーブオイル
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-62}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-62}}
+\hypertarget{ux4f5cux308aux65b9-63}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-63}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9255,8 +9402,8 @@ Sauerkraut)\index{sauerkraut|see{ザワークラウト}}}{ザワークラウト 
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-43}{%
-\subsection{材料}\label{ux6750ux6599-43}}
+\hypertarget{ux6750ux6599-44}{%
+\subsection{材料}\label{ux6750ux6599-44}}
 
 \begin{itemize}
 \tightlist
@@ -9305,8 +9452,8 @@ Sauerkraut)\index{sauerkraut|see{ザワークラウト}}}{ザワークラウト 
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-63}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-63}}
+\hypertarget{ux4f5cux308aux65b9-64}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-64}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9357,15 +9504,15 @@ Sauerkraut)\index{sauerkraut|see{ザワークラウト}}}{ザワークラウト 
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-56}{%
-\subsection{補足}\label{ux88dcux8db3-56}}
+\hypertarget{ux88dcux8db3-58}{%
+\subsection{補足}\label{ux88dcux8db3-58}}
 
 夏場は管理が難しいので秋や冬にやるとよい.
 ロシアやポーランドでは人参やディルを混ぜることがよくあるらしい.
 ドイツやチェコではあまり混ぜない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-60}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-60}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-61}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-61}}
 
 \begin{itemize}
 \tightlist
@@ -9398,8 +9545,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-44}{%
-\subsection{材料}\label{ux6750ux6599-44}}
+\hypertarget{ux6750ux6599-45}{%
+\subsection{材料}\label{ux6750ux6599-45}}
 
 \begin{itemize}
 \tightlist
@@ -9440,8 +9587,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
   密閉できる清潔な瓶
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-64}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-64}}
+\hypertarget{ux4f5cux308aux65b9-65}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-65}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9460,8 +9607,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
   冷暗所で1週間ほど寝かせる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-57}{%
-\subsection{補足}\label{ux88dcux8db3-57}}
+\hypertarget{ux88dcux8db3-59}{%
+\subsection{補足}\label{ux88dcux8db3-59}}
 
 \aruby{utpenci}{ウトペンツィ} は複数形で, \aruby{utpenec}{ウトペネツ}
 は単数形. 意味は 「溺死体」
@@ -9470,8 +9617,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 
 ピックル液の量は材料の比率を維持しつつ瓶のサイズに合わせて調整する.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-61}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-61}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-62}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-62}}
 
 \begin{itemize}
 \tightlist
@@ -9548,8 +9695,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-45}{%
-\subsection{材料}\label{ux6750ux6599-45}}
+\hypertarget{ux6750ux6599-46}{%
+\subsection{材料}\label{ux6750ux6599-46}}
 
 \begin{itemize}
 \tightlist
@@ -9586,8 +9733,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   タコ紐
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-65}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-65}}
+\hypertarget{ux4f5cux308aux65b9-66}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-66}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9631,15 +9778,15 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   1日冷蔵庫で寝かせる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-58}{%
-\subsection{補足}\label{ux88dcux8db3-58}}
+\hypertarget{ux88dcux8db3-60}{%
+\subsection{補足}\label{ux88dcux8db3-60}}
 
 比較的安価な方法は, 段ボールで燻製室を作り,
 継続的な加熱の必要ない「スモークウッド」で燻製すること.
 しかし火災のリスクがまったくないわけではないため, 目を離さないように.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-62}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-62}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-63}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-63}}
 
 \begin{itemize}
 \tightlist
@@ -9666,8 +9813,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-46}{%
-\subsection{材料}\label{ux6750ux6599-46}}
+\hypertarget{ux6750ux6599-47}{%
+\subsection{材料}\label{ux6750ux6599-47}}
 
 \begin{itemize}
 \tightlist
@@ -9677,8 +9824,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   塩
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-66}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-66}}
+\hypertarget{ux4f5cux308aux65b9-67}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-67}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9693,13 +9840,13 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-59}{%
-\subsection{補足}\label{ux88dcux8db3-59}}
+\hypertarget{ux88dcux8db3-61}{%
+\subsection{補足}\label{ux88dcux8db3-61}}
 
 黒パンと一緒に食べる, ウォッカで流し込む, 温かいスープと一緒に食べる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-63}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-63}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-64}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-64}}
 
 謎
 
@@ -9716,8 +9863,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-47}{%
-\subsection{材料}\label{ux6750ux6599-47}}
+\hypertarget{ux6750ux6599-48}{%
+\subsection{材料}\label{ux6750ux6599-48}}
 
 \begin{itemize}
 \tightlist
@@ -9756,8 +9903,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   大量のキムチを保管できるタッパー
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-67}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-67}}
+\hypertarget{ux4f5cux308aux65b9-68}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-68}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9782,8 +9929,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   清潔な箱に入れ, 冷蔵庫で保管する
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-60}{%
-\subsection{補足}\label{ux88dcux8db3-60}}
+\hypertarget{ux88dcux8db3-62}{%
+\subsection{補足}\label{ux88dcux8db3-62}}
 
 ヤンニョムや抜けた水分に完全に浸かる状態でないとカビが発生しやすいので注意
 
@@ -9815,8 +9962,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-48}{%
-\subsection{材料}\label{ux6750ux6599-48}}
+\hypertarget{ux6750ux6599-49}{%
+\subsection{材料}\label{ux6750ux6599-49}}
 
 \begin{itemize}
 \tightlist
@@ -9840,8 +9987,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   油
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-68}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-68}}
+\hypertarget{ux4f5cux308aux65b9-69}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-69}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9854,8 +10001,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   包丁で細かく刻む
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-61}{%
-\subsection{補足}\label{ux88dcux8db3-61}}
+\hypertarget{ux88dcux8db3-63}{%
+\subsection{補足}\label{ux88dcux8db3-63}}
 
 焦げると味を損なうので加熱時間に注意
 
@@ -9875,8 +10022,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-64}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-64}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-65}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-65}}
 
 \begin{itemize}
 \tightlist
@@ -9900,8 +10047,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-49}{%
-\subsection{材料}\label{ux6750ux6599-49}}
+\hypertarget{ux6750ux6599-50}{%
+\subsection{材料}\label{ux6750ux6599-50}}
 
 \begin{itemize}
 \tightlist
@@ -9948,8 +10095,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   清潔な密閉できる瓶
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-69}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-69}}
+\hypertarget{ux4f5cux308aux65b9-70}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-70}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
