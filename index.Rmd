@@ -69,9 +69,14 @@ display_difficulty <- function(difficul_ingred, difficul_cook){
 
 # 初めに {-#preface}
 
+```{block, type="rmdcaution", echo=knitr::is_latex_output()}
+本書は R 言語並びに **rmarkdown**, **bookdown**, **rmdja**パッケージなどを使って書かれています.
+```
+
 2020年は外出できなかったのでいろいろ作った.
 
 プロの料理人でも料理道の家元でもないので, もちろんここで紹介しているものが唯一正統な作り方というわけではない. うまい料理を見つけ出すのに最後に必要なのはあなたの努力だろう. しかし, 本書があなたの今後の食事を豊かにすることになんらかの形で寄与できることを願っている.
+
 
 # 本書の読み方 {-}
 
