@@ -1,0 +1,109 @@
+---
+title: "ザ・クックブック"
+author: 'ill-identified^[twitter ID: \@ill-identified]'
+date: "更新時刻 `r Sys.time()`"
+site: bookdown::bookdown_site
+description: ""
+documentclass: bxjsreport
+classoption: a4paper
+link-citations: true
+linkcolor: blue
+citecolor: blue
+urlcolor: magenta
+bibliography: Cooking.bib
+pagestyle: fancy
+github-repo: "Gedevan-Aleksizde/cookbook"
+url: 'https://github.com/Gedevan-Aleksizde/cookbook'
+---
+
+```{r setup, include=FALSE}
+require(tidyverse)
+require(kableExtra)
+knitr::opts_chunk$set(echo = F)
+# グラフの標準フォント設定
+rmdja::set_graphics_font(rmdja::get_default_font_family("xelatex")["serif"])
+
+ruby <- function (word, ruby, ja = T) 
+{
+    if (knitr::is_html_output()) {
+        paste0("`<ruby>", word, "<rp>(</rp><rt>", ruby, "</rt><rp>)</rp></ruby>`{=html}")
+    }
+    else if (knitr::is_latex_output()) {
+      if(ja == T){
+        paste0("`\\ruby[g]{", word, "}{", ruby, "}`{=latex}")
+      } else {
+        paste0("`\\aruby{", word, "}{", ruby, "}`{=latex}")
+      }
+    }
+    else {
+        paste0(word, " (", ruby, ")")
+    }
+}
+
+
+      
+display_difficulty <- function(difficul_ingred, difficul_cook){
+  star_ingred <- paste0(
+    paste(rep("★", difficul_ingred), collapse = ""),
+    paste(rep("☆", max(0, 5 - difficul_ingred)), collapse = "")
+  )
+  star_cook <- paste0(
+    paste(rep("★", difficul_cook), collapse = ""),
+    paste(rep("☆", max(0, 5 - difficul_cook)), collapse = "")
+  )
+  if(knitr::is_latex_output()){
+    star_ingred <- paste("{\\fontspec{Noto Sans CJK JP}", star_ingred, "}")
+    star_cook <- paste("{\\fontspec{Noto Sans CJK JP}", star_cook, "}")
+  }
+  d <- data.frame(row = c("材料調達", "調理"), diff = c(star_ingred, star_cook))
+  k <- kbl(d, col.names = c("", "難易度"), booktabs = T, align = "rl", escape = F)
+  if(knitr::is_html_output()){
+    k <- k %>% kable_styling(full_width = F)
+  }
+  return(k)
+}
+```
+
+
+\listoffigures
+
+# 初めに {-#preface}
+
+2020年は外出できなかったのでいろいろ作った.
+
+プロの料理人でも料理道の家元でもないので, もちろんここで紹介しているものが唯一正統な作り方というわけではない. うまい料理を見つけ出すのに最後に必要なのはあなたの努力だろう. しかし, 本書があなたの今後の食事を豊かにすることになんらかの形で寄与できることを願っている.
+
+# 本書の読み方 {-}
+
+各レシピは次のようなセクションに分かれている.
+
+* 「難度」は文字通り料理の難度を5段階で評価したものである. 評価は完全に個人的な経験に基づくものなので, 読者すべてに当てはまるとは言えない. 必要な材料の入手難度と, 料理手順の技術的難度について記載している.
+* 「材料」は文字通り必要な材料とその分量である. 「適量」と書かれているのは常識の範囲でわかりそうな場合か, 作者が正確な分量を量ってなかったり覚えてなかったりするもの.
+* 「道具」は特筆すべき調理器具が必要な場合に記載する. フライパンや鍋や包丁などありふれたものは省略するが, 例えば大きいフライパンや鍋が要求されるばあいは記載する.
+* 「作り方」も文字通り使い方で, 基本的には時系列に沿って手順を記載している. 簡単な注意事項なども補足することがある.
+* 「補足」はレシピ全般に関する参考情報や, 他のセクションに書くには長すぎる注意事項などを書いている.
+* 「参考資料」は文字通り
+
+## 凡例 {-}
+
+### 国名の略記 {-}
+
+基本的に1字だが重複があるもの, 紛らわしいものは2字で表記
+
+* 亜塞 - アゼルバイジャン
+* 米 - アメリカ合衆国
+* 英 - イギリス (現時点ではスコットランド等を区別しない)
+* 印 - インド
+* 宇 - ウクライナ
+* 月 - ウズベキスタン
+* 韓 - 韓国
+* 草 - ジョージア
+* 捷 - チェコ
+* 中 - 中国
+* 日 - 日本
+* 白露 - ベラルーシ
+* 波 - ポーランド
+* 露 - ロシア
+
+
+
