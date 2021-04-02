@@ -1,7 +1,7 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-02 00:08:29, 初公開: 2021/4/1"
+date: "最終更新時刻 2021-04-02 22:22:38, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
 documentclass: ltjsreport
@@ -328,9 +328,12 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 中華鍋で作ったほうがやりやすい. 卵黄と卵白を分けるのは面倒なように見えるが, このほうが卵が塊にならず均等に混ざりやすい.
 
+王剛の方法では片栗粉などで米をほぐしているが, ザルさえあれば Foodie の記事で紹介されているように水ですすいでしまうほうが簡単である. ただし, 平たいフライパンではくっつきやすくなり, より多くの油が必要になる.
+
 ### 参考資料
 
 * 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=1Q-5eIBfBDQ
+* Foodie の記事 https://mi-journey.jp/foodie/59108/
 
 ## 西紅柿炒鶏蛋 (中) + 面 {#friedtomatoegg}
 
