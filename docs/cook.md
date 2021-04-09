@@ -1,7 +1,7 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-02 22:22:38, 初公開: 2021/4/1"
+date: "最終更新時刻 2021-04-10 02:57:06, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
 documentclass: ltjsreport
@@ -332,7 +332,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 ### 参考資料
 
-* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=1Q-5eIBfBDQ
+* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=1Q-5eIBfBDQ 
 * Foodie の記事 https://mi-journey.jp/foodie/59108/
 
 ## 西紅柿炒鶏蛋 (中) + 面 {#friedtomatoegg}
@@ -394,7 +394,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 ### 参考資料
 
 * 美食作家王剛による6動画
-  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」 https://www.youtube.com/watch?v=3gF44PXZXNc
+  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」https://www.youtube.com/watch?v=3gF44PXZXNc
   * 中華鍋で丁寧に作る場合の解説 (日本語) https://www.youtube.com/watch?v=-7vw-sHGtDY
   * 水を足してスープにしている「西红柿鸡蛋面」 https://www.youtube.com/watch?v=PtAhBml14Uw
 
@@ -459,7 +459,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 * アラブ式シャクシュカ (アラビア語, 英語字幕) https://www.youtube.com/watch?v=aSTBwIeYBYk
 * (英語) https://www.youtube.com/watch?v=Iy3mUtlvw84
-* モロッコ式シャクシュカ (英語) https://www.youtube.com/watch?v=9z9UU10kM5c
+* モロッコ式シャクシュカ (英語)  https://www.youtube.com/watch?v=9z9UU10kM5c
 
 ## シュクメルリ\index{シュクメルリ} (草: შქმერული\index{შქმერული|see{シュクメルリ}}) {#shkmerli}
 
@@ -641,7 +641,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=L_dDUw_QuDU]
+* https://www.youtube.com/watch?v=L_dDUw_QuDU
 
 ## スペイン風オムレツ  (西: Tortilla de Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペイン風オムレツ}}
 
@@ -1047,7 +1047,7 @@ TODO: 画像
 
 * 美食作家王剛の料理動画 (中国語) https://www.youtube.com/watch?v=TpR9-9CNxAY
 * 同, 古いバージョン https://www.youtube.com/watch?v=68v5mGdE978
-* 同, 青椒肉絲の料理動画 (中国語) https://www.youtube.com/watch?v=wn0_7SMpw6o
+* 同, 青椒肉絲の料理動画 (中国語)  https://www.youtube.com/watch?v=wn0_7SMpw6o
 
 ## 水煮肉片 (中, 四川)\index{水煮肉片}
 
@@ -1306,7 +1306,7 @@ TODO: 画像
 
 * 王剛の料理動画
   * その1 https://www.youtube.com/watch?v=v72yoabCHXA
-  * その2 (古いバージョン) https://www.youtube.com/watch?v=DIMwUp9UqB4
+  * その2 https://www.youtube.com/watch?v=DIMwUp9UqB4
 
 ## 酸湯肥牛 (中, 四川) \index{酸湯肥牛}
 
@@ -1633,10 +1633,10 @@ TODO
 ### 参考資料
 
 * http://www.czechfriend.jp/event/040826.htm
-* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語) https://www.youtube.com/watch?v=rgouyUynrlA
+* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語)  https://www.youtube.com/watch?v=rgouyUynrlA
 * "Kuchyně Lidlu" による「パンくずのクネドリーク」の料理動画 (チェコ語) https://www.youtube.com/watch?v=4_KnXyIiZds
-* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語) https://www.recepty.cz/recept/karlovarsky-knedlik-140268
-*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語) https://www.youtube.com/watch?v=SIee8PWWSbI
+* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語)  https://www.recepty.cz/recept/karlovarsky-knedlik-140268
+*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語)  https://www.youtube.com/watch?v=SIee8PWWSbI
 
 ## ピエロギ (波: Pierogi)\index{ピエロギ}\index{pierogi|see{ピエロギ}}
 
@@ -1765,7 +1765,7 @@ TODO: 画像
 
 ### 参考資料
 
-* Коллекция Рецептов の料理動画 https://www.youtube.com/watch?v=N9aS8jBaTS8
+* Коллекция Рецептов の料理動画 https://www.youtube.com/watch?v=N9aS8jBaTS8 
 * @OginoNumano2017 p. 54
 * @boumei Ch. 27, および付録のサラファン式レシピ
 
@@ -1889,6 +1889,7 @@ TODO: 画像
 * 伝統的な道具を使った料理法 (ジョージア語音声) https://www.youtube.com/watch?v=YRNOKkblZzc
 * 日本在住のロシア人による料理動画 (日本語音声) https://www.youtube.com/watch?v=-v2sk3QxVDc
 * ジョージア在住の日本人による解説動画, 肉ではなくジャガイモ入り (日本語, ロシア語音声) https://www.youtube.com/watch?v=Z7HJ1f-Qp0
+
 
 ## (予定) ポンチキ
 
@@ -2014,8 +2015,9 @@ TODO: 画像
 * "UYGHUR HAND-PULLED NOODLES | LAGHMAN" (英語) https://www.youtube.com/watch?v=XhrxYD4Zahg
 * "How to make Lagman Noodles Homemade Hand-pulled Noodle Uyghur Laghman" (英語) https://www.youtube.com/watch?v=AiMGPbMcAw0
 * ロシア国内で知られているラグマンは手延ではないことが多く, またジャガイモやディルを使うなどロシア的ローカライズがなされている
-  * 「ウズベキスタン風」ラグマン (ロシア語) https://www.youtube.com/watch?v=4QdaJoJpt5s
-  * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語) https://www.youtube.com/watch?v=pF0MiqYUxLw
+    * 「ウズベキスタン風」ラグマン (ロシア語) https://www.youtube.com/watch?v=4QdaJoJpt5s
+    * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語)  https://www.youtube.com/watch?v=pF0MiqYUxLw
+
 
 ## プロフ/パラフ (露: Плов/月: Palov) \index{плов|see{プロフ}} \index{palo|see{プロフ}}
 
@@ -2457,7 +2459,7 @@ TODO: 画像
 ### 参考資料
 
 * ポーランド在住日本人による解説付きの動画 (日本語) https://www.youtube.com/watch?v=GYV1bVHyglQ
-* Dorotki による料理動画 (ポーランド語, 英語字幕あり)  https://www.youtube.com/watch?v=LFc-PO0fu7A
+* Dorotki による料理動画 (ポーランド語, 英語字幕あり) https://www.youtube.com/watch?v=LFc-PO0fu7A
 * @OginoNumano2017 pp. 40-41
 
 ## キムチチム (韓: 김치찜)
@@ -2487,13 +2489,16 @@ TODO: 画像
 
 * 豚バラ肉ブロック 1 kg
   * 肉の選び方は補足の部分参照
-* 白菜キムチ 1.3 kg
+* 白菜キムチ 1.3 kg (白菜1/4株相当)
   * 発酵が進み酸味が強くなったものが良い
 * ニンニク 3-4かけら
+* 生姜
+* 玉ねぎ
+* 長ねぎ
 * 唐辛子の粉 大さじ 2-3杯
   * キムチ用のさほど辛くないものを使う
   * カイエンヌペッパーのような特別に辛い種類のものは適さない
-  * パプリカパウダーでもよい
+  * 辛いのが苦手ならば一部をパプリカパウダーに置き換えてもよい
 * (オプション) 生の唐辛子
 * (オプション) 隠し味
   * テンジャン (甜麺醤などでも良いかもしれない?)
@@ -2516,7 +2521,8 @@ TODO: 画像
     * 味が薄かったら醤油とかを入れる
     * 発酵しすぎて匂いが強ければ砂糖を入れる
 7. 肉が十分に柔らかくなるまで煮込み続ける
-    * 1時間半程度, 圧力鍋を使っても良い
+    * 1時間半程度
+	* 圧力鍋を使って短縮しても良い
     * だいたい角煮と同じ要領で良い
 
 \begin{figure}
@@ -3306,9 +3312,7 @@ TODO: 画像
 * クロポテンコの「ヘトマン風ボルシチ」レシピ (ウクライナ語, ロシア語) https://klopotenko.com/getmanskij-borshh/
 
 * “Всегда Вкусно!” の料理動画 (ロシア語) https://www.youtube.com/watch?v=_-9nH4zFThs
-
 * 『ナスチャンネル』のロシア式の料理動画 (日本語音声) https://www.youtube.com/watch?v=5mXOepWrzGc
-
 * @OginoNumano2017 pp. 36-37
 
 ## シチー (露: Щи)
@@ -3623,8 +3627,9 @@ TODO
 
 ### 参考資料
 
-* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?time_continue=1&v=5FbGKARjuBU&feature=emb_logo
-* Čočka na kyselo の料理動画 (英語) https://www.youtube.com/watch?v=0uVRiei7yxk&feature=emb_logo
+* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?v=5FbGKARjuBU
+* Čočka na kyselo の料理動画 (英語) https://www.youtube.com/watch?v=0uVRiei7yxk 
+
 
 ## すりつぶしたレンズ豆 (捷, 15世紀)
 
@@ -4728,13 +4733,20 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画  https://www.youtube.com/watch?v=w5oWJZVPRK4
+* Random Innkeeper の動画 https://www.youtube.com/watch?v=w5oWJZVPRK4
 
-## タラのベーコン炒め (捷, 15世紀: Štiku s slaninami)
+## メルルーサのベーコン煮 (捷, 15世紀: Štiku s slaninami)
 
-イギリス由来の料理のため, 海の魚を使用している. メルルーサとかを使うのが本来のレシピだが, 手に入れやすいスケトウダラでアレンジ.
+イギリス由来の料理のため, 海の魚を使用している. メルルーサを使うのが本来のレシピだが, 今回は入手できなかったためスケトウダラでアレンジした (図\@ref(fig:stiku-s-slaninami-finished)).
 
-TODO: 画像
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/stiku-s-slaninami/finished} 
+
+}
+
+\caption{タラのベーコン煮}(\#fig:stiku-s-slaninami-finished)
+\end{figure}
 
 
 \begin{tabular}[t]{rl}
@@ -4768,6 +4780,8 @@ TODO: 画像
 ### 補足
 
 元のレシピでは全ての材料を一度に入れるとしか書いてないらしい. パースニップを下敷きにするのは Random Innkeeper のアイディアである.
+
+なお, 日本国内の市販ベーコンは味が薄く脂身も少ないため, 塩を余分に加えたほうが良いかもしれない.
 
 @Ju2018 p. 23 でも中世イギリスのタラ料理が言及されている.
 
@@ -4900,6 +4914,7 @@ TODO: 画像
 ### 参考資料
 
 * @katz2012Art
+* 日本語の解説付きの作成例 https://www.youtube.com/watch?v=uTgx3Gcixcc
 
 ## ウトペネツ\index{ウトペネツ} (捷: Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネツ}}
 
@@ -4949,13 +4964,16 @@ TODO: 画像
 1. 鍋に水, 塩, 砂糖, オールスパイス, 胡椒, 月桂樹の葉を入れ沸騰させる
 1. 瓶にスライスしたパプリカと玉ねぎ, そして残りの材料を詰め込む
 1. (1) の熱湯の粗熱が取れたら瓶に注ぎ, 蓋をする
-1. 冷暗所で1週間ほど寝かせる
+1. 冷暗所で乳酸発酵するまで寝かせる
+	* 1-2週間程度
 
 ### 補足
 
 `\aruby{utpenci}{ウトペンツィ}`{=latex} は複数形で, `\aruby{utpenec}{ウトペネツ}`{=latex} は単数形. 意味は 「溺死体」
 
 現地では špekáček というソーセージを使用することが多い.
+
+図\@ref(fig:utopenci-finished) は玉ねぎやパプリカを多く入れているが「溺死体」という名前が示すように, 本来は肉がメインである.
 
 ピックル液の量は材料の比率を維持しつつ瓶のサイズに合わせて調整する.
 
@@ -5044,8 +5062,11 @@ TODO: 画像
 
 1. 肉に下味をつける
     * バラ肉に十分な塩とスパイスをすりつける
-    * または十分な濃度の塩水に漬ける
+    * または十分な濃度の塩水 (ピックル液/ソミュール液) に漬ける
+		* 15-20%程度の濃度の塩水に好みのハーブ・スパイスを入れて一度沸騰させた液
 2. 2週間-1ヶ月ほど冷蔵庫で熟成させる
+	* 乾式の場合, 表面に染み出してくる水分をまめに取り除く
+	* ピチットシートなら説明書に従い, キッチンペーパーならなるべく1日ごとに取り替える
 3. 軽く水洗いし, 表面についたスパイスを洗い流す
 4. 表面の水分を拭き取る
 5. さらに天日干しで表面を乾燥させる

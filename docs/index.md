@@ -1,7 +1,7 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-02 22:22:25, 初公開: 2021/4/1"
+date: "最終更新時刻 2021-04-10 02:56:55, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
 documentclass: ltjsreport
@@ -267,7 +267,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 ### 参考資料
 
-* 『ロシアの味』日本在住ロシア人による動画 (日本語) https://www.youtube.com/watch?v=HXz8deILEe8
+* 『ロシアの味』日本在住ロシア人による動画 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/HXz8deILEe8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 『ロシア・ビヨンド』での言及 https://jp.rbth.com/multimedia/video/2015/03/03/52185
 
 ## 醤油炒飯 (中) {#chahan}
@@ -359,7 +359,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 ### 参考資料
 
-* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=1Q-5eIBfBDQ
+* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/1Q-5eIBfBDQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 * Foodie の記事 https://mi-journey.jp/foodie/59108/
 
 ## 西紅柿炒鶏蛋 (中) + 面 {#friedtomatoegg}
@@ -422,9 +422,9 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 ### 参考資料
 
 * 美食作家王剛による6動画
-  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」 https://www.youtube.com/watch?v=3gF44PXZXNc
-  * 中華鍋で丁寧に作る場合の解説 (日本語) https://www.youtube.com/watch?v=-7vw-sHGtDY
-  * 水を足してスープにしている「西红柿鸡蛋面」 https://www.youtube.com/watch?v=PtAhBml14Uw
+  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」<iframe width="640" height="480" src="https://www.youtube.com/embed/3gF44PXZXNc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  * 中華鍋で丁寧に作る場合の解説 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/-7vw-sHGtDY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  * 水を足してスープにしている「西红柿鸡蛋面」 <iframe width="640" height="480" src="https://www.youtube.com/embed/PtAhBml14Uw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## シャクシュカ (中近東) {#shakushka}
 
@@ -490,9 +490,9 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* アラブ式シャクシュカ (アラビア語, 英語字幕) https://www.youtube.com/watch?v=aSTBwIeYBYk
-* (英語) https://www.youtube.com/watch?v=Iy3mUtlvw84
-* モロッコ式シャクシュカ (英語) https://www.youtube.com/watch?v=9z9UU10kM5c
+* アラブ式シャクシュカ (アラビア語, 英語字幕) <iframe width="640" height="480" src="https://www.youtube.com/embed/aSTBwIeYBYk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/Iy3mUtlvw84" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* モロッコ式シャクシュカ (英語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/9z9UU10kM5c" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## シュクメルリ\index{シュクメルリ} (草: შქმერული\index{შქმერული|see{シュクメルリ}}) {#shkmerli}
 
@@ -572,10 +572,10 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* シュクメリ村での伝統的な作り方, 牛乳の代わりに水を使う (ジョージア語) https://www.youtube.com/watch?v=qBpRB3QAjoQ
+* シュクメリ村での伝統的な作り方, 牛乳の代わりに水を使う (ジョージア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/qBpRB3QAjoQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 『シュクメルリ異聞』上記の動画に言及した日本語の解説記事 http://georgia1001.com/2020/02/12/anotherstoryofshkmeruli/
 * 『シュクメルリには「茶シュク」と「白シュク」の2つがある。本当のシュクメルリは茶色い料理です。』 http://jp.ndish.com/diary/20200901_3847/
-* ジョージア大使によるハチャプリの作り方実演動画 https://www.youtube.com/watch?v=v1fL2_qm4xE
+* ジョージア大使によるハチャプリの作り方実演動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/v1fL2_qm4xE" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## パエリヤ (西: Paella)\index{パエリヤ}\index{paella|see{パエリヤ}}
 
@@ -672,7 +672,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=L_dDUw_QuDU]
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/L_dDUw_QuDU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## スペイン風オムレツ  (西: Tortilla de Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペイン風オムレツ}}
 
@@ -743,7 +743,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=JceGMNG7rpU
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/JceGMNG7rpU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## チェスネチカ - (捷: česnečka)\index{チェスネチカ}\index{česnečka|see{チェスネチカ}} {#cesnecka}
 
@@ -805,8 +805,8 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 #### 参考資料
 
-* czechcookbook の動画 (英語音声) https://www.youtube.com/watch?v=vYeoxYUMzME
-* Random Innkeeper の動画 (英語音声, 日本語字幕) https://www.youtube.com/watch?v=F_59dZw5G44
+* czechcookbook の動画 (英語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/vYeoxYUMzME" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Random Innkeeper の動画 (英語音声, 日本語字幕) <iframe width="640" height="480" src="https://www.youtube.com/embed/F_59dZw5G44" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @faktor2007Traditional p. 18
 
 ## 鶏・野菜・味噌 (日)\index{鶏・野菜・味噌}
@@ -990,8 +990,8 @@ TODO: 画像
 
 ### 参考資料
 
-* 美食作家王剛の動画 https://www.youtube.com/watch?v=NqHI1CJU-Rg
-* 同, 火鍋の素を入れるなどアレンジしたバージョン https://www.youtube.com/watch?v=ZjnOTA65DPo
+* 美食作家王剛の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/NqHI1CJU-Rg" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 同, 火鍋の素を入れるなどアレンジしたバージョン <iframe width="640" height="480" src="https://www.youtube.com/embed/ZjnOTA65DPo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 『メシ通』の記事, フライパンを使用 https://www.hotpepper.jp/mesitsu/entry/noriki-washiya/19-00032
 
 ## 魚香肉絲\index{魚香肉絲}/青椒肉絲\index{青椒肉絲} (中, 四川) {#rosu}
@@ -1097,9 +1097,9 @@ TODO: 画像
 
 ### 参考資料
 
-* 美食作家王剛の料理動画 (中国語) https://www.youtube.com/watch?v=TpR9-9CNxAY
-* 同, 古いバージョン https://www.youtube.com/watch?v=68v5mGdE978
-* 同, 青椒肉絲の料理動画 (中国語) https://www.youtube.com/watch?v=wn0_7SMpw6o
+* 美食作家王剛の料理動画 (中国語) <iframe width="640" height="480" src="https://www.youtube.com/embed/TpR9-9CNxAY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 同, 古いバージョン <iframe width="640" height="480" src="https://www.youtube.com/embed/68v5mGdE978" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 同, 青椒肉絲の料理動画 (中国語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/wn0_7SMpw6o" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 水煮肉片 (中, 四川)\index{水煮肉片}
 
@@ -1194,7 +1194,7 @@ TODO: 画像
 
 ### 参考資料
 
-* 美食作家王剛の料理動画 https://www.youtube.com/watch?v=hyiGCNwCMxU
+* 美食作家王剛の料理動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/hyiGCNwCMxU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 麻婆豆腐 (中, 四川)\index{麻婆豆腐}
 
@@ -1292,7 +1292,7 @@ TODO: 画像
 
 ### 参考資料
 
-* 美食作家王剛による料理動画 https://www.youtube.com/watch?v=USoC8AqirVA
+* 美食作家王剛による料理動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/USoC8AqirVA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 『美味四川』の記事「[永久保存版！本場の四川で食べる麻婆豆腐の作り方](https://sisen-recipe.com/sichuan/2016/03/1.html)」
 * 『メシ通』の記事「[「麻婆豆腐の作り方」を四川料理のスゴイ人に教わったら、目からウロコが3回落ちた](https://www.hotpepper.jp/mesitsu/entry/noriki-washiya/18-00431)」
 
@@ -1376,8 +1376,8 @@ TODO: 画像
 ### 参考資料
 
 * 王剛の料理動画
-  * その1 https://www.youtube.com/watch?v=v72yoabCHXA
-  * その2 (古いバージョン) https://www.youtube.com/watch?v=DIMwUp9UqB4
+  * その1 <iframe width="640" height="480" src="https://www.youtube.com/embed/v72yoabCHXA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  * その2 <iframe width="640" height="480" src="https://www.youtube.com/embed/DIMwUp9UqB4" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 酸湯肥牛 (中, 四川) \index{酸湯肥牛}
 
@@ -1448,7 +1448,7 @@ TODO: 画像
 ### 参考資料
 
 * 『美味四川』の記事「[暑い日に食べたい酸っぱ辛い四川料理「酸湯肥牛」の作り方](https://sisen-recipe.com/sichuan/2018/07/2358.html)」
-* 『美食台』の動画 (中国語) https://www.youtube.com/watch?v=8SlM9nacW0g
+* 『美食台』の動画 (中国語) <iframe width="640" height="480" src="https://www.youtube.com/embed/8SlM9nacW0g" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 口水鶏 (中, 四川)\index{口水鶏}\index{口水雞|see{口水鶏}}\index{口水鸡|see{口水鶏}}
 
@@ -1559,11 +1559,11 @@ TODO: 画像
 
 ### 参考資料
 
-* 鶏を〆る方法含んだ王剛の料理動画 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=99nspRiav-A
+* 鶏を〆る方法含んだ王剛の料理動画 (中国語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/99nspRiav-A" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* 王剛の香辣红油の作成動画 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=6wlDqKt2ADo
+* 王剛の香辣红油の作成動画 (中国語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/6wlDqKt2ADo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* 『简单 家常 美味！』の動画 https://www.youtube.com/watch?v=laB1e6fWbmA
+* 『简单 家常 美味！』の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/laB1e6fWbmA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## (TODO) インドカレー (印)
 
@@ -1671,8 +1671,8 @@ TODO
 
 ### 参考資料
 
-* 動画 (英語音声) https://www.youtube.com/watch?v=pTInrevl54Q
-* Václav Frič による料理動画 (チェコ語音声) https://www.youtube.com/watch?v=lUGyggN9ygY
+* 動画 (英語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/pTInrevl54Q" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Václav Frič による料理動画 (チェコ語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/lUGyggN9ygY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## クネドリーク (捷: Knedlíky) \index{クネドリーク}\index{knedlíky|see{クネドリーク}}
 
@@ -1733,10 +1733,10 @@ TODO
 ### 参考資料
 
 * http://www.czechfriend.jp/event/040826.htm
-* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語) https://www.youtube.com/watch?v=rgouyUynrlA
-* "Kuchyně Lidlu" による「パンくずのクネドリーク」の料理動画 (チェコ語) https://www.youtube.com/watch?v=4_KnXyIiZds
-* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語) https://www.recepty.cz/recept/karlovarsky-knedlik-140268
-*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語) https://www.youtube.com/watch?v=SIee8PWWSbI
+* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/rgouyUynrlA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* "Kuchyně Lidlu" による「パンくずのクネドリーク」の料理動画 (チェコ語) <iframe width="640" height="480" src="https://www.youtube.com/embed/4_KnXyIiZds" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語)  https://www.recepty.cz/recept/karlovarsky-knedlik-140268
+*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/SIee8PWWSbI" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ピエロギ (波: Pierogi)\index{ピエロギ}\index{pierogi|see{ピエロギ}}
 
@@ -1822,7 +1822,7 @@ Ruskie の場合の詰め物は, マッシュポテトにリコッタチーズ�
 
 ### 参考資料
 
-* The Polish Chef による Ruskie の作り方 https://www.youtube.com/watch?v=GQ0GiTKzu38
+* The Polish Chef による Ruskie の作り方 <iframe width="640" height="480" src="https://www.youtube.com/embed/GQ0GiTKzu38" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 日本語のレシピ https://jpya.or.jp/ja/2018/12/pierogi/
 * @czerniecki1682Compendium pp.86-87 (ほとんど読めない)
 
@@ -1875,11 +1875,11 @@ TODO: 画像
 * 茹でる直前の状態で, くっつかないように小分けして冷凍しておけば好きな時に食べられる
 * ロシアでは家庭でペリメニを一気に大量に作るため, ハニカム構造の型が流通している
   + 型抜きで生地を分けるなら, ウォッカ用のショットグラスがちょうどいい大きさになる.
-  + 参考: https://www.youtube.com/watch?v=_o9934oSYqQ
+  + 参考: <iframe width="640" height="480" src="https://www.youtube.com/embed/_o9934oSYqQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 参考資料
 
-* Коллекция Рецептов の料理動画 https://www.youtube.com/watch?v=N9aS8jBaTS8
+* Коллекция Рецептов の料理動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/N9aS8jBaTS8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 * @OginoNumano2017 p. 54
 * @boumei Ch. 27, および付録のサラファン式レシピ
 
@@ -1989,9 +1989,10 @@ TODO: 画像
 
 ### 参考資料
 
-* 伝統的な道具を使った料理法 (ジョージア語音声) https://www.youtube.com/watch?v=YRNOKkblZzc
-* 日本在住のロシア人による料理動画 (日本語音声) https://www.youtube.com/watch?v=-v2sk3QxVDc
-* ジョージア在住の日本人による解説動画, 肉ではなくジャガイモ入り (日本語, ロシア語音声) https://www.youtube.com/watch?v=Z7HJ1f-Qp0
+* 伝統的な道具を使った料理法 (ジョージア語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/YRNOKkblZzc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 日本在住のロシア人による料理動画 (日本語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/-v2sk3QxVDc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* ジョージア在住の日本人による解説動画, 肉ではなくジャガイモ入り (日本語, ロシア語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/Z7HJ1f-Qp0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## (予定) ポンチキ
 
@@ -2124,11 +2125,12 @@ TODO: 画像
 
 * 小泉武夫『食マガジン』での紹介 https://koizumipress.com/archives/6314
 * 中央アジア雑貨輸入販売業者『シルクロードキャラバン』によるレシピ『ウズベク料理 ラグメンのレシピ』 http://sr-caravan.com/?mode=f10
-* "UYGHUR HAND-PULLED NOODLES | LAGHMAN" (英語) https://www.youtube.com/watch?v=XhrxYD4Zahg
-* "How to make Lagman Noodles Homemade Hand-pulled Noodle Uyghur Laghman" (英語) https://www.youtube.com/watch?v=AiMGPbMcAw0
+* "UYGHUR HAND-PULLED NOODLES | LAGHMAN" (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/XhrxYD4Zahg" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* "How to make Lagman Noodles Homemade Hand-pulled Noodle Uyghur Laghman" (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/AiMGPbMcAw0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * ロシア国内で知られているラグマンは手延ではないことが多く, またジャガイモやディルを使うなどロシア的ローカライズがなされている
-  * 「ウズベキスタン風」ラグマン (ロシア語) https://www.youtube.com/watch?v=4QdaJoJpt5s
-  * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語) https://www.youtube.com/watch?v=pF0MiqYUxLw
+    * 「ウズベキスタン風」ラグマン (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/4QdaJoJpt5s" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/pF0MiqYUxLw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## プロフ/パラフ (露: Плов/月: Palov) \index{плов|see{プロフ}} \index{palo|see{プロフ}}
 
@@ -2223,12 +2225,12 @@ TODO: 画像
 ### 参考資料
 
 * @OginoNumano2017 p. 83
-* ウズベク風プロフ (ロシア語) https://www.youtube.com/watch?v=J-D3eZgos3I
-* フェルガナ式プロフ (ロシア語) https://www.youtube.com/watch?v=LDSO3W88QvU
-* サマルカンド式 (ロシア語) https://www.youtube.com/watch?v=6gnzLZdpxQs
-* タシュケント式 (ロシア語) https://www.youtube.com/watch?v=oYqqHNdoGMk
-* 炊飯器で作る方法 (日本語) https://www.youtube.com/watch?v=ZVTa4OQ0atk
-* アゼルバイジャン人による料理動画 https://www.youtube.com/watch?v=oAOYV9Y6MVc
+* ウズベク風プロフ (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/J-D3eZgos3I" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* フェルガナ式プロフ (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/LDSO3W88QvU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* サマルカンド式 (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/6gnzLZdpxQs" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* タシュケント式 (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/oYqqHNdoGMk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 炊飯器で作る方法 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/ZVTa4OQ0atk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* アゼルバイジャン人による料理動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/oAOYV9Y6MVc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 現地の「プロフセンター」の風景
 * e-food.jp の簡略化したレシピ (日本語) https://e-food.jp/recipe/asia/samalkandplov/
 
@@ -2289,7 +2291,7 @@ TODO: 画像
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=Zjm9fQBBHiM
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/Zjm9fQBBHiM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!--chapter:end:03-carbon.Rmd-->
 
@@ -2461,8 +2463,8 @@ TODO: 画像
 ### 参考資料
 
 * @faktor2007Traditional p.65
-* "Recepty bez brepty" の動画 https://www.youtube.com/watch?v=rXudmMKbInQ
-* "Czechcookbook" の動画 https://www.youtube.com/watch?v=tkCtjcHuJ-s
+* "Recepty bez brepty" の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/rXudmMKbInQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* "Czechcookbook" の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/tkCtjcHuJ-s" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 「スペイン風」ミートボール/ルーラーデン (捷: španělský ptáček/独: Rouladen)\index{スペイン風ミートボール}\index{španělský ptáček|see{スペイン風ミートボール}}\index{ルーラーデン|see{スペイン風ミートボール}}\index{rouladen|see{ルーラーデン}}
 
@@ -2544,7 +2546,7 @@ TODO: 画像
 ### 参考資料
 
 * @faktor2007Traditional p.54
-* "video-recepty.com" の動画 https://www.youtube.com/watch?v=T2hfkBYQjkc
+* "video-recepty.com" の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/T2hfkBYQjkc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * Wikipedia の記事 https://cs.wikipedia.org/w/index.php?title=%C5%A0pan%C4%9Blsk%C3%BD_pt%C3%A1%C4%8Dek&oldid=19363197
 
 ## ゴウォンプキ (波: Gołąbki) \index{ゴウォンプキ}\index{gołąbki|see{ゴウォンプキ}}
@@ -2608,8 +2610,8 @@ TODO: 画像
 
 ### 参考資料
 
-* ポーランド在住日本人による解説付きの動画 (日本語) https://www.youtube.com/watch?v=GYV1bVHyglQ
-* Dorotki による料理動画 (ポーランド語, 英語字幕あり)  https://www.youtube.com/watch?v=LFc-PO0fu7A
+* ポーランド在住日本人による解説付きの動画 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/GYV1bVHyglQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Dorotki による料理動画 (ポーランド語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/LFc-PO0fu7A" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @OginoNumano2017 pp. 40-41
 
 ## キムチチム (韓: 김치찜)
@@ -2644,13 +2646,16 @@ TODO: 画像
 
 * 豚バラ肉ブロック 1 kg
   * 肉の選び方は補足の部分参照
-* 白菜キムチ 1.3 kg
+* 白菜キムチ 1.3 kg (白菜1/4株相当)
   * 発酵が進み酸味が強くなったものが良い
 * ニンニク 3-4かけら
+* 生姜
+* 玉ねぎ
+* 長ねぎ
 * 唐辛子の粉 大さじ 2-3杯
   * キムチ用のさほど辛くないものを使う
   * カイエンヌペッパーのような特別に辛い種類のものは適さない
-  * パプリカパウダーでもよい
+  * 辛いのが苦手ならば一部をパプリカパウダーに置き換えてもよい
 * (オプション) 生の唐辛子
 * (オプション) 隠し味
   * テンジャン (甜麺醤などでも良いかもしれない?)
@@ -2673,7 +2678,8 @@ TODO: 画像
     * 味が薄かったら醤油とかを入れる
     * 発酵しすぎて匂いが強ければ砂糖を入れる
 7. 肉が十分に柔らかくなるまで煮込み続ける
-    * 1時間半程度, 圧力鍋を使っても良い
+    * 1時間半程度
+	* 圧力鍋を使って短縮しても良い
     * だいたい角煮と同じ要領で良い
 
 <div class="figure" style="text-align: center">
@@ -2687,7 +2693,7 @@ TODO: 画像
 
 ### 参考資料
 
-* ペク・ジョンウォンの料理動画 https://www.youtube.com/watch?v=RVfSeUZ8XkY
+* ペク・ジョンウォンの料理動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/RVfSeUZ8XkY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## キエフ風カツレツ (露: котлета по-киевски/котлета де-валяй) \index{キエフ風カツレツ}\index{котлета по-киевски|see{キエフ風カツレツ}}\index{котлета де-валяй|see{キエフ風カツレツ}}
 
@@ -2785,9 +2791,9 @@ TODO: 画像
 
 ### 参考資料
 
-* Коллекция Рецептов によるソ連時代の作り方 (ロシア語, 英語字幕あり) https://www.youtube.com/watch?v=C-nt0yqz-0g
+* Коллекция Рецептов によるソ連時代の作り方 (ロシア語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/C-nt0yqz-0g" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 上記を参考にしたブログ記事 https://under-identified.hatenablog.com/entry/2020/12/30/233933
-* より簡単な作り方の紹介 (日本語) https://www.youtube.com/watch?v=MKhA7T9nzbE
+* より簡単な作り方の紹介 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/MKhA7T9nzbE" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * もっと簡単な作り方の紹介 https://note.com/dogirls_ua/n/n72220579a52b
 
 ## ドルマの三姉妹 (亜塞: Üç-Bacı Dolması)
@@ -2872,9 +2878,9 @@ TODO: 画像
 
 ### 参考文献
 
-* (たぶんアゼリー語, ロシア語, 英語字幕あり) https://www.youtube.com/watch?v=GUfGmjOgCZE
-* (たぶんアゼリー語) https://www.youtube.com/watch?v=bohT4pGV7rc
-* (たぶんアゼリー語) https://www.youtube.com/watch?v=eNj9yJ0_1NI
+* (たぶんアゼリー語, ロシア語, 英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/GUfGmjOgCZE" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* (たぶんアゼリー語) <iframe width="640" height="480" src="https://www.youtube.com/embed/bohT4pGV7rc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* (たぶんアゼリー語) <iframe width="640" height="480" src="https://www.youtube.com/embed/eNj9yJ0_1NI" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 荻野恭子『ピーマンとなすの肉詰め煮～ドルマ～』キューピー3分クッキング https://www.ntv.co.jp/3min/recipe/20070901/
 
 
@@ -2961,7 +2967,7 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=7Eegww-atzU
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/7Eegww-atzU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @faktor2007Traditional, p. 58
 
 
@@ -3052,13 +3058,13 @@ TODO: 画像
 
 ジョージア語はほとんどわからないので見様見真似である
 
-* Apolines cuisine の動画, くるみのペーストに近い見た目 (ジョージア語音声) https://www.youtube.com/watch?v=DeLvJ7V-30k
-* Arkadi Kalantarov の動画 (ジョージア語字幕) https://www.youtube.com/watch?v=kcV9GgPqcoU
-* 1TV (ジョージアのテレビ局) の紹介動画, 後半は「ハルチョー風パスタ」? (ジョージア語音声) https://www.youtube.com/watch?v=kcV9GgPqcoU
-* Спасибо Шеф の動画 (ロシア語) https://www.youtube.com/watch?v=mRybqZc_gZk
+* Apolines cuisine の動画, くるみのペーストに近い見た目 (ジョージア語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/DeLvJ7V-30k" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Arkadi Kalantarov の動画 (ジョージア語字幕) <iframe width="640" height="480" src="https://www.youtube.com/embed/kcV9GgPqcoU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 1TV (ジョージアのテレビ局) の紹介動画, 後半は「ハルチョー風パスタ」? (ジョージア語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/kcV9GgPqcoU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Спасибо Шеф の動画 (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/mRybqZc_gZk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @boumei 10章
 * CNN の記事 https://edition.cnn.com/travel/article/georgia-best-food-tbilisi/index.html
-* 「ゴーミ」の料理動画 (英語) https://www.youtube.com/watch?v=76jFKW23X_Y
+* 「ゴーミ」の料理動画 (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/76jFKW23X_Y" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!--chapter:end:04-meat.Rmd-->
 
@@ -3249,7 +3255,7 @@ TODO: 画像
 ### 参考資料
 
 * @OginoNumano2017 p.14
-* (たぶんリトアニア語, 英語字幕) https://www.youtube.com/watch?v=sL8Q05qt56c
+* (たぶんリトアニア語, 英語字幕) <iframe width="640" height="480" src="https://www.youtube.com/embed/sL8Q05qt56c" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ニジマスのバターグリル (捷, pečený pstruh na másle) \index{pečený pstruh na másle|see{ニジマスのバターグリル}}
 
@@ -3314,7 +3320,7 @@ TODO: 画像
 ### 参考資料
 
 * @faktor2007Traditional p.24
-* https://www.youtube.com/watch?v=RNjsLl5w5-E
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/RNjsLl5w5-E" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!--chapter:end:05-summer.Rmd-->
 
@@ -3501,13 +3507,11 @@ TODO: 画像
 
 ### 参考資料
 
-* クロポテンコの料理動画 (ウクライナ語, 日本語字幕あり) https://www.youtube.com/watch?v=LgjumwEC7zo
+* クロポテンコの料理動画 (ウクライナ語, 日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/LgjumwEC7zo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * クロポテンコの「ヘトマン風ボルシチ」レシピ (ウクライナ語, ロシア語) https://klopotenko.com/getmanskij-borshh/
 
-* “Всегда Вкусно!” の料理動画 (ロシア語) https://www.youtube.com/watch?v=_-9nH4zFThs
-
-* 『ナスチャンネル』のロシア式の料理動画 (日本語音声) https://www.youtube.com/watch?v=5mXOepWrzGc
-
+* “Всегда Вкусно!” の料理動画 (ロシア語) <iframe width="640" height="480" src="https://www.youtube.com/embed/_-9nH4zFThs" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* 『ナスチャンネル』のロシア式の料理動画 (日本語音声) <iframe width="640" height="480" src="https://www.youtube.com/embed/5mXOepWrzGc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @OginoNumano2017 pp. 36-37
 
 ## シチー (露: Щи)
@@ -3648,7 +3652,7 @@ https://speakerdeck.com/ktgrstsh/how-to-make-solyanka
 
 * @boumei Ch. 6
 * https://young-germany.jp/2019/04/ddr4/
-* https://www.youtube.com/watch?v=8KxbfDXqwyU
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/8KxbfDXqwyU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## (予定) ビーフストロガノフ (露: Бефстроганов/Говядина По-строгановски) \index{ビーフストロガノフ}
 
@@ -3843,8 +3847,9 @@ TODO
 
 ### 参考資料
 
-* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?time_continue=1&v=5FbGKARjuBU&feature=emb_logo
-* Čočka na kyselo の料理動画 (英語) https://www.youtube.com/watch?v=0uVRiei7yxk&feature=emb_logo
+* Random Innkeeper の動画 (日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/5FbGKARjuBU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Čočka na kyselo の料理動画 (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/0uVRiei7yxk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
 
 ## すりつぶしたレンズ豆 (捷, 15世紀)
 
@@ -3908,7 +3913,7 @@ TODO
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=tkkB7AhjGFM
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/tkkB7AhjGFM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## パンケーキ (捷: palačinky) \index{palačinky|see{パンケーキ}}
 
@@ -3961,7 +3966,7 @@ TODO
 
 ### 参考資料
 
-* Random Innkeeper のレシピ, チェコ風のスプレッドのレシピつき https://www.youtube.com/watch?v=okHyqdnKPfY
+* Random Innkeeper のレシピ, チェコ風のスプレッドのレシピつき <iframe width="640" height="480" src="https://www.youtube.com/embed/okHyqdnKPfY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * Helltaker のクリア特典には作者 (ポーランド人) の祖母のレシピが含まれている https://store.steampowered.com/app/1289310/Helltaker
 
 ## (予定) 中世のドーナツ (捷, 16世紀)
@@ -4069,7 +4074,7 @@ TODO
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=Lm-FoNIFJE0
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/Lm-FoNIFJE0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## (予定) イラクサのシチュー (捷, 中世)
 
@@ -4124,7 +4129,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 (英語音声, 日本語字幕あり) https://www.youtube.com/watch?v=dKNu_qnQZkM
+* Random Innkeeper の動画 (英語音声, 日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/dKNu_qnQZkM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## パン粉のドーナツと林檎のポリッジ (捷, 15世紀)
 
@@ -4203,7 +4208,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考文献
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/J4iEFjWsMqM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @Ju2018
 
 ## プレッツェル (捷, 15世紀: pleclík)
@@ -4264,7 +4269,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 (英語, 日本語字幕あり) https://www.youtube.com/watch?v=6JXrlNuYHF8
+* Random Innkeeper の動画 (英語, 日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/6JXrlNuYHF8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## エンドウマメの団子 (捷, 15世紀)
 
@@ -4323,7 +4328,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=XSOw8thwkgU
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/XSOw8thwkgU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## (予定) 4食のポリッジ
 
@@ -4331,7 +4336,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/J4iEFjWsMqM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @feyfrlikova2015Kuchyne
 
 ## 豚肉のビールソース和え (vepřovina divoká, 捷, 16世紀) \index{vepřovina divoká|see{豚肉のビールソース和え}}
@@ -4396,7 +4401,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=qWsfd6tn2VY
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/qWsfd6tn2VY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 鶏肉とブラックソース kuře v černé jíše (捷, 15世紀)
 
@@ -4463,7 +4468,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の料理 https://www.youtube.com/watch?v=XEdpYA_xHLM
+* Random Innkeeper の料理 <iframe width="640" height="480" src="https://www.youtube.com/embed/XEdpYA_xHLM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ハンガリー風ローストチキン (kuře po Uhersku, 捷, 15世紀) \index{kuře po Uhersku|see{ハンガリー風ローストチキン}}
 
@@ -4539,7 +4544,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=ZZxF8H4ArbA
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/ZZxF8H4ArbA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 鶏肉のローフと黒いソース (捷, 15世紀, sekanina slepičí s černou omáčkou) \index{sekanina slepičí|see{鶏肉のローフ}}
 
@@ -4622,7 +4627,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=vaBtiTrlmVc
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/vaBtiTrlmVc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 自作記録 https://under-identified.hatenablog.com/entry/2019/04/13/220424 
 
 ## 「ハンガリー風」ローストビーフ #1 (捷, 15世紀, Pečeně hovězí po Uhersku) \index{Pečeně hovězí po Uhersku|see{ハンガリー風ローストビーフ (15世紀)}}
@@ -4695,7 +4700,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=QnSHjogWAMA
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/QnSHjogWAMA" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @feyfrlikova2015Kuchyne  
 
 ## 「ハンガリー風」ローストビーフ #2 (捷, 16世紀, Hovězie po Uhersku) \index{Hovězie po Uhersku|see{ハンガリー風ローストビーフ (16世紀)}}
@@ -4765,7 +4770,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=u5A8wbyBI9Y
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/u5A8wbyBI9Y" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## ラム肉のセージソース和え (捷, 15世紀)
@@ -4833,7 +4838,7 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=BsYVAQfuWqc
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/BsYVAQfuWqc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 「鹿肉風」牛肉 (捷, 15世紀)
@@ -4897,7 +4902,7 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=xZe7p8ofCfg
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/xZe7p8ofCfg" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## (予定) ローストダック (捷, 15世紀)
 
@@ -4914,7 +4919,7 @@ TODO: 画像
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=mtta0W-kBh4
+* <iframe width="640" height="480" src="https://www.youtube.com/embed/mtta0W-kBh4" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 野ウサギの煮込み (捷, 15世紀)
 
@@ -4963,7 +4968,7 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?v=CcjKye3use8
+* Random Innkeeper の動画 (日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/CcjKye3use8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ハッシュドレバー (捷, 15世紀)
 
@@ -5038,13 +5043,16 @@ TODO: 画像
 
 ### 参考資料
 
-* Random Innkeeper の動画  https://www.youtube.com/watch?v=w5oWJZVPRK4
+* Random Innkeeper の動画 <iframe width="640" height="480" src="https://www.youtube.com/embed/w5oWJZVPRK4" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## タラのベーコン炒め (捷, 15世紀: Štiku s slaninami)
+## メルルーサのベーコン煮 (捷, 15世紀: Štiku s slaninami)
 
-イギリス由来の料理のため, 海の魚を使用している. メルルーサとかを使うのが本来のレシピだが, 手に入れやすいスケトウダラでアレンジ.
+イギリス由来の料理のため, 海の魚を使用している. メルルーサを使うのが本来のレシピだが, 今回は入手できなかったためスケトウダラでアレンジした (図\@ref(fig:stiku-s-slaninami-finished)).
 
-TODO: 画像
+<div class="figure" style="text-align: center">
+<img src="img/stiku-s-slaninami/finished.jpg" alt="タラのベーコン煮" width="2016" />
+<p class="caption">(\#fig:stiku-s-slaninami-finished)タラのベーコン煮</p>
+</div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5088,11 +5096,13 @@ TODO: 画像
 
 元のレシピでは全ての材料を一度に入れるとしか書いてないらしい. パースニップを下敷きにするのは Random Innkeeper のアイディアである.
 
+なお, 日本国内の市販ベーコンは味が薄く脂身も少ないため, 塩を余分に加えたほうが良いかもしれない.
+
 @Ju2018 p. 23 でも中世イギリスのタラ料理が言及されている.
 
 ### 参考資料
 
-* Random Innkeeper https://www.youtube.com/watch?v=pQthdIYfRR0
+* Random Innkeeper <iframe width="640" height="480" src="https://www.youtube.com/embed/pQthdIYfRR0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * @Ju2018
 
 ## トゥ・フー (アッカド, バビロン第1王朝時代? `{\fontspec{Akkadian}`{=latex}𒌅𒌔𒌑`}`{=latex})
@@ -5242,6 +5252,7 @@ TODO: 画像
 ### 参考資料
 
 * @katz2012Art
+* 日本語の解説付きの作成例 <iframe width="640" height="480" src="https://www.youtube.com/embed/uTgx3Gcixcc" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ウトペネツ\index{ウトペネツ} (捷: Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネツ}}
 
@@ -5296,13 +5307,16 @@ TODO: 画像
 1. 鍋に水, 塩, 砂糖, オールスパイス, 胡椒, 月桂樹の葉を入れ沸騰させる
 1. 瓶にスライスしたパプリカと玉ねぎ, そして残りの材料を詰め込む
 1. (1) の熱湯の粗熱が取れたら瓶に注ぎ, 蓋をする
-1. 冷暗所で1週間ほど寝かせる
+1. 冷暗所で乳酸発酵するまで寝かせる
+	* 1-2週間程度
 
 ### 補足
 
 `<ruby>utpenci<rp>(</rp><rt>ウトペンツィ</rt><rp>)</rp></ruby>`{=html} は複数形で, `<ruby>utpenec<rp>(</rp><rt>ウトペネツ</rt><rp>)</rp></ruby>`{=html} は単数形. 意味は 「溺死体」
 
 現地では špekáček というソーセージを使用することが多い.
+
+図\@ref(fig:utopenci-finished) は玉ねぎやパプリカを多く入れているが「溺死体」という名前が示すように, 本来は肉がメインである.
 
 ピックル液の量は材料の比率を維持しつつ瓶のサイズに合わせて調整する.
 
@@ -5423,8 +5437,11 @@ TODO: 画像
 
 1. 肉に下味をつける
     * バラ肉に十分な塩とスパイスをすりつける
-    * または十分な濃度の塩水に漬ける
+    * または十分な濃度の塩水 (ピックル液/ソミュール液) に漬ける
+		* 15-20%程度の濃度の塩水に好みのハーブ・スパイスを入れて一度沸騰させた液
 2. 2週間-1ヶ月ほど冷蔵庫で熟成させる
+	* 乾式の場合, 表面に染み出してくる水分をまめに取り除く
+	* ピチットシートなら説明書に従い, キッチンペーパーならなるべく1日ごとに取り替える
 3. 軽く水洗いし, 表面についたスパイスを洗い流す
 4. 表面の水分を拭き取る
 5. さらに天日干しで表面を乾燥させる
@@ -5440,7 +5457,7 @@ TODO: 画像
 
 ### 参考資料
 
-* 乾式チロリアン風ベーコン (英語字幕あり) https://www.youtube.com/watch?v=VZ9MmxevNeQ
+* 乾式チロリアン風ベーコン (英語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/VZ9MmxevNeQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 * 『Speck ドイツ式ベーコン』 http://jdg-nishinihon.org/upfiles/files/speck.pdf
 
 ## サーロ\index{サーロ} (宇/露: Сало\index{сало|see{サーロ})}

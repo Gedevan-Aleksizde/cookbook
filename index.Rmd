@@ -62,6 +62,14 @@ display_difficulty <- function(difficul_ingred, difficul_cook){
   }
   return(k)
 }
+
+embed_video <- function(id, prefix_embed = "https://www.youtube.com/embed/", prefix_normal = "https://www.youtube.com/watch?v="){
+  if(knitr::is_html_output()){
+    knitr::asis_output(paste0('<iframe width="640" height="480" src="', prefix_embed, id, '" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'))
+  } else {
+    knitr::asis_output(paste0(prefix_normal, id))
+  }
+}
 ```
 
 

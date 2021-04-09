@@ -120,8 +120,8 @@ display_difficulty(3, 3)
 ### 参考資料
 
 * @faktor2007Traditional p.65
-* "Recepty bez brepty" の動画 https://www.youtube.com/watch?v=rXudmMKbInQ
-* "Czechcookbook" の動画 https://www.youtube.com/watch?v=tkCtjcHuJ-s
+* "Recepty bez brepty" の動画 `r embed_video("rXudmMKbInQ")`
+* "Czechcookbook" の動画 `r embed_video("tkCtjcHuJ-s")`
 
 ## 「スペイン風」ミートボール/ルーラーデン (捷: španělský ptáček/独: Rouladen)\index{スペイン風ミートボール}\index{španělský ptáček|see{スペイン風ミートボール}}\index{ルーラーデン|see{スペイン風ミートボール}}\index{rouladen|see{ルーラーデン}}
 
@@ -186,7 +186,7 @@ knitr::include_graphics("img/spanelsky-ptacek/tied.jpg")
 ### 参考資料
 
 * @faktor2007Traditional p.54
-* "video-recepty.com" の動画 https://www.youtube.com/watch?v=T2hfkBYQjkc
+* "video-recepty.com" の動画 `r embed_video("T2hfkBYQjkc")`
 * Wikipedia の記事 https://cs.wikipedia.org/w/index.php?title=%C5%A0pan%C4%9Blsk%C3%BD_pt%C3%A1%C4%8Dek&oldid=19363197
 
 ## ゴウォンプキ (波: Gołąbki) \index{ゴウォンプキ}\index{gołąbki|see{ゴウォンプキ}}
@@ -234,8 +234,8 @@ display_difficulty(2, 4)
 
 ### 参考資料
 
-* ポーランド在住日本人による解説付きの動画 (日本語) https://www.youtube.com/watch?v=GYV1bVHyglQ
-* Dorotki による料理動画 (ポーランド語, 英語字幕あり)  https://www.youtube.com/watch?v=LFc-PO0fu7A
+* ポーランド在住日本人による解説付きの動画 (日本語) `r embed_video("GYV1bVHyglQ")`
+* Dorotki による料理動画 (ポーランド語, 英語字幕あり) `r embed_video("LFc-PO0fu7A")`
 * @OginoNumano2017 pp. 40-41
 
 ## キムチチム (韓: 김치찜)
@@ -254,13 +254,16 @@ display_difficulty(5, 2)
 
 * 豚バラ肉ブロック 1 kg
   * 肉の選び方は補足の部分参照
-* 白菜キムチ 1.3 kg
+* 白菜キムチ 1.3 kg (白菜1/4株相当)
   * 発酵が進み酸味が強くなったものが良い
 * ニンニク 3-4かけら
+* 生姜
+* 玉ねぎ
+* 長ねぎ
 * 唐辛子の粉 大さじ 2-3杯
   * キムチ用のさほど辛くないものを使う
   * カイエンヌペッパーのような特別に辛い種類のものは適さない
-  * パプリカパウダーでもよい
+  * 辛いのが苦手ならば一部をパプリカパウダーに置き換えてもよい
 * (オプション) 生の唐辛子
 * (オプション) 隠し味
   * テンジャン (甜麺醤などでも良いかもしれない?)
@@ -283,7 +286,8 @@ display_difficulty(5, 2)
     * 味が薄かったら醤油とかを入れる
     * 発酵しすぎて匂いが強ければ砂糖を入れる
 7. 肉が十分に柔らかくなるまで煮込み続ける
-    * 1時間半程度, 圧力鍋を使っても良い
+    * 1時間半程度
+	* 圧力鍋を使って短縮しても良い
     * だいたい角煮と同じ要領で良い
 
 ```{r kimchichim-pot, fig.cap="煮込む直前"}
@@ -296,7 +300,7 @@ knitr::include_graphics("img/kimchichim/pot.jpg")
 
 ### 参考資料
 
-* ペク・ジョンウォンの料理動画 https://www.youtube.com/watch?v=RVfSeUZ8XkY
+* ペク・ジョンウォンの料理動画 `r embed_video("RVfSeUZ8XkY")`
 
 ## キエフ風カツレツ (露: котлета по-киевски/котлета де-валяй) \index{キエフ風カツレツ}\index{котлета по-киевски|see{キエフ風カツレツ}}\index{котлета де-валяй|see{キエフ風カツレツ}}
 
@@ -378,9 +382,9 @@ display_difficulty(4, 5)
 
 ### 参考資料
 
-* Коллекция Рецептов によるソ連時代の作り方 (ロシア語, 英語字幕あり) https://www.youtube.com/watch?v=C-nt0yqz-0g
+* Коллекция Рецептов によるソ連時代の作り方 (ロシア語, 英語字幕あり) `r embed_video("C-nt0yqz-0g")`
 * 上記を参考にしたブログ記事 https://under-identified.hatenablog.com/entry/2020/12/30/233933
-* より簡単な作り方の紹介 (日本語) https://www.youtube.com/watch?v=MKhA7T9nzbE
+* より簡単な作り方の紹介 (日本語) `r embed_video("MKhA7T9nzbE")`
 * もっと簡単な作り方の紹介 https://note.com/dogirls_ua/n/n72220579a52b
 
 ## ドルマの三姉妹 (亜塞: Üç-Bacı Dolması)
@@ -448,9 +452,9 @@ knitr::include_graphics("img/dolma/dolma-failed.jpg")
 
 ### 参考文献
 
-* (たぶんアゼリー語, ロシア語, 英語字幕あり) https://www.youtube.com/watch?v=GUfGmjOgCZE
-* (たぶんアゼリー語) https://www.youtube.com/watch?v=bohT4pGV7rc
-* (たぶんアゼリー語) https://www.youtube.com/watch?v=eNj9yJ0_1NI
+* (たぶんアゼリー語, ロシア語, 英語字幕あり) `r embed_video("GUfGmjOgCZE")`
+* (たぶんアゼリー語) `r embed_video("bohT4pGV7rc")`
+* (たぶんアゼリー語) `r embed_video("eNj9yJ0_1NI")`
 * 荻野恭子『ピーマンとなすの肉詰め煮～ドルマ～』キューピー3分クッキング https://www.ntv.co.jp/3min/recipe/20070901/
 
 
@@ -521,7 +525,7 @@ display_difficulty(4, 2)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=7Eegww-atzU
+* Random Innkeeper の動画 `r embed_video("7Eegww-atzU")`
 * @faktor2007Traditional, p. 58
 
 
@@ -596,10 +600,10 @@ display_difficulty(5, 3)
 
 ジョージア語はほとんどわからないので見様見真似である
 
-* Apolines cuisine の動画, くるみのペーストに近い見た目 (ジョージア語音声) https://www.youtube.com/watch?v=DeLvJ7V-30k
-* Arkadi Kalantarov の動画 (ジョージア語字幕) https://www.youtube.com/watch?v=kcV9GgPqcoU
-* 1TV (ジョージアのテレビ局) の紹介動画, 後半は「ハルチョー風パスタ」? (ジョージア語音声) https://www.youtube.com/watch?v=kcV9GgPqcoU
-* Спасибо Шеф の動画 (ロシア語) https://www.youtube.com/watch?v=mRybqZc_gZk
+* Apolines cuisine の動画, くるみのペーストに近い見た目 (ジョージア語音声) `r embed_video("DeLvJ7V-30k")`
+* Arkadi Kalantarov の動画 (ジョージア語字幕) `r embed_video("kcV9GgPqcoU")`
+* 1TV (ジョージアのテレビ局) の紹介動画, 後半は「ハルチョー風パスタ」? (ジョージア語音声) `r embed_video("kcV9GgPqcoU")`
+* Спасибо Шеф の動画 (ロシア語) `r embed_video("mRybqZc_gZk")`
 * @boumei 10章
 * CNN の記事 https://edition.cnn.com/travel/article/georgia-best-food-tbilisi/index.html
-* 「ゴーミ」の料理動画 (英語) https://www.youtube.com/watch?v=76jFKW23X_Y
+* 「ゴーミ」の料理動画 (英語) `r embed_video("76jFKW23X_Y")`

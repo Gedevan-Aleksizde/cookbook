@@ -62,8 +62,8 @@ knitr::include_graphics("img/bramborak/dough.jpg")
 
 ### 参考資料
 
-* 動画 (英語音声) https://www.youtube.com/watch?v=pTInrevl54Q
-* Václav Frič による料理動画 (チェコ語音声) https://www.youtube.com/watch?v=lUGyggN9ygY
+* 動画 (英語音声) `r embed_video("pTInrevl54Q")`
+* Václav Frič による料理動画 (チェコ語音声) `r embed_video("lUGyggN9ygY")`
 
 ## クネドリーク (捷: Knedlíky) \index{クネドリーク}\index{knedlíky|see{クネドリーク}}
 
@@ -109,10 +109,10 @@ display_difficulty(2, 2)
 ### 参考資料
 
 * http://www.czechfriend.jp/event/040826.htm
-* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語) https://www.youtube.com/watch?v=rgouyUynrlA
-* "Kuchyně Lidlu" による「パンくずのクネドリーク」の料理動画 (チェコ語) https://www.youtube.com/watch?v=4_KnXyIiZds
-* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語) https://www.recepty.cz/recept/karlovarsky-knedlik-140268
-*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語) https://www.youtube.com/watch?v=SIee8PWWSbI
+* "Kuchyně Lidlu" による標準的なクネドリークの料理動画 (チェコ語)  `r embed_video("rgouyUynrlA")`
+* "Kuchyně Lidlu" による「パンくずのクネドリーク」の料理動画 (チェコ語) `r embed_video("4_KnXyIiZds")`
+* "Recepty.cz" による「カルロヴィ・ヴァリ風」クネドリーク (チェコ語)  https://www.recepty.cz/recept/karlovarsky-knedlik-140268
+*  "Kuchyně Lidlu" のカルロヴィ・ヴァリ風の作成動画 (チェコ語)  `r embed_video("SIee8PWWSbI")`
 
 ## ピエロギ (波: Pierogi)\index{ピエロギ}\index{pierogi|see{ピエロギ}}
 
@@ -182,7 +182,7 @@ Ruskie の場合の詰め物は, マッシュポテトにリコッタチーズ�
 
 ### 参考資料
 
-* The Polish Chef による Ruskie の作り方 https://www.youtube.com/watch?v=GQ0GiTKzu38
+* The Polish Chef による Ruskie の作り方 `r embed_video("GQ0GiTKzu38")`
 * 日本語のレシピ https://jpya.or.jp/ja/2018/12/pierogi/
 * @czerniecki1682Compendium pp.86-87 (ほとんど読めない)
 
@@ -220,11 +220,11 @@ display_difficulty(2, 2)
 * 茹でる直前の状態で, くっつかないように小分けして冷凍しておけば好きな時に食べられる
 * ロシアでは家庭でペリメニを一気に大量に作るため, ハニカム構造の型が流通している
   + 型抜きで生地を分けるなら, ウォッカ用のショットグラスがちょうどいい大きさになる.
-  + 参考: https://www.youtube.com/watch?v=_o9934oSYqQ
+  + 参考: `r embed_video("_o9934oSYqQ")`
 
 ### 参考資料
 
-* Коллекция Рецептов の料理動画 https://www.youtube.com/watch?v=N9aS8jBaTS8
+* Коллекция Рецептов の料理動画 `r embed_video("N9aS8jBaTS8")` 
 * @OginoNumano2017 p. 54
 * @boumei Ch. 27, および付録のサラファン式レシピ
 
@@ -314,9 +314,10 @@ knitr::include_graphics("img/khinkali/boiling.jpg")
 
 ### 参考資料
 
-* 伝統的な道具を使った料理法 (ジョージア語音声) https://www.youtube.com/watch?v=YRNOKkblZzc
-* 日本在住のロシア人による料理動画 (日本語音声) https://www.youtube.com/watch?v=-v2sk3QxVDc
-* ジョージア在住の日本人による解説動画, 肉ではなくジャガイモ入り (日本語, ロシア語音声) https://www.youtube.com/watch?v=Z7HJ1f-Qp0
+* 伝統的な道具を使った料理法 (ジョージア語音声) `r embed_video("YRNOKkblZzc")`
+* 日本在住のロシア人による料理動画 (日本語音声) `r embed_video("-v2sk3QxVDc")`
+* ジョージア在住の日本人による解説動画, 肉ではなくジャガイモ入り (日本語, ロシア語音声) `r embed_video("Z7HJ1f-Qp0")`
+
 
 ## (予定) ポンチキ
 
@@ -417,11 +418,12 @@ knitr::include_graphics("img/laghman/spiral.jpg")
 
 * 小泉武夫『食マガジン』での紹介 https://koizumipress.com/archives/6314
 * 中央アジア雑貨輸入販売業者『シルクロードキャラバン』によるレシピ『ウズベク料理 ラグメンのレシピ』 http://sr-caravan.com/?mode=f10
-* "UYGHUR HAND-PULLED NOODLES | LAGHMAN" (英語) https://www.youtube.com/watch?v=XhrxYD4Zahg
-* "How to make Lagman Noodles Homemade Hand-pulled Noodle Uyghur Laghman" (英語) https://www.youtube.com/watch?v=AiMGPbMcAw0
+* "UYGHUR HAND-PULLED NOODLES | LAGHMAN" (英語) `r embed_video("XhrxYD4Zahg")`
+* "How to make Lagman Noodles Homemade Hand-pulled Noodle Uyghur Laghman" (英語) `r embed_video("AiMGPbMcAw0")`
 * ロシア国内で知られているラグマンは手延ではないことが多く, またジャガイモやディルを使うなどロシア的ローカライズがなされている
-  * 「ウズベキスタン風」ラグマン (ロシア語) https://www.youtube.com/watch?v=4QdaJoJpt5s
-  * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語) https://www.youtube.com/watch?v=pF0MiqYUxLw
+    * 「ウズベキスタン風」ラグマン (ロシア語) `r embed_video("4QdaJoJpt5s")`
+    * Всегда Вкусно! による「ウズベキスタン風」ラグマン  (ロシア語)  `r embed_video("pF0MiqYUxLw")`
+
 
 ## プロフ/パラフ (露: Плов/月: Palov) \index{плов|see{プロフ}} \index{palo|see{プロフ}}
 
@@ -500,12 +502,12 @@ display_difficulty(4, 3)
 ### 参考資料
 
 * @OginoNumano2017 p. 83
-* ウズベク風プロフ (ロシア語) https://www.youtube.com/watch?v=J-D3eZgos3I
-* フェルガナ式プロフ (ロシア語) https://www.youtube.com/watch?v=LDSO3W88QvU
-* サマルカンド式 (ロシア語) https://www.youtube.com/watch?v=6gnzLZdpxQs
-* タシュケント式 (ロシア語) https://www.youtube.com/watch?v=oYqqHNdoGMk
-* 炊飯器で作る方法 (日本語) https://www.youtube.com/watch?v=ZVTa4OQ0atk
-* アゼルバイジャン人による料理動画 https://www.youtube.com/watch?v=oAOYV9Y6MVc
+* ウズベク風プロフ (ロシア語) `r embed_video("J-D3eZgos3I")`
+* フェルガナ式プロフ (ロシア語) `r embed_video("LDSO3W88QvU")`
+* サマルカンド式 (ロシア語) `r embed_video("6gnzLZdpxQs")`
+* タシュケント式 (ロシア語) `r embed_video("oYqqHNdoGMk")`
+* 炊飯器で作る方法 (日本語) `r embed_video("ZVTa4OQ0atk")`
+* アゼルバイジャン人による料理動画 `r embed_video("oAOYV9Y6MVc")`
 * 現地の「プロフセンター」の風景
 * e-food.jp の簡略化したレシピ (日本語) https://e-food.jp/recipe/asia/samalkandplov/
 
@@ -550,4 +552,4 @@ display_difficulty(4, 4)
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=Zjm9fQBBHiM
+* `r embed_video("Zjm9fQBBHiM")`

@@ -107,8 +107,8 @@ knitr::include_graphics("img/laziji/fry-with-chille.jpg")
 
 ### 参考資料
 
-* 美食作家王剛の動画 https://www.youtube.com/watch?v=NqHI1CJU-Rg
-* 同, 火鍋の素を入れるなどアレンジしたバージョン https://www.youtube.com/watch?v=ZjnOTA65DPo
+* 美食作家王剛の動画 `r embed_video("NqHI1CJU-Rg")`
+* 同, 火鍋の素を入れるなどアレンジしたバージョン `r embed_video("ZjnOTA65DPo")`
 * 『メシ通』の記事, フライパンを使用 https://www.hotpepper.jp/mesitsu/entry/noriki-washiya/19-00032
 
 ## 魚香肉絲\index{魚香肉絲}/青椒肉絲\index{青椒肉絲} (中, 四川) {#rosu}
@@ -199,9 +199,9 @@ display_difficulty(3, 2)
 
 ### 参考資料
 
-* 美食作家王剛の料理動画 (中国語) https://www.youtube.com/watch?v=TpR9-9CNxAY
-* 同, 古いバージョン https://www.youtube.com/watch?v=68v5mGdE978
-* 同, 青椒肉絲の料理動画 (中国語) https://www.youtube.com/watch?v=wn0_7SMpw6o
+* 美食作家王剛の料理動画 (中国語) `r embed_video("TpR9-9CNxAY")`
+* 同, 古いバージョン `r embed_video("68v5mGdE978")`
+* 同, 青椒肉絲の料理動画 (中国語)  `r embed_video("wn0_7SMpw6o")`
 
 ## 水煮肉片 (中, 四川)\index{水煮肉片}
 
@@ -280,7 +280,7 @@ display_difficulty(3, 2)
 
 ### 参考資料
 
-* 美食作家王剛の料理動画 https://www.youtube.com/watch?v=hyiGCNwCMxU
+* 美食作家王剛の料理動画 `r embed_video("hyiGCNwCMxU")`
 
 ## 麻婆豆腐 (中, 四川)\index{麻婆豆腐}
 
@@ -362,7 +362,7 @@ display_difficulty(3, 2)
 
 ### 参考資料
 
-* 美食作家王剛による料理動画 https://www.youtube.com/watch?v=USoC8AqirVA
+* 美食作家王剛による料理動画 `r embed_video("USoC8AqirVA")`
 * 『美味四川』の記事「[永久保存版！本場の四川で食べる麻婆豆腐の作り方](https://sisen-recipe.com/sichuan/2016/03/1.html)」
 * 『メシ通』の記事「[「麻婆豆腐の作り方」を四川料理のスゴイ人に教わったら、目からウロコが3回落ちた](https://www.hotpepper.jp/mesitsu/entry/noriki-washiya/18-00431)」
 
@@ -431,8 +431,8 @@ display_difficulty(3, 3)
 ### 参考資料
 
 * 王剛の料理動画
-  * その1 https://www.youtube.com/watch?v=v72yoabCHXA
-  * その2 (古いバージョン) https://www.youtube.com/watch?v=DIMwUp9UqB4
+  * その1 `r embed_video("v72yoabCHXA")`
+  * その2 `r embed_video("DIMwUp9UqB4")`
 
 ## 酸湯肥牛 (中, 四川) \index{酸湯肥牛}
 
@@ -488,7 +488,7 @@ display_difficulty(2, 2)
 ### 参考資料
 
 * 『美味四川』の記事「[暑い日に食べたい酸っぱ辛い四川料理「酸湯肥牛」の作り方](https://sisen-recipe.com/sichuan/2018/07/2358.html)」
-* 『美食台』の動画 (中国語) https://www.youtube.com/watch?v=8SlM9nacW0g
+* 『美食台』の動画 (中国語) `r embed_video("8SlM9nacW0g")`
 
 ## 口水鶏 (中, 四川)\index{口水鶏}\index{口水雞|see{口水鶏}}\index{口水鸡|see{口水鶏}}
 
@@ -582,11 +582,11 @@ knitr::include_graphics("img/yodare/smaller.jpg")
 
 ### 参考資料
 
-* 鶏を〆る方法含んだ王剛の料理動画 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=99nspRiav-A
+* 鶏を〆る方法含んだ王剛の料理動画 (中国語, 英語字幕あり) `r embed_video("99nspRiav-A")`
 
-* 王剛の香辣红油の作成動画 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=6wlDqKt2ADo
+* 王剛の香辣红油の作成動画 (中国語, 英語字幕あり) `r embed_video("6wlDqKt2ADo")`
 
-* 『简单 家常 美味！』の動画 https://www.youtube.com/watch?v=laB1e6fWbmA
+* 『简单 家常 美味！』の動画 `r embed_video("laB1e6fWbmA")`
 
 ## (TODO) インドカレー (印)
 

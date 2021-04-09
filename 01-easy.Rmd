@@ -149,7 +149,7 @@ display_difficulty(1, 1)
 
 ### 参考資料
 
-* 『ロシアの味』日本在住ロシア人による動画 (日本語) https://www.youtube.com/watch?v=HXz8deILEe8
+* 『ロシアの味』日本在住ロシア人による動画 (日本語) `r embed_video("HXz8deILEe8")`
 * 『ロシア・ビヨンド』での言及 https://jp.rbth.com/multimedia/video/2015/03/03/52185
 
 ## 醤油炒飯 (中) {#chahan}
@@ -226,7 +226,7 @@ display_difficulty(1, 2)
 
 ### 参考資料
 
-* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) https://www.youtube.com/watch?v=1Q-5eIBfBDQ
+* 美食作家王剛の醤油炒飯の作り方 (中国語, 英語字幕あり) `r embed_video("1Q-5eIBfBDQ")` 
 * Foodie の記事 https://mi-journey.jp/foodie/59108/
 
 ## 西紅柿炒鶏蛋 (中) + 面 {#friedtomatoegg}
@@ -272,9 +272,9 @@ knitr::include_graphics("img/friedtomatoegg/cooking.jpg")
 ### 参考資料
 
 * 美食作家王剛による6動画
-  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」 https://www.youtube.com/watch?v=3gF44PXZXNc
-  * 中華鍋で丁寧に作る場合の解説 (日本語) https://www.youtube.com/watch?v=-7vw-sHGtDY
-  * 水を足してスープにしている「西红柿鸡蛋面」 https://www.youtube.com/watch?v=PtAhBml14Uw
+  * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」`r embed_video("3gF44PXZXNc")`
+  * 中華鍋で丁寧に作る場合の解説 (日本語) `r embed_video("-7vw-sHGtDY")`
+  * 水を足してスープにしている「西红柿鸡蛋面」 `r embed_video("PtAhBml14Uw")`
 
 ## シャクシュカ (中近東) {#shakushka}
 
@@ -324,9 +324,9 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 
 ### 参考資料
 
-* アラブ式シャクシュカ (アラビア語, 英語字幕) https://www.youtube.com/watch?v=aSTBwIeYBYk
-* (英語) https://www.youtube.com/watch?v=Iy3mUtlvw84
-* モロッコ式シャクシュカ (英語) https://www.youtube.com/watch?v=9z9UU10kM5c
+* アラブ式シャクシュカ (アラビア語, 英語字幕) `r embed_video("aSTBwIeYBYk")`
+* (英語) `r embed_video("Iy3mUtlvw84")`
+* モロッコ式シャクシュカ (英語)  `r embed_video("9z9UU10kM5c")`
 
 ## シュクメルリ\index{シュクメルリ} (草: შქმერული\index{შქმერული|see{シュクメルリ}}) {#shkmerli}
 
@@ -387,10 +387,10 @@ knitr::include_graphics("img/shkmerli/chopped.jpg")
 
 ### 参考資料
 
-* シュクメリ村での伝統的な作り方, 牛乳の代わりに水を使う (ジョージア語) https://www.youtube.com/watch?v=qBpRB3QAjoQ
+* シュクメリ村での伝統的な作り方, 牛乳の代わりに水を使う (ジョージア語) `r embed_video("qBpRB3QAjoQ")`
 * 『シュクメルリ異聞』上記の動画に言及した日本語の解説記事 http://georgia1001.com/2020/02/12/anotherstoryofshkmeruli/
 * 『シュクメルリには「茶シュク」と「白シュク」の2つがある。本当のシュクメルリは茶色い料理です。』 http://jp.ndish.com/diary/20200901_3847/
-* ジョージア大使によるハチャプリの作り方実演動画 https://www.youtube.com/watch?v=v1fL2_qm4xE
+* ジョージア大使によるハチャプリの作り方実演動画 `r embed_video("v1fL2_qm4xE")`
 
 ## パエリヤ (西: Paella)\index{パエリヤ}\index{paella|see{パエリヤ}}
 
@@ -471,7 +471,7 @@ display_difficulty(1, 2)
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=L_dDUw_QuDU]
+* `r embed_video("L_dDUw_QuDU")`
 
 ## スペイン風オムレツ  (西: Tortilla de Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペイン風オムレツ}}
 
@@ -526,7 +526,7 @@ display_difficulty(1, 2)
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=JceGMNG7rpU
+* `r embed_video("JceGMNG7rpU")`
 
 ## チェスネチカ - (捷: česnečka)\index{チェスネチカ}\index{česnečka|see{チェスネチカ}} {#cesnecka}
 
@@ -572,8 +572,8 @@ display_difficulty(1, 1)
 
 #### 参考資料
 
-* czechcookbook の動画 (英語音声) https://www.youtube.com/watch?v=vYeoxYUMzME
-* Random Innkeeper の動画 (英語音声, 日本語字幕) https://www.youtube.com/watch?v=F_59dZw5G44
+* czechcookbook の動画 (英語音声) `r embed_video("vYeoxYUMzME")`
+* Random Innkeeper の動画 (英語音声, 日本語字幕) `r embed_video("F_59dZw5G44")`
 * @faktor2007Traditional p. 18
 
 ## 鶏・野菜・味噌 (日)\index{鶏・野菜・味噌}

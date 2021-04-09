@@ -137,7 +137,7 @@ display_difficulty(4, 2)
 ### 参考資料
 
 * @OginoNumano2017 p.14
-* (たぶんリトアニア語, 英語字幕) https://www.youtube.com/watch?v=sL8Q05qt56c
+* (たぶんリトアニア語, 英語字幕) `r embed_video("sL8Q05qt56c")`
 
 ## ニジマスのバターグリル (捷, pečený pstruh na másle) \index{pečený pstruh na másle|see{ニジマスのバターグリル}}
 
@@ -186,4 +186,4 @@ display_difficulty(2, 2)
 ### 参考資料
 
 * @faktor2007Traditional p.24
-* https://www.youtube.com/watch?v=RNjsLl5w5-E
+* `r embed_video("RNjsLl5w5-E")`

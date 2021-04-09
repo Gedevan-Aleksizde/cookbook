@@ -56,8 +56,9 @@ display_difficulty(2, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?time_continue=1&v=5FbGKARjuBU&feature=emb_logo
-* Čočka na kyselo の料理動画 (英語) https://www.youtube.com/watch?v=0uVRiei7yxk&feature=emb_logo
+* Random Innkeeper の動画 (日本語字幕あり) `r embed_video("5FbGKARjuBU")`
+* Čočka na kyselo の料理動画 (英語) `r embed_video("0uVRiei7yxk")` 
+
 
 ## すりつぶしたレンズ豆 (捷, 15世紀)
 
@@ -105,7 +106,7 @@ display_difficulty(2, 2)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=tkkB7AhjGFM
+* Random Innkeeper の動画 `r embed_video("tkkB7AhjGFM")`
 
 ## パンケーキ (捷: palačinky) \index{palačinky|see{パンケーキ}}
 
@@ -143,7 +144,7 @@ display_difficulty(1, 2)
 
 ### 参考資料
 
-* Random Innkeeper のレシピ, チェコ風のスプレッドのレシピつき https://www.youtube.com/watch?v=okHyqdnKPfY
+* Random Innkeeper のレシピ, チェコ風のスプレッドのレシピつき `r embed_video("okHyqdnKPfY")`
 * Helltaker のクリア特典には作者 (ポーランド人) の祖母のレシピが含まれている https://store.steampowered.com/app/1289310/Helltaker
 
 ## (予定) 中世のドーナツ (捷, 16世紀)
@@ -219,7 +220,7 @@ knitr::include_graphics("img/roll-bread/bred_roll_dough.jpg")
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=Lm-FoNIFJE0
+* Random Innkeeper の動画 `r embed_video("Lm-FoNIFJE0")`
 
 ## (予定) イラクサのシチュー (捷, 中世)
 
@@ -258,7 +259,7 @@ display_difficulty(2, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 (英語音声, 日本語字幕あり) https://www.youtube.com/watch?v=dKNu_qnQZkM
+* Random Innkeeper の動画 (英語音声, 日本語字幕あり) `r embed_video("dKNu_qnQZkM")`
 
 ## パン粉のドーナツと林檎のポリッジ (捷, 15世紀)
 
@@ -321,7 +322,7 @@ display_difficulty(3, 2)
 
 ### 参考文献
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* Random Innkeeper の動画 `r embed_video("J4iEFjWsMqM")`
 * @Ju2018
 
 ## プレッツェル (捷, 15世紀: pleclík)
@@ -366,7 +367,7 @@ display_difficulty(2, 10)
 
 ### 参考資料
 
-* Random Innkeeper の動画 (英語, 日本語字幕あり) https://www.youtube.com/watch?v=6JXrlNuYHF8
+* Random Innkeeper の動画 (英語, 日本語字幕あり) `r embed_video("6JXrlNuYHF8")`
 
 ## エンドウマメの団子 (捷, 15世紀)
 
@@ -409,7 +410,7 @@ display_difficulty(3, 4)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=XSOw8thwkgU
+* Random Innkeeper の動画 `r embed_video("XSOw8thwkgU")`
 
 ## (予定) 4食のポリッジ
 
@@ -417,7 +418,7 @@ display_difficulty(3, 4)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=J4iEFjWsMqM
+* Random Innkeeper の動画 `r embed_video("J4iEFjWsMqM")`
 * @feyfrlikova2015Kuchyne
 
 ## 豚肉のビールソース和え (vepřovina divoká, 捷, 16世紀) \index{vepřovina divoká|see{豚肉のビールソース和え}}
@@ -466,7 +467,7 @@ display_difficulty(3, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=qWsfd6tn2VY
+* Random Innkeeper の動画 `r embed_video("qWsfd6tn2VY")`
 
 ## 鶏肉とブラックソース kuře v černé jíše (捷, 15世紀)
 
@@ -517,7 +518,7 @@ display_difficulty(2, 3)
 
 ### 参考資料
 
-* Random Innkeeper の料理 https://www.youtube.com/watch?v=XEdpYA_xHLM
+* Random Innkeeper の料理 `r embed_video("XEdpYA_xHLM")`
 
 ## ハンガリー風ローストチキン (kuře po Uhersku, 捷, 15世紀) \index{kuře po Uhersku|see{ハンガリー風ローストチキン}}
 
@@ -577,7 +578,7 @@ display_difficulty(4, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=ZZxF8H4ArbA
+* Random Innkeeper の動画 `r embed_video("ZZxF8H4ArbA")`
 
 ## 鶏肉のローフと黒いソース (捷, 15世紀, sekanina slepičí s černou omáčkou) \index{sekanina slepičí|see{鶏肉のローフ}}
 
@@ -644,7 +645,7 @@ display_difficulty(3, 4)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=vaBtiTrlmVc
+* Random Innkeeper の動画 `r embed_video("vaBtiTrlmVc")`
 * 自作記録 https://under-identified.hatenablog.com/entry/2019/04/13/220424 
 
 ## 「ハンガリー風」ローストビーフ #1 (捷, 15世紀, Pečeně hovězí po Uhersku) \index{Pečeně hovězí po Uhersku|see{ハンガリー風ローストビーフ (15世紀)}}
@@ -701,7 +702,7 @@ display_difficulty(4, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=QnSHjogWAMA
+* Random Innkeeper の動画 `r embed_video("QnSHjogWAMA")`
 * @feyfrlikova2015Kuchyne  
 
 ## 「ハンガリー風」ローストビーフ #2 (捷, 16世紀, Hovězie po Uhersku) \index{Hovězie po Uhersku|see{ハンガリー風ローストビーフ (16世紀)}}
@@ -755,7 +756,7 @@ display_difficulty(4, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=u5A8wbyBI9Y
+* Random Innkeeper の動画 `r embed_video("u5A8wbyBI9Y")`
 
 
 ## ラム肉のセージソース和え (捷, 15世紀)
@@ -808,7 +809,7 @@ display_difficulty(4, 2)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=BsYVAQfuWqc
+* Random Innkeeper の動画 `r embed_video("BsYVAQfuWqc")`
 
 
 ## 「鹿肉風」牛肉 (捷, 15世紀)
@@ -856,7 +857,7 @@ display_difficulty(3, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 https://www.youtube.com/watch?v=xZe7p8ofCfg
+* Random Innkeeper の動画 `r embed_video("xZe7p8ofCfg")`
 
 ## (予定) ローストダック (捷, 15世紀)
 
@@ -871,7 +872,7 @@ knitr::include_graphics("img/roast-duck-cz/moravsky.jpg")
 
 ### 参考資料
 
-* https://www.youtube.com/watch?v=mtta0W-kBh4
+* `r embed_video("mtta0W-kBh4")`
 
 ## 野ウサギの煮込み (捷, 15世紀)
 
@@ -904,7 +905,7 @@ display_difficulty(5, 3)
 
 ### 参考資料
 
-* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?v=CcjKye3use8
+* Random Innkeeper の動画 (日本語字幕あり) `r embed_video("CcjKye3use8")`
 
 ## ハッシュドレバー (捷, 15世紀)
 
@@ -963,13 +964,15 @@ display_difficulty(4, 2)
 
 ### 参考資料
 
-* Random Innkeeper の動画  https://www.youtube.com/watch?v=w5oWJZVPRK4
+* Random Innkeeper の動画 `r embed_video("w5oWJZVPRK4")`
 
-## タラのベーコン炒め (捷, 15世紀: Štiku s slaninami)
+## メルルーサのベーコン煮 (捷, 15世紀: Štiku s slaninami)
 
-イギリス由来の料理のため, 海の魚を使用している. メルルーサとかを使うのが本来のレシピだが, 手に入れやすいスケトウダラでアレンジ.
+イギリス由来の料理のため, 海の魚を使用している. メルルーサを使うのが本来のレシピだが, 今回は入手できなかったためスケトウダラでアレンジした (図\@ref(fig:stiku-s-slaninami-finished)).
 
-TODO: 画像
+```{r stiku-s-slaninami-finished, fig.cap="タラのベーコン煮"}
+knitr::include_graphics("img/stiku-s-slaninami/finished.jpg")
+```
 
 ```{r}
 display_difficulty(4, 2)
@@ -998,11 +1001,13 @@ display_difficulty(4, 2)
 
 元のレシピでは全ての材料を一度に入れるとしか書いてないらしい. パースニップを下敷きにするのは Random Innkeeper のアイディアである.
 
+なお, 日本国内の市販ベーコンは味が薄く脂身も少ないため, 塩を余分に加えたほうが良いかもしれない.
+
 @Ju2018 p. 23 でも中世イギリスのタラ料理が言及されている.
 
 ### 参考資料
 
-* Random Innkeeper https://www.youtube.com/watch?v=pQthdIYfRR0
+* Random Innkeeper `r embed_video("pQthdIYfRR0")`
 * @Ju2018
 
 ## トゥ・フー (アッカド, バビロン第1王朝時代? `{\fontspec{Akkadian}`{=latex}𒌅𒌔𒌑`}`{=latex})
