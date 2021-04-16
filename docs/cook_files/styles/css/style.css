@@ -37,7 +37,8 @@ pre {
 pre code {
   white-space: inherit;
 }
-p.flushright {
+
+.flushright {
   text-align: right;
 }
 blockquote > p:last-child {
