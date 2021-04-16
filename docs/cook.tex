@@ -7,7 +7,7 @@
   a4paper]{ltjsreport}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex,ifthen}
+\usepackage{ifxetex,ifluatex,ifpdf,ifthen}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -47,10 +47,12 @@
 
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
+\ifpdf
+  \IfFileExists{microtype.sty}{% use microtype if available
+    \usepackage[]{microtype}
+    \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+  }{}
+\fi
 \makeatletter
 \@ifundefined{KOMAClassName}{% if non-KOMA class
   \IfFileExists{parskip.sty}{%
@@ -76,7 +78,7 @@
 \urlstyle{same} % disable monospaced font for URLs
 % for compatible with kableExtra package functions.
 \usepackage{longtable,booktabs,dcolumn}
-%\usepackage{longtable,booktabs,dcolumn,array,multirow,wrapfig,float,colortbl,pdflscape,tabu,threeparttablethreeparttablex,makecell}
+%\usepackage{longtable,booktabs,dcolumn,array,multirow,wrapfig,float,colortbl,pdflscape,tabu,threeparttable,threeparttablex,makecell}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -94,56 +96,25 @@
   \usepackage{fancyhdr}
 }{}
 \pagestyle{fancy}
-% for soft wrapping in code block
-\usepackage{fvextra}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines,breakanywhere}
-\usepackage{titlesec}
-\newcommand{\sectionbreak}{\clearpage}
-\newcommand{\chapterbreak}{\cleardoublepage}
-\renewcommand{\chaptermark}[1]{\markboth{第\ \thechapter\ 章~#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\,#1}{}}
-\usepackage{makeidx}
-\makeindex
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
-\usepackage[style=jauthoryear,natbib=true]{biblatex}
-\addbibresource{Cooking.bib}
 
-
-\title{ザ・クックブック}
-\author{ill-identified\footnote{twitter ID: @ill-identified}}
-\date{最終更新時刻 2021-04-10 02:57:06, 初公開: 2021/4/1}
-\usepackage{bxtexlogo}
-\colorlet{shadecolor}{gray!20}
-
-\usepackage{fmtcount}
-\ifdefined\theFancyVerbLine\renewcommand{\theFancyVerbLine}{\small \padzeroes[2]{\decimal{FancyVerbLine}}}\fi % adjust row number position
-\IfFileExists{bxcoloremoji.sty}{\usepackage{bxcoloremoji}}{}
-
-
-
-%\renewcommand{\prepartname}{第}
-%\renewcommand{\postpartname}{部}
-
-
-% redefine quote format as modern
+% compatible mukti-columns macro
+% by "R Markdown Cookbook" Sec. 5.8
+\newenvironment{cols}[1][]{}{}
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
 \makeatletter
-\@ifpackageloaded{framed}{}{\usepackage{framed}}
-\definecolor{quotebarcolor}{rgb}{0.2,0.2,0.2}
-\renewenvironment{quote}{\def\FrameCommand{{\color{quotebarcolor}{\vrule width 3pt}}\hspace{10pt}}\MakeFramed{\advance\hsize-\width\FrameRestore}}{\endMakeFramed}
+\def\ignorespacesandallpars{%
+\@ifnextchar\par
+{\expandafter\ignorespacesandallpars\@gobble}%
+{}%
+}
 \makeatother
+%-------
+
 
 % ---- XeLaTeX 専用のあれ ----
 \ifxetex
@@ -160,7 +131,7 @@
   }%
 \fi
 
-% --- 特殊ブロックをLaTeXで表現するためのマクロ ---
+% ---- custom blocks ----
 \makeatletter
 \newenvironment{kframe}{%
 \medskip{}
@@ -186,37 +157,82 @@
 }{\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}}
 \makeatother
 
-\newenvironment{rmdblock}[1]
-  {
-  \begin{itemize}
-  \renewcommand{\labelitemi}{
-    \raisebox{-.7\height}[0pt][0pt]{
-      {\setkeys{Gin}{width=3em,keepaspectratio}\includegraphics{_latex/_img/#1}}
-    }
-  }
+
+% --- custom blocks ---
+
+% ---- redefine quote format as modern
+\setlength{\fboxsep}{.8em}
+\usepackage{framed}
+\definecolor{quotebarcolor}{rgb}{0.2,0.2,0.2}
+\renewenvironment{quote}{\def\FrameCommand{{\color{quotebarcolor}{\vrule width 3pt}}\hspace{10pt}}\MakeFramed{\advance\hsize-\width\FrameRestore}}{\endMakeFramed}
+% ----
+% ---- tcolobox settings by the Cookbook Sec.9.6.2
+\usepackage{tcolorbox}
+% \newenvironment{blackbox}{\definecolor{shadecolor}{rgb}{0, 0, 0}\color{white}\begin{shaded}}{\end{shaded}}
+% \newtcolorbox{blackbox}{colback=black,colframe=orange,coltext=white,boxsep=5pt,arc=4pt}
+\newtcolorbox{greyblock}{colback=gray!20,colframe=orange,coltext=black,boxsep=5pt,arc=4pt}
+\newenvironment{infobox}[1]{\begin{itemize}\renewcommand{\labelitemi}{\raisebox{-.7\height}[0pt][0pt]{%
+  {\setkeys{Gin}{width=3em,keepaspectratio}\includegraphics{_latex/_img/#1}}}}
   \setlength{\fboxsep}{1em}
-  \begin{kframe}
+  \begin{greyblock}
   \item
-  }
-  {
-  \end{kframe}
-  \end{itemize}
-  }
-\newenvironment{rmdnote}
-  {\begin{rmdblock}{note}}
-  {\end{rmdblock}}
-\newenvironment{rmdcaution}
-  {\begin{rmdblock}{caution}}
-  {\end{rmdblock}}
-\newenvironment{rmdimportant}
-  {\begin{rmdblock}{important}}
-  {\end{rmdblock}}
-\newenvironment{rmdtip}
-  {\begin{rmdblock}{tip}}
-  {\end{rmdblock}}
-\newenvironment{rmdwarning}
-  {\begin{rmdblock}{warning}}
-  {\end{rmdblock}}
+  }{\end{greyblock}\end{itemize}
+}
+% ----
+
+% for block/block2 engine
+\newenvironment{memo}{\begin{infobox}{memo}}{\end{infobox}}
+\newenvironment{caution}{\begin{infobox}{caution}}{\end{infobox}}
+\newenvironment{important}{\begin{infobox}{important}}{\end{infobox}}
+\newenvironment{tip}{\begin{infobox}{tip}}{\end{infobox}}
+\newenvironment{warning}{\begin{infobox}{warning}}{\end{infobox}}
+% ---- custom block over ----
+
+% --- for soft wrapping in code block
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines,breakanywhere}
+% ----
+
+% ---- user-defined preamble here ----
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\chapterbreak}{\cleardoublepage}
+\renewcommand{\chaptermark}[1]{\markboth{第\ \thechapter\ 章~#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\,#1}{}}
+\usepackage{makeidx}
+\makeindex
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+% ---- user-defined preamble over ----
+
+\usepackage[style=jauthoryear,natbib=true]{biblatex}
+\addbibresource{Cooking.bib}
+
+
+\title{ザ・クックブック}
+\author{ill-identified\footnote{twitter ID: @ill-identified}}
+\date{最終更新時刻 2021-04-17 00:44:08, 初公開: 2021/4/1}
+\usepackage{bxtexlogo}
+\colorlet{shadecolor}{gray!20}
+
+\usepackage{fmtcount}
+\ifdefined\theFancyVerbLine\renewcommand{\theFancyVerbLine}{\small \padzeroes[2]{\decimal{FancyVerbLine}}}\fi % adjust row number position
+\IfFileExists{bxcoloremoji.sty}{\usepackage{bxcoloremoji}}{}
+
+
+
 
 \begin{document}
 \maketitle
@@ -250,10 +266,11 @@
 \chapter*{初めに}\label{preface}}
 \addcontentsline{toc}{chapter}{初めに}
 
-\begin{rmdcaution}
+\begin{infobox}{memo}
 本書は R 言語並びに \textbf{rmarkdown}, \textbf{bookdown},
 \textbf{rmdja}パッケージなどを使って書かれています.
-\end{rmdcaution}
+
+\end{infobox}
 
 2020年は外出できなかったのでいろいろ作った.
 
@@ -7203,7 +7220,7 @@ TODO
 
 }
 
-\caption{すりつぶしたレンズ豆}\label{fig:unnamed-chunk-51}
+\caption{すりつぶしたレンズ豆}\label{fig:unnamed-chunk-50}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7413,7 +7430,7 @@ TODO
 
 }
 
-\caption{中世のロールパン}\label{fig:unnamed-chunk-55}
+\caption{中世のロールパン}\label{fig:unnamed-chunk-54}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7566,7 +7583,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 }
 
-\caption{「ソーセージ」}\label{fig:unnamed-chunk-57}
+\caption{「ソーセージ」}\label{fig:unnamed-chunk-56}
 \end{figure}
 
 \begin{tabular}[t]{rl}

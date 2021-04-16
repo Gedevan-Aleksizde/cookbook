@@ -77,9 +77,9 @@ embed_video <- function(id, prefix_embed = "https://www.youtube.com/embed/", pre
 
 # 初めに {-#preface}
 
-```{block, type="rmdcaution", echo=knitr::is_latex_output()}
+:::{.infobox .memo data-latex="{memo}"}
 本書は R 言語並びに **rmarkdown**, **bookdown**, **rmdja**パッケージなどを使って書かれています.
-```
+:::
 
 2020年は外出できなかったのでいろいろ作った.
 

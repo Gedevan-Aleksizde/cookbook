@@ -19,6 +19,7 @@ rmdja::gitbook_ja:
 rmdja::pdf_book_ja:
   toc_depth: 2
   latex_engine: lualatex
+  block_style: tcolorbox
   keep_tex: true
   tombow: false
   add_folio: true

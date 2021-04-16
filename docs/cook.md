@@ -1,7 +1,7 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-10 02:57:06, 初公開: 2021/4/1"
+date: "最終更新時刻 2021-04-17 00:44:08, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
 documentclass: ltjsreport
@@ -23,10 +23,9 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 # 初めに {-#preface}
 
-\begin{rmdcaution}
-本書は R 言語並びに \textbf{rmarkdown}, \textbf{bookdown},
-\textbf{rmdja}パッケージなどを使って書かれています.
-\end{rmdcaution}
+:::{.infobox .memo data-latex="{memo}"}
+本書は R 言語並びに **rmarkdown**, **bookdown**, **rmdja**パッケージなどを使って書かれています.
+:::
 
 2020年は外出できなかったのでいろいろ作った.
 
@@ -3641,7 +3640,7 @@ TODO
 
 }
 
-\caption{すりつぶしたレンズ豆}(\#fig:unnamed-chunk-51)
+\caption{すりつぶしたレンズ豆}(\#fig:unnamed-chunk-50)
 \end{figure}
 
 
@@ -3761,7 +3760,7 @@ TODO
 
 }
 
-\caption{中世のロールパン}(\#fig:unnamed-chunk-55)
+\caption{中世のロールパン}(\#fig:unnamed-chunk-54)
 \end{figure}
 
 
@@ -3846,7 +3845,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 }
 
-\caption{「ソーセージ」}(\#fig:unnamed-chunk-57)
+\caption{「ソーセージ」}(\#fig:unnamed-chunk-56)
 \end{figure}
 
 

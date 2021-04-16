@@ -1,7 +1,7 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-10 02:56:55, 初公開: 2021/4/1"
+date: "最終更新時刻 2021-04-17 00:43:57, 初公開: 2021/4/1"
 site: bookdown::bookdown_site
 description: ""
 documentclass: ltjsreport
@@ -23,9 +23,9 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 
 # 初めに {-#preface}
 
-<div class="rmdcaution">
-<p>本書は R 言語並びに <strong>rmarkdown</strong>, <strong>bookdown</strong>, <strong>rmdja</strong>パッケージなどを使って書かれています.</p>
-</div>
+:::{.infobox .memo data-latex="{memo}"}
+本書は R 言語並びに **rmarkdown**, **bookdown**, **rmdja**パッケージなどを使って書かれています.
+:::
 
 2020年は外出できなかったのでいろいろ作った.
 
@@ -3857,7 +3857,7 @@ TODO
 
 <div class="figure" style="text-align: center">
 <img src="img/mashed-lentil/finished.jpg" alt="すりつぶしたレンズ豆" width="1716" />
-<p class="caption">(\#fig:unnamed-chunk-51)すりつぶしたレンズ豆</p>
+<p class="caption">(\#fig:unnamed-chunk-50)すりつぶしたレンズ豆</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -4000,7 +4000,7 @@ TODO
 
 <div class="figure" style="text-align: center">
 <img src="img/roll-bread/finished.jpg" alt="中世のロールパン" width="857" />
-<p class="caption">(\#fig:unnamed-chunk-55)中世のロールパン</p>
+<p class="caption">(\#fig:unnamed-chunk-54)中世のロールパン</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -4086,7 +4086,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 <div class="figure" style="text-align: center">
 <img src="img/sausage/finished.jpg" alt="「ソーセージ」" width="2016" />
-<p class="caption">(\#fig:unnamed-chunk-57)「ソーセージ」</p>
+<p class="caption">(\#fig:unnamed-chunk-56)「ソーセージ」</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
