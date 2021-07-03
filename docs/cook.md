@@ -1,19 +1,25 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-17 00:44:08, 初公開: 2021/4/1"
+date: "最終更新時刻 2021/07/03, 初公開: 2021/04/01"
 site: bookdown::bookdown_site
 description: ""
-documentclass: ltjsreport
+documentclass: bxjsreport
 classoption: a4paper
 link-citations: true
 linkcolor: blue
 citecolor: blue
 urlcolor: magenta
 bibliography: Cooking.bib
+biblio-style: jecon-custom
 pagestyle: fancy
 github-repo: "Gedevan-Aleksizde/cookbook"
 url: 'https://github.com/Gedevan-Aleksizde/cookbook'
+mainfont: DejaVu Serif
+sansfont: DejaVu Sans
+jfontpreset: noto-otf
+header-includes:
+  - \newjfontfamily\fallbacking{DejaVu Sans}
 ---
 
 
@@ -396,69 +402,6 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
   * 通りの作り方の動画, 冒頭から2分までが「怠け者のレシピ」https://www.youtube.com/watch?v=3gF44PXZXNc
   * 中華鍋で丁寧に作る場合の解説 (日本語) https://www.youtube.com/watch?v=-7vw-sHGtDY
   * 水を足してスープにしている「西红柿鸡蛋面」 https://www.youtube.com/watch?v=PtAhBml14Uw
-
-## シャクシュカ (中近東) {#shakushka}
-
-中近東および北アフリカで見られる料理. 西紅柿炒鶏蛋同様トマトと卵の料理だが, 唐辛子ソースのハリッサやオリーブオイルを加えるのでもう少し豪華になる (図\@ref(fig:shakushuka-finished)).
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/shakushka/finished} 
-
-}
-
-\caption{シャクシュカの例}(\#fig:shakushuka-finished)
-\end{figure}
-
-
-\begin{tabular}[t]{rl}
-\toprule
- & 難易度\\
-\midrule
-材料調達 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
-調理 & {\fontspec{Noto Sans CJK JP} ★☆☆☆☆ }\\
-\bottomrule
-\end{tabular}
-
-### 材料 (2食分)
-
-* 卵 4個
-* ホールトマト缶 1個 (400g)
-* ニンニク
-* 玉ねぎ
-* オリーブオイル
-* ハリッサ 大さじ1-2杯
-  * なければ以下を少しづつ加える
-  * 唐辛子
-  * コリアンダーシード
-  * クミンシード
-  * パプリカパウダー
-* 塩・胡椒
-* オリーブの実 (種抜き) 数個
-* コリアンダーの葉
-  * イタリアンパセリでも良い
-
-### 作り方
-
-1. 玉ねぎとニンニクをみじん切りにする
-1. フライパンにオリーブオイルをひき, 玉ねぎとニンニクを火が通るまで炒める
-1. トマトとハリッサを入れ, よくかき混ぜる
-1. トマトに火が通って余計な水分が減り, 柔らかくなるま煮込む
-1. 卵を投入する
-    * トマトペーストにくぼみを作ると均等に配置しやすい
-1. 目玉焼きの容量で, 蓋をして卵全体を蒸す
-1. 卵に十分に火が通ったら皿に盛り付ける
-1. 刻んだオリーブの実とコリアンダーの葉を散らす
-
-### 補足
-
-KALDI で売っているハリッサを使うと楽だが, ちょっと割高なので材料を直接入れても良い.
-
-### 参考資料
-
-* アラブ式シャクシュカ (アラビア語, 英語字幕) https://www.youtube.com/watch?v=aSTBwIeYBYk
-* (英語) https://www.youtube.com/watch?v=Iy3mUtlvw84
-* モロッコ式シャクシュカ (英語)  https://www.youtube.com/watch?v=9z9UU10kM5c
 
 ## シュクメルリ\index{シュクメルリ} (草: შქმერული\index{შქმერული|see{シュクメルリ}}) {#shkmerli}
 
@@ -1431,10 +1374,12 @@ TODO: 画像
 鶏の下処理
 
 1. 鍋で湯を沸かす
-2. 臭い取りのため生姜, ネギ, 料理酒を入れる
-3. 鶏肉を入れ, 茹でる
+1. 鶏を下茹でし, 灰汁を取る
+1. 鶏を取り出し湯を捨て, 再度湯を沸かす
+1. 臭い取りのため生姜, ネギ, 料理酒を入れる
+1. 鶏肉を入れ, 茹でる
     * 沸騰してから10分くらい?
-4. 肉を取り出し, 粗熱をとる
+1. 肉を取り出し, 粗熱をとる
     * 冷水で冷ましても良い
 
 ソースを作る
@@ -1451,6 +1396,8 @@ TODO: 画像
 3. お好みでネギやコリアンダーの葉をふりかける
 
 ### 補足
+
+灰汁をとるのに2度茹でるのが面倒で, 灰汁が気にならないなら一度目から下味つけをしてもよい
 
 生の唐辛子の入手が難しいなら, 泡辣椒でもよい.
 
@@ -1903,9 +1850,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-## ラグマン (ウイグル: `{`{=latex}ﻟﻪﯕﻤﻪﻦ`}`{=latex})\index{うどん!ラグマン}
-
-ウイグル族をはじめ中央アジア各所で見られる料理. 中国語の「拉麺」の由来と考えられる. 日本のラーメンと違い, 本来の語義通り手延べ麺であることが特徴. スープに漬けるものもあれば, 「混ぜそば」「焼きそば」風のものもあるが, 今回は簡単な混ぜそば風のものにする.
+## ラグマン (ウイグル: `{\fallbacking ﻟﻪﯕﻤﻪﻦ}`{=latex})\index{うどん!ラグマン}
+ウイグル族をはじめ中央アジア各所で見られる料理. 中国語の「拉麺」の由来説がある^[日本語のラーメンは拉麺説以外に異説があるらしいが詳しくは知らない.]. 日本のラーメンと違い, 本来の語義通り手延べ麺であることが特徴. スープに漬けるものもあれば, 「混ぜそば」「焼きそば」風のものもあるが, 今回は簡単な混ぜそば風のものにする.
 
 \begin{figure}
 
@@ -3640,7 +3586,7 @@ TODO
 
 }
 
-\caption{すりつぶしたレンズ豆}(\#fig:unnamed-chunk-50)
+\caption{すりつぶしたレンズ豆}(\#fig:unnamed-chunk-49)
 \end{figure}
 
 
@@ -3760,7 +3706,7 @@ TODO
 
 }
 
-\caption{中世のロールパン}(\#fig:unnamed-chunk-54)
+\caption{中世のロールパン}(\#fig:unnamed-chunk-53)
 \end{figure}
 
 
@@ -3845,7 +3791,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 }
 
-\caption{「ソーセージ」}(\#fig:unnamed-chunk-56)
+\caption{「ソーセージ」}(\#fig:unnamed-chunk-55)
 \end{figure}
 
 
@@ -4664,6 +4610,83 @@ TODO: 画像
 
 * Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?v=CcjKye3use8
 
+## KCD のシチュー
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/KCD-stew/finished} 
+
+}
+
+\caption{15世紀にグラーシュはない}(\#fig:kcd-stew)
+\end{figure}
+
+
+\begin{tabular}[t]{rl}
+\toprule
+ & 難易度\\
+\midrule
+材料調達 & {\fontspec{Noto Sans CJK JP} ★★★★☆ }\\
+調理 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
+\bottomrule
+\end{tabular}
+
+ゲーム [Kingdom Come: Deliverance]() に登場する謎のシチュー. チェコの伝統料理グラーシュに似ているが, 現代のグラーシュはトマトやパプリカを使うため15世紀には存在しなかった.
+
+これは正確には当時の文献にあったものではないが, 当時の文献に着想を得たものであるという.
+
+### 材料
+
+* 牛ブリスケット
+    * なければ煮込み用のスネ肉でもよい
+* 根パセリ
+* ニンジン
+* セロリアック
+* 玉ねぎ
+* 赤ワイン
+* 白パン
+* ラード
+* 塩
+* ブイヨン
+* リンゴ
+    * リンゴ酢を使っても良い
+* メース
+* ショウガ
+    * 乾燥粉末がなければすりおろす
+* 胡椒
+* (オプション) ラベージの葉
+
+### 作り方
+
+1. 根菜と林檎全てみじん切りにする
+1. 牛肉を 2cm 大に切る
+1. 鍋にラードを溶かし, 牛肉に焼き目を付ける
+1. 表面がよく焦げ茶色になったら取り出し, 代わりに玉ねぎ以外の根菜を炒める
+1. 火が通ってきたら玉ねぎと林檎も入れる
+1. 軽く焦げ付く (カラメル化する) まで弱火でじっくり炒める.
+1. ショウガ, メース. 胡椒, 塩を加えてよく混ぜる
+1. ワインを注ぎ, 蒸発するまで混ぜる
+1. 水気が飛んだら肉を再度入れる
+1. 肉が水没する程度までブイヨンを注ぐ
+1. 蓋をして2時間ほど煮込む
+    * 肉が柔らかくなるまで
+1. この間にフライパンでパンを乾煎りする
+    * たぶん普通にトースターでもやってもよい
+1. 鍋にラベージの葉を入れる
+1. 鍋にパンを崩して入れる
+
+
+### 補足
+
+参考動画では塩ひとつまみ (a pinch of ...) と言っているが, 実際には小さじ2杯かそれより多いくらいがちょうどよい 
+
+日本では根パセリとセロリアックが入手しづらい. セロリアックはセロリの茎でも良いかもしれないが, 根パセリは代わりのきく食材が思いつかない. パースニップは見た目こそ似ているが風味は全く異なる.
+
+### 参考資料
+
+* Random Innkeeper の動画 (日本語字幕あり) https://www.youtube.com/watch?v=zqc4iQrE-FQ
+
+
 ## ハッシュドレバー (捷, 15世紀)
 
 「見た目はひどいが, 味は良い」レバーの臭みが苦手な人におすすめ. 多少見た目を改善したレシピも紹介する
@@ -4870,6 +4893,12 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
+
 ### 材料
 
 * キャベツ 1玉 (1.2-1.5 kg程度)
@@ -4938,6 +4967,12 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
+
 ### 材料
 
 * ベーコンやソーセージ
@@ -4961,6 +4996,8 @@ TODO: 画像
 ### 作り方
 
 1. 鍋に水, 塩, 砂糖, オールスパイス, 胡椒, 月桂樹の葉を入れ沸騰させる
+1. ソーセージの皮をむき, 割る. または輪切りにする
+    * 日本の市販のソーセージは小さいので半分に割るくらいがよいと思われる
 1. 瓶にスライスしたパプリカと玉ねぎ, そして残りの材料を詰め込む
 1. (1) の熱湯の粗熱が取れたら瓶に注ぎ, 蓋をする
 1. 冷暗所で乳酸発酵するまで寝かせる
@@ -4970,7 +5007,7 @@ TODO: 画像
 
 `\aruby{utpenci}{ウトペンツィ}`{=latex} は複数形で, `\aruby{utpenec}{ウトペネツ}`{=latex} は単数形. 意味は 「溺死体」
 
-現地では špekáček というソーセージを使用することが多い.
+現地では špekáček というソーセージを使用することが多いらしい. 参考動画でも大きめのソーセージを4本に割っている
 
 図\@ref(fig:utopenci-finished) は玉ねぎやパプリカを多く入れているが「溺死体」という名前が示すように, 本来は肉がメインである.
 
@@ -4978,6 +5015,7 @@ TODO: 画像
 
 ### 参考資料
 
+* 動画: https://www.youtube.com/watch?v=niRxxO8NSHM
 * 古典的なレシピ https://www.toprecepty.cz/recept/39156-utopenci-klasika/
 
 ## (TODO) キノコの塩漬け (露)
@@ -5041,6 +5079,12 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
+
 ### 材料
 
 * 豚バラ肉
@@ -5098,6 +5142,14 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください.
+
+特にこのレシピは生で大丈夫な理由がよくわかりません.
+
+:::
+
 ### 材料
 
 * 背脂
@@ -5118,7 +5170,7 @@ TODO: 画像
 謎
 
 
-## キムチ (韓: 김치)
+## キムチ (韓: `{\fontspec{Noto Sans CJK JP}김치}`{=latex})
 
 
 \begin{tabular}[t]{rl}
@@ -5129,6 +5181,12 @@ TODO: 画像
 調理 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
 \bottomrule
 \end{tabular}
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 
@@ -5245,6 +5303,12 @@ TODO: 画像
 調理 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
 \bottomrule
 \end{tabular}
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 

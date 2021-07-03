@@ -4,7 +4,7 @@
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
-  a4paper]{ltjsreport}
+  lualatex,ja=standard,a4paper,jafont=noto-otf]{bxjsreport}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex,ifpdf,ifthen}
@@ -18,20 +18,16 @@
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
   \setmainfont[]{DejaVu Serif}
   \setsansfont[]{DejaVu Sans}
-  \setmonofont[]{DejaVu Sans Mono}
 \fi
 
 % japanese font setting
 % if the preset is specified
 \ifxetex
-  \usepackage[AutoFallBack=true]{zxjatype}
-  \usepackage[noto-otf,]{zxjafont}
   \usepackage{xeCJKfntef}
 \fi
 \ifluatex
   \usepackage{luatexja}
   \usepackage[,noto-otf]{luatexja-preset}
-  %\renewcommand{\kanjifamilydefault}{\gtdefault}
 \fi
 
   \IfFileExists{pxrubrica.sty}{\usepackage{pxrubrica}}{}
@@ -87,6 +83,19 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -193,6 +202,19 @@
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines,breakanywhere}
 % ----
 
+% ---- font style-changing macro for convenient ----
+\ifdefined\mcfamily
+  \newcommand{\textserif}[1]{{\rmfamily\mcfamily #1}}
+\else
+  \newcommand{\textserif}[1]{{\rmfamily #1}}
+\fi
+\ifdefined\gtfamily
+  \newcommand{\textsans}[1]{{\sffamily\gtfamily #1}}
+\else
+  \newcommand{\textsans}[1]{{\sffamily #1}}
+\fi
+% ----
+
 % ---- user-defined preamble here ----
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
@@ -201,6 +223,7 @@
 \renewcommand{\sectionmark}[1]{\markright{\thesection\,#1}{}}
 \usepackage{makeidx}
 \makeindex
+\newjfontfamily\fallbacking{DejaVu Sans}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -217,13 +240,13 @@
 \usepackage{xcolor}
 % ---- user-defined preamble over ----
 
-\usepackage[style=jauthoryear,natbib=true]{biblatex}
-\addbibresource{Cooking.bib}
+\usepackage[]{natbib}
+\bibliographystyle{jecon-custom}
 
 
 \title{ザ・クックブック}
 \author{ill-identified\footnote{twitter ID: @ill-identified}}
-\date{最終更新時刻 2021-04-17 00:44:08, 初公開: 2021/4/1}
+\date{最終更新時刻 2021/07/03, 初公開: 2021/04/01}
 \usepackage{bxtexlogo}
 \colorlet{shadecolor}{gray!20}
 
@@ -988,128 +1011,6 @@ Puttanesca)\index{うどん!娼婦風スパゲッティ}}{娼婦風スパゲッ�
   \end{itemize}
 \end{itemize}
 
-\hypertarget{shakushka}{%
-\section{シャクシュカ (中近東)}\label{shakushka}}
-
-中近東および北アフリカで見られる料理.
-西紅柿炒鶏蛋同様トマトと卵の料理だが,
-唐辛子ソースのハリッサやオリーブオイルを加えるのでもう少し豪華になる
-(図\ref{fig:shakushuka-finished}).
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/shakushka/finished} 
-
-}
-
-\caption{シャクシュカの例}\label{fig:shakushuka-finished}
-\end{figure}
-
-\begin{tabular}[t]{rl}
-\toprule
- & 難易度\\
-\midrule
-材料調達 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
-調理 & {\fontspec{Noto Sans CJK JP} ★☆☆☆☆ }\\
-\bottomrule
-\end{tabular}
-
-\hypertarget{ux6750ux6599-2ux98dfux5206}{%
-\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206}}
-
-\begin{itemize}
-\tightlist
-\item
-  卵 4個
-\item
-  ホールトマト缶 1個 (400g)
-\item
-  ニンニク
-\item
-  玉ねぎ
-\item
-  オリーブオイル
-\item
-  ハリッサ 大さじ1-2杯
-
-  \begin{itemize}
-  \tightlist
-  \item
-    なければ以下を少しづつ加える
-  \item
-    唐辛子
-  \item
-    コリアンダーシード
-  \item
-    クミンシード
-  \item
-    パプリカパウダー
-  \end{itemize}
-\item
-  塩・胡椒
-\item
-  オリーブの実 (種抜き) 数個
-\item
-  コリアンダーの葉
-
-  \begin{itemize}
-  \tightlist
-  \item
-    イタリアンパセリでも良い
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{ux4f5cux308aux65b9-4}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-4}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  玉ねぎとニンニクをみじん切りにする
-\item
-  フライパンにオリーブオイルをひき, 玉ねぎとニンニクを火が通るまで炒める
-\item
-  トマトとハリッサを入れ, よくかき混ぜる
-\item
-  トマトに火が通って余計な水分が減り, 柔らかくなるま煮込む
-\item
-  卵を投入する
-
-  \begin{itemize}
-  \tightlist
-  \item
-    トマトペーストにくぼみを作ると均等に配置しやすい
-  \end{itemize}
-\item
-  目玉焼きの容量で, 蓋をして卵全体を蒸す
-\item
-  卵に十分に火が通ったら皿に盛り付ける
-\item
-  刻んだオリーブの実とコリアンダーの葉を散らす
-\end{enumerate}
-
-\hypertarget{ux88dcux8db3-5}{%
-\subsection{補足}\label{ux88dcux8db3-5}}
-
-KALDI で売っているハリッサを使うと楽だが,
-ちょっと割高なので材料を直接入れても良い.
-
-\hypertarget{ux53c2ux8003ux8cc7ux6599-3}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-3}}
-
-\begin{itemize}
-\tightlist
-\item
-  アラブ式シャクシュカ (アラビア語, 英語字幕)
-  \url{https://www.youtube.com/watch?v=aSTBwIeYBYk}
-\item
-  (英語) \url{https://www.youtube.com/watch?v=Iy3mUtlvw84}
-\item
-  モロッコ式シャクシュカ (英語)
-  \url{https://www.youtube.com/watch?v=9z9UU10kM5c}
-\end{itemize}
-
 \hypertarget{shkmerli}{%
 \section{\texorpdfstring{シュクメルリ\index{シュクメルリ} (草:
 შქმერული\index{შქმერული|see{シュクメルリ}})}{シュクメルリ (草: შქმერული)}}\label{shkmerli}}
@@ -1177,8 +1078,8 @@ KALDI で売っているハリッサを使うと楽だが,
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-5}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-5}}
+\hypertarget{ux4f5cux308aux65b9-4}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-4}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1244,15 +1145,15 @@ KALDI で売っているハリッサを使うと楽だが,
 \caption{適当に切り分ける}\label{fig:shkmerli-chopped}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-6}{%
-\subsection{補足}\label{ux88dcux8db3-6}}
+\hypertarget{ux88dcux8db3-5}{%
+\subsection{補足}\label{ux88dcux8db3-5}}
 
 ハチャプリ (作り方は参考資料参照) かパン, そしてワインないしチャチャ
 (ჭაჭა) と一緒に食べると良い.
 もともとはタパカというローストチキンのレシピをアレンジしたものらしい.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-4}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-4}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-3}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-3}}
 
 \begin{itemize}
 \tightlist
@@ -1352,8 +1253,8 @@ Paella)\index{パエリヤ}\index{paella|see{パエリヤ}}}{パエリヤ (西: 
   専用フライパンではなく普通のフライパンでもなんとかなる.
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-6}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-6}}
+\hypertarget{ux4f5cux308aux65b9-5}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-5}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1392,16 +1293,16 @@ Paella)\index{パエリヤ}\index{paella|see{パエリヤ}}}{パエリヤ (西: 
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-7}{%
-\subsubsection{補足}\label{ux88dcux8db3-7}}
+\hypertarget{ux88dcux8db3-6}{%
+\subsubsection{補足}\label{ux88dcux8db3-6}}
 
 欲張って一度に大量に作ろうとすると米の上層に火が通ってないのに底が焦げ付くということが起こりがちである.
 
 参考動画ではアルティチョークを使用しているが,
 なかなか手に入らないので私は使ったことがない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-5}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-5}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-4}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-4}}
 
 \begin{itemize}
 \tightlist
@@ -1472,8 +1373,8 @@ Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペ
   大きめの皿
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-7}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-7}}
+\hypertarget{ux4f5cux308aux65b9-6}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-6}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1532,13 +1433,13 @@ Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペ
   ピザのように切り分けて食べる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-8}{%
-\subsection{補足}\label{ux88dcux8db3-8}}
+\hypertarget{ux88dcux8db3-7}{%
+\subsection{補足}\label{ux88dcux8db3-7}}
 
 ベーコンはさほど重要ではない. 必須なのはジャガイモ.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-6}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-6}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-5}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-5}}
 
 \begin{itemize}
 \tightlist
@@ -1598,8 +1499,8 @@ Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペ
   (オプション) 溶き卵
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-8}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-8}}
+\hypertarget{ux4f5cux308aux65b9-7}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-7}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1630,16 +1531,16 @@ Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペ
   盛り付け, お好みでクルトンや溶き卵を入れる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-9}{%
-\subsubsection{補足}\label{ux88dcux8db3-9}}
+\hypertarget{ux88dcux8db3-8}{%
+\subsubsection{補足}\label{ux88dcux8db3-8}}
 
 中世の頃から似たような料理が同地に存在するらしい.
 現代のチェコ人は二日酔いや風邪気味で調子が悪かったら朝食をこれにするらしい.
 ニンニクは最初に入れたり, 2回に分けて入れたりしても良い.
 もうすこし食べごたえのあるものにしたければ, ベーコンを入れても良い
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-7}{%
-\subsubsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-7}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-6}{%
+\subsubsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-6}}
 
 \begin{itemize}
 \tightlist
@@ -1650,7 +1551,7 @@ Patatas)\index{スペイン風オムレツ}\index{tortilla de patatas|see{スペ
   Random Innkeeper の動画 (英語音声, 日本語字幕)
   \url{https://www.youtube.com/watch?v=F_59dZw5G44}
 \item
-  \textcite{faktor2007Traditional} p.~18
+  \citet{faktor2007Traditional} p.~18
 \end{itemize}
 
 \hypertarget{ux9d8fux91ceux83dcux5473ux564c-ux65e5}{%
@@ -1689,8 +1590,8 @@ TODO: 画像
   (オプション) 七味唐辛子
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-9}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-9}}
+\hypertarget{ux4f5cux308aux65b9-8}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-8}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1713,8 +1614,8 @@ TODO: 画像
   残った出汁でうどんを煮たり雑炊にしても良い.
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-10}{%
-\subsubsection{補足}\label{ux88dcux8db3-10}}
+\hypertarget{ux88dcux8db3-9}{%
+\subsubsection{補足}\label{ux88dcux8db3-9}}
 
 たぶん石川県民しか知らない. 本来は特製の味噌を使う.
 \url{https://www.toriyasaimiso.jp/recipe}
@@ -1751,8 +1652,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-2ux98dfux5206-1}{%
-\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206-1}}
+\hypertarget{ux6750ux6599-2ux98dfux5206}{%
+\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206}}
 
 唐揚げの下処理に必要な材料
 
@@ -1878,8 +1779,8 @@ TODO: 画像
   ボウルといくつかの小皿
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-10}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-10}}
+\hypertarget{ux4f5cux308aux65b9-9}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-9}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2001,8 +1902,8 @@ TODO: 画像
 \caption{焦げ付かないよう絶えず鍋を振る}\label{fig:laziji-fry-wtih-chille}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-11}{%
-\subsection{補足}\label{ux88dcux8db3-11}}
+\hypertarget{ux88dcux8db3-10}{%
+\subsection{補足}\label{ux88dcux8db3-10}}
 
 鶏肉を小さく切る,
 ピーナッツを入れるといったやり方は宮保鶏丁のレシピを部分的に取り入れた王剛のアレンジだと思われる.
@@ -2011,8 +1912,8 @@ TODO: 画像
 そして花椒である.
 なお食べ終わった後に大量に残る唐辛子は残念ながら捨てなければならない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-8}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-8}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-7}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-7}}
 
 \begin{itemize}
 \tightlist
@@ -2150,8 +2051,8 @@ TODO: 画像
   例によってできれば中華鍋があるとよい
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-11}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-11}}
+\hypertarget{ux4f5cux308aux65b9-10}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-10}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2219,8 +2120,8 @@ TODO: 画像
 青椒肉絲の場合は, 肉の油通しの後, 代わりに野菜を先に炒め,
 火が通ってきたら肉と調味料を投入して炒める.
 
-\hypertarget{ux88dcux8db3-12}{%
-\subsection{補足}\label{ux88dcux8db3-12}}
+\hypertarget{ux88dcux8db3-11}{%
+\subsection{補足}\label{ux88dcux8db3-11}}
 
 ちょうどいい火加減はよくわからないので,
 フライパンを置いて料理する場合は注意.
@@ -2228,8 +2129,8 @@ TODO: 画像
 王剛は切った肉を水でゆすぐと肉が柔らかくなるとしているが,
 私は違いを感じられなかったので省略している.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-9}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-9}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-8}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-8}}
 
 \begin{itemize}
 \tightlist
@@ -2268,8 +2169,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-2ux98dfux5206-2}{%
-\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206-2}}
+\hypertarget{ux6750ux6599-2ux98dfux5206-1}{%
+\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206-1}}
 
 下処理に必要な材料
 
@@ -2335,8 +2236,8 @@ TODO: 画像
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-12}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-12}}
+\hypertarget{ux4f5cux308aux65b9-11}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-11}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2410,14 +2311,14 @@ TODO: 画像
   210度に熱した油を上からかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-13}{%
-\subsection{補足}\label{ux88dcux8db3-13}}
+\hypertarget{ux88dcux8db3-12}{%
+\subsection{補足}\label{ux88dcux8db3-12}}
 
 正確にはレタスではなく油麦菜 (チシャ) を使う. また,
 王剛のやり方では芹菜も使うが日本では入手しづらいので省略した.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-10}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-10}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-9}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-9}}
 
 \begin{itemize}
 \tightlist
@@ -2450,8 +2351,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-2ux98dfux5206-3}{%
-\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206-3}}
+\hypertarget{ux6750ux6599-2ux98dfux5206-2}{%
+\subsection{材料 (2食分)}\label{ux6750ux6599-2ux98dfux5206-2}}
 
 \begin{itemize}
 \tightlist
@@ -2556,8 +2457,8 @@ TODO: 画像
   ジャーレン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-13}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-13}}
+\hypertarget{ux4f5cux308aux65b9-12}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-12}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2604,8 +2505,8 @@ TODO: 画像
   盛り付ける際には刻んだニンニクの芽と刀口辣椒をトッピングする
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-14}{%
-\subsection{補足}\label{ux88dcux8db3-14}}
+\hypertarget{ux88dcux8db3-13}{%
+\subsection{補足}\label{ux88dcux8db3-13}}
 
 王剛のレシピでは肉は50gとしているが,
 何品も作るの労力を考え一品で腹持ちを良くするため多めにしている.
@@ -2620,8 +2521,8 @@ TODO: 画像
 
 あまり鍋を振る必要がないので, フライパンでもさほど支障がないと思われる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-11}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-11}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-10}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-10}}
 
 \begin{itemize}
 \tightlist
@@ -2723,8 +2624,8 @@ TODO: 画像
 
 中華鍋でやったほうがそれっぽい
 
-\hypertarget{ux4f5cux308aux65b9-14}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-14}}
+\hypertarget{ux4f5cux308aux65b9-13}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-13}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2775,8 +2676,8 @@ TODO: 画像
   ニンニクの芽を入れて最大火力で炒める
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-15}{%
-\subsection{補足}\label{ux88dcux8db3-15}}
+\hypertarget{ux88dcux8db3-14}{%
+\subsection{補足}\label{ux88dcux8db3-14}}
 
 最初の下茹でで十分に火が通っており, また薄切りにしているため,
 2度目に加熱する際は焦がさないよう火加減に注意して行うとよい.
@@ -2786,8 +2687,8 @@ TODO: 画像
 王剛の動画では皮付きの豚肉を扱っているが,
 日本ではあまり売ってないのでその処理は省略した.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-12}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-12}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-11}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-11}}
 
 \begin{itemize}
 \tightlist
@@ -2866,8 +2767,8 @@ TODO: 画像
   花椒
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-15}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-15}}
+\hypertarget{ux4f5cux308aux65b9-14}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-14}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2908,8 +2809,8 @@ TODO: 画像
   少々の油を強く熱して青唐辛子にかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-16}{%
-\subsection{補足}\label{ux88dcux8db3-16}}
+\hypertarget{ux88dcux8db3-15}{%
+\subsection{補足}\label{ux88dcux8db3-15}}
 
 この料理では漬け物をだしを取るためだけに使う.
 もったいないと思ったら食べても構わない.
@@ -2917,8 +2818,8 @@ TODO: 画像
 私はこの料理を都内の料理店「\href{http://www.tenfufan.com/}{天府舫}」で知った.
 ここ提供されるものは花椒の実がまるごと浮かんでおり, 非常に辛かった.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-13}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-13}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-12}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-12}}
 
 \begin{itemize}
 \tightlist
@@ -3016,8 +2917,8 @@ TODO: 画像
 \caption{鍋が小さいと完全に入り切らない}\label{fig:yodare-smaller-pot}
 \end{figure}
 
-\hypertarget{ux4f5cux308aux65b9-16}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-16}}
+\hypertarget{ux4f5cux308aux65b9-15}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-15}}
 
 鶏の下処理
 
@@ -3026,6 +2927,10 @@ TODO: 画像
 \tightlist
 \item
   鍋で湯を沸かす
+\item
+  鶏を下茹でし, 灰汁を取る
+\item
+  鶏を取り出し湯を捨て, 再度湯を沸かす
 \item
   臭い取りのため生姜, ネギ, 料理酒を入れる
 \item
@@ -3078,8 +2983,11 @@ TODO: 画像
   お好みでネギやコリアンダーの葉をふりかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-17}{%
-\subsection{補足}\label{ux88dcux8db3-17}}
+\hypertarget{ux88dcux8db3-16}{%
+\subsection{補足}\label{ux88dcux8db3-16}}
+
+灰汁をとるのに2度茹でるのが面倒で,
+灰汁が気にならないなら一度目から下味つけをしてもよい
 
 生の唐辛子の入手が難しいなら, 泡辣椒でもよい.
 
@@ -3138,8 +3046,8 @@ TODO: 画像
   残りの材料をよく混ぜる
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-14}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-14}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-13}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-13}}
 
 \begin{itemize}
 \item
@@ -3251,8 +3159,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
   フライ返しと菜箸, あるいはフォークなどがあるとよい
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-17}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-17}}
+\hypertarget{ux4f5cux308aux65b9-16}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-16}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3305,8 +3213,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
 \caption{揚げる直前}\label{fig:bramborak-dough}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-18}{%
-\subsection{補足}\label{ux88dcux8db3-18}}
+\hypertarget{ux88dcux8db3-17}{%
+\subsection{補足}\label{ux88dcux8db3-17}}
 
 チェコ語でジャガイモのことをブランボル (brambor) というので,
 ブランボラークという名前はストレートにジャガイモ料理であることを示唆している.
@@ -3315,8 +3223,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
 など類似料理がいくつかある.
 デルニーは生地にもサワークリームやすり下ろした玉ねぎを混ぜる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-15}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-15}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-14}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-14}}
 
 \begin{itemize}
 \tightlist
@@ -3373,8 +3281,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
   アルミホイル
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-18}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-18}}
+\hypertarget{ux4f5cux308aux65b9-17}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-17}}
 
 \begin{itemize}
 \tightlist
@@ -3410,8 +3318,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux88dcux8db3-19}{%
-\subsection{補足}\label{ux88dcux8db3-19}}
+\hypertarget{ux88dcux8db3-18}{%
+\subsection{補足}\label{ux88dcux8db3-18}}
 
 オーストリアや南ドイツ,
 あるいはチェコ国内のカルロヴィ・ヴァリではパンを細かくちぎったものを混ぜることもあるらしい.
@@ -3419,8 +3327,8 @@ Bramboráky)\index{ブランボラーク}\index{bramboráky|see{ブランボラ�
 グラーシュ (セクション\ref{gulas}) の付け合せに, あるいは vepřo knedlo
 zelo を作ってビールと一緒に食べるとよい.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-16}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-16}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-15}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-15}}
 
 \begin{itemize}
 \tightlist
@@ -3537,8 +3445,8 @@ Ruskie と Pierogi kapustą i grzybami (ザワークラウトとキノコのピ�
   延し台
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-19}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-19}}
+\hypertarget{ux4f5cux308aux65b9-18}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-18}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3584,8 +3492,8 @@ Ruskie の場合の詰め物は,
 キャベツとキノコの場合は, 材料を (ザワークラウトを特に念入りに)
 みじん切りにした上で炒め, 塩胡椒で味を調える.
 
-\hypertarget{ux88dcux8db3-20}{%
-\subsection{補足}\label{ux88dcux8db3-20}}
+\hypertarget{ux88dcux8db3-19}{%
+\subsection{補足}\label{ux88dcux8db3-19}}
 
 果物やジャムを入れることもある. スモモジャム (ポヴィドル) がポピュラー.
 17世紀のポーランドの料理本 ``Compendium Ferculorum''
@@ -3594,8 +3502,8 @@ Ruskie の場合の詰め物は,
 ロシアやウクライナにもピローク (пирог) というパイ料理があり,
 名称は似ているが作り方は異なる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-17}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-17}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-16}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-16}}
 
 \begin{itemize}
 \tightlist
@@ -3605,7 +3513,7 @@ Ruskie の場合の詰め物は,
 \item
   日本語のレシピ \url{https://jpya.or.jp/ja/2018/12/pierogi/}
 \item
-  \textcite{czerniecki1682Compendium} pp.86-87 (ほとんど読めない)
+  \citet{czerniecki1682Compendium} pp.86-87 (ほとんど読めない)
 \end{itemize}
 
 \hypertarget{ux4e88ux5b9a-ux30daux30eaux30e1ux30cb-ux9732-ux43fux435ux43bux44cux43cux435ux43dux438}{%
@@ -3643,8 +3551,8 @@ TODO: 画像
   牛または豚の挽き肉
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-20}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-20}}
+\hypertarget{ux4f5cux308aux65b9-19}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-19}}
 
 バター
 
@@ -3659,8 +3567,8 @@ TODO: 画像
   例によってパセリやディルやサワークリームなどを添えて食べる.
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-21}{%
-\subsection{補足}\label{ux88dcux8db3-21}}
+\hypertarget{ux88dcux8db3-20}{%
+\subsection{補足}\label{ux88dcux8db3-20}}
 
 餃子より一回り小さい. 市販の餃子の皮は大きすぎるので向かない
 
@@ -3683,8 +3591,8 @@ TODO: 画像
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-18}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-18}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-17}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-17}}
 
 \begin{itemize}
 \tightlist
@@ -3692,9 +3600,9 @@ TODO: 画像
   Коллекция Рецептов の料理動画
   \url{https://www.youtube.com/watch?v=N9aS8jBaTS8}
 \item
-  \textcite{OginoNumano2017} p.~54
+  \citet{OginoNumano2017} p.~54
 \item
-  \textcite{boumei} Ch. 27, および付録のサラファン式レシピ
+  \citet{boumei} Ch. 27, および付録のサラファン式レシピ
 \end{itemize}
 
 \hypertarget{ux30d2ux30f3ux30abux30ea-ux8349-ux10eeux10d8ux10dcux10d9ux10d0ux10daux10d8}{%
@@ -3795,8 +3703,8 @@ TODO: 画像
   鍋
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-21}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-21}}
+\hypertarget{ux4f5cux308aux65b9-20}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-20}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3885,8 +3793,8 @@ TODO: 画像
 \caption{ローレルは必須ではない}\label{fig:khinkali-boiling}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-22}{%
-\subsection{補足}\label{ux88dcux8db3-22}}
+\hypertarget{ux88dcux8db3-21}{%
+\subsection{補足}\label{ux88dcux8db3-21}}
 
 ヘタ部分をつまんで食べる. ヘタ部分は食べない.
 これもタレはないので詰め物にしっかり味付けする.
@@ -3895,8 +3803,8 @@ TODO: 画像
 現地人の動画では延ばしてから型抜きで切り分けているが,
 台所がせまい場合は餃子のように生地を細長くしてちぎってから延ばすやり方でも良い.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-19}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-19}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-18}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-18}}
 
 \begin{itemize}
 \tightlist
@@ -3924,14 +3832,14 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux30e9ux30b0ux30deux30f3-ux30a6ux30a4ux30b0ux30eb-uxfedfuxfeeauxfbd5uxfee4uxfeeauxfee6}{%
+\hypertarget{ux30e9ux30b0ux30deux30f3-ux30a6ux30a4ux30b0ux30eb}{%
 \section{\texorpdfstring{ラグマン (ウイグル:
-{ﻟﻪﯕﻤﻪﻦ})\index{うどん!ラグマン}}{ラグマン (ウイグル: ﻟﻪﯕﻤﻪﻦ)}}\label{ux30e9ux30b0ux30deux30f3-ux30a6ux30a4ux30b0ux30eb-uxfedfuxfeeauxfbd5uxfee4uxfeeauxfee6}}
+{\fallbacking ﻟﻪﯕﻤﻪﻦ})\index{うどん!ラグマン}}{ラグマン (ウイグル: )}}\label{ux30e9ux30b0ux30deux30f3-ux30a6ux30a4ux30b0ux30eb}}
 
 ウイグル族をはじめ中央アジア各所で見られる料理.
-中国語の「拉麺」の由来と考えられる. 日本のラーメンと違い,
-本来の語義通り手延べ麺であることが特徴. スープに漬けるものもあれば,
-「混ぜそば」「焼きそば」風のものもあるが,
+中国語の「拉麺」の由来説がある\footnote{日本語のラーメンは拉麺説以外に異説があるらしいが詳しくは知らない.}.
+日本のラーメンと違い, 本来の語義通り手延べ麺であることが特徴.
+スープに漬けるものもあれば, 「混ぜそば」「焼きそば」風のものもあるが,
 今回は簡単な混ぜそば風のものにする.
 
 \begin{figure}
@@ -4028,8 +3936,8 @@ TODO: 画像
   大きめの皿, またはフライパン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-22}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-22}}
+\hypertarget{ux4f5cux308aux65b9-21}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-21}}
 
 手延べ麺の作成
 
@@ -4101,16 +4009,16 @@ TODO: 画像
 
 最後に麺の上に具を盛り付ける
 
-\hypertarget{ux88dcux8db3-23}{%
-\subsection{補足}\label{ux88dcux8db3-23}}
+\hypertarget{ux88dcux8db3-22}{%
+\subsection{補足}\label{ux88dcux8db3-22}}
 
 ロシアではヴォク (中国語の鑊が由来か)
 と言う名前で野菜と鶏肉と太い麺を炒め,
 アメリカのドラマでよく見かける箱に入れたファストフードが頻繁に見られた.
 ラグマンと関係があるのかは不明
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-20}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-20}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-19}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-19}}
 
 \begin{itemize}
 \tightlist
@@ -4250,8 +4158,8 @@ TODO: 画像
   現地の人がやってるように皿を載せるだけで密閉できなくともわりとなんとかなる
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-23}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-23}}
+\hypertarget{ux4f5cux308aux65b9-22}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-22}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4319,8 +4227,8 @@ TODO: 画像
   オプションでゆで卵や干しブドウを添える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-24}{%
-\subsection{補足}\label{ux88dcux8db3-24}}
+\hypertarget{ux88dcux8db3-23}{%
+\subsection{補足}\label{ux88dcux8db3-23}}
 
 米が丸底鍋の底に触れていると焦げやすいため,
 下敷きになるように野菜は十分に入れる必要がある.
@@ -4330,13 +4238,13 @@ TODO: 画像
 
 材料を入れる順番はかなり差異がある.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-21}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-21}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-20}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-20}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{OginoNumano2017} p.~83
+  \citet{OginoNumano2017} p.~83
 \item
   ウズベク風プロフ (ロシア語)
   \url{https://www.youtube.com/watch?v=J-D3eZgos3I}
@@ -4409,8 +4317,8 @@ TODO: 画像
 
 ミキサーがあったほうがよい
 
-\hypertarget{ux4f5cux308aux65b9-24}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-24}}
+\hypertarget{ux4f5cux308aux65b9-23}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-23}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4435,14 +4343,14 @@ TODO: 画像
   油で揚げる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-25}{%
-\subsection{補足}\label{ux88dcux8db3-25}}
+\hypertarget{ux88dcux8db3-24}{%
+\subsection{補足}\label{ux88dcux8db3-24}}
 
 ミキサーがないと困難. 粘りが出ずにすぐ崩れる.
 小麦粉等をつなぎにするしかない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-22}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-22}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-21}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-21}}
 
 \begin{itemize}
 \tightlist
@@ -4572,8 +4480,8 @@ TODO: 画像
   燻製器
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-25}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-25}}
+\hypertarget{ux4f5cux308aux65b9-24}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-24}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4605,14 +4513,14 @@ TODO: 画像
   ハンバーガーなどにして食べる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-26}{%
-\subsection{補足}\label{ux88dcux8db3-26}}
+\hypertarget{ux88dcux8db3-25}{%
+\subsection{補足}\label{ux88dcux8db3-25}}
 
 燻製にする場合, 生のニンニクなど水分のあるものは肉に塗るべきではない.
 燻製にしないなら気にしなくても良い.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-23}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-23}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-22}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-22}}
 
 \hypertarget{ux30f4ux30a7ux30d7ux30b7ux30e7ux30afux30cdux30c9ux30edux30bcux30ed-ux6377-vepux159o-knedlo-zelo}{%
 \section{\texorpdfstring{ヴェプショ=クネドロ=ゼロ (捷:
@@ -4689,8 +4597,8 @@ TODO: 画像
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-26}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-26}}
+\hypertarget{ux4f5cux308aux65b9-25}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-25}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4738,13 +4646,13 @@ TODO: 画像
   クネドリークとザワークラウトとソースと一緒に盛り付ける
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-24}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-24}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-23}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-23}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{faktor2007Traditional} p.65
+  \citet{faktor2007Traditional} p.65
 \item
   ``Recepty bez brepty'' の動画
   \url{https://www.youtube.com/watch?v=rXudmMKbInQ}
@@ -4828,8 +4736,8 @@ Rouladen)\index{スペイン風ミートボール}\index{španělský ptáček|s
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-27}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-27}}
+\hypertarget{ux4f5cux308aux65b9-26}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-26}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4871,8 +4779,8 @@ Rouladen)\index{スペイン風ミートボール}\index{španělský ptáček|s
 \caption{タコ糸, マスタードを塗る}\label{fig:spanelsky-ptacek-tied}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-27}{%
-\subsection{補足}\label{ux88dcux8db3-27}}
+\hypertarget{ux88dcux8db3-26}{%
+\subsection{補足}\label{ux88dcux8db3-26}}
 
 ヨーロッパのマスタードは全般的に日本の練からしよりだいぶ辛味がマイルドなので,
 どちらを使うかで使用量に注意する.
@@ -4893,13 +4801,13 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
 このミートボールにはしばしば米が添えられる.
 地中海を想起される食材なのかもしれない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-25}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-25}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-24}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-24}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{faktor2007Traditional} p.54
+  \citet{faktor2007Traditional} p.54
 \item
   ``video-recepty.com'' の動画
   \url{https://www.youtube.com/watch?v=T2hfkBYQjkc}
@@ -4968,8 +4876,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   トマトピューレ
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-28}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-28}}
+\hypertarget{ux4f5cux308aux65b9-27}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-27}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5010,8 +4918,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   ゴウォンプキの入った鍋にソースをかける
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-26}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-26}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-25}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-25}}
 
 \begin{itemize}
 \tightlist
@@ -5022,7 +4930,7 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   Dorotki による料理動画 (ポーランド語, 英語字幕あり)
   \url{https://www.youtube.com/watch?v=LFc-PO0fu7A}
 \item
-  \textcite{OginoNumano2017} pp.~40-41
+  \citet{OginoNumano2017} pp.~40-41
 \end{itemize}
 
 \hypertarget{ux30adux30e0ux30c1ux30c1ux30e0-ux97d3-uxae40uxce58uxcc1c}{%
@@ -5110,8 +5018,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-29}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-29}}
+\hypertarget{ux4f5cux308aux65b9-28}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-28}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5171,8 +5079,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
 \caption{煮込む直前}\label{fig:kimchichim-pot}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-28}{%
-\subsection{補足}\label{ux88dcux8db3-28}}
+\hypertarget{ux88dcux8db3-27}{%
+\subsection{補足}\label{ux88dcux8db3-27}}
 
 激辛料理の章に掲載しようか迷ったが,
 唐辛子をよほど入れない限りそこまで辛くはならないと思われる.
@@ -5184,8 +5092,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
 国内で流通しているキムチの多くは長期熟成を想定していないようなので,
 衛生面の問題は自己責任で.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-27}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-27}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-26}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-26}}
 
 \begin{itemize}
 \tightlist
@@ -5284,8 +5192,8 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   揚げ物ができる鍋
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-30}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-30}}
+\hypertarget{ux4f5cux308aux65b9-29}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-29}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5357,16 +5265,16 @@ ptáček は辞書には小鳥とあるが, ミートボールというニュア
   これを両胸で行う
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-29}{%
-\subsection{補足}\label{ux88dcux8db3-29}}
+\hypertarget{ux88dcux8db3-28}{%
+\subsection{補足}\label{ux88dcux8db3-28}}
 
 中に入っているのがバターなので, 時間が経つと漏れ出してしまう.
 揚げたてを食べるのが良い.
 
 余った部分はシュクメルリとか口水鶏とか辣子鶏とかに使うとよいだろう.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-28}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-28}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-27}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-27}}
 
 \begin{itemize}
 \tightlist
@@ -5465,8 +5373,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-31}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-31}}
+\hypertarget{ux4f5cux308aux65b9-30}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-30}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5524,8 +5432,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   (オプション) 炒めたマッシュルームや刻んだコリアンダーの葉を添える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-30}{%
-\subsection{補足}\label{ux88dcux8db3-30}}
+\hypertarget{ux88dcux8db3-29}{%
+\subsection{補足}\label{ux88dcux8db3-29}}
 
 おそらく最も難しいのは羊の挽き肉を入手または作成することだろう.
 それ以外は原始的な調理器具でも対処できる. 多くの場合,
@@ -5643,8 +5551,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   大きめの鍋, 2つあると良い
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-32}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-32}}
+\hypertarget{ux4f5cux308aux65b9-31}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-31}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5689,8 +5597,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   型に切ったゆで卵と上記を注ぎ, 冷蔵庫で一晩冷やす
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-31}{%
-\subsection{補足}\label{ux88dcux8db3-31}}
+\hypertarget{ux88dcux8db3-30}{%
+\subsection{補足}\label{ux88dcux8db3-30}}
 
 元のレシピでは豚の頭も使用しているが,
 入手が難しかったため使用しなかった.
@@ -5704,15 +5612,15 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 このような豚の屠殺を zabíjačka といい,
 現在でもチェコの田舎では中世の農村さながらの豚の解体祭りをするらしい.
 煮凝りにせず, 単に柔らかくなるまで塩水で煮ただけで食べる ovar
-という料理もある\autocite{faktor2007Traditional}.
+という料理もある\citep{faktor2007Traditional}.
 
 周辺各国にも類似した料理が存在する. ロシア (Холодец, студень),
 ベラルーシ, ウクライナ (холодець),
 ポーランドなどでも類似した料理が存在する. これらは豚の頭や足を使うこと,
 卵や野菜を入れる点で共通している.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-29}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-29}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-28}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-28}}
 
 \begin{itemize}
 \tightlist
@@ -5720,7 +5628,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   Random Innkeeper の動画
   \url{https://www.youtube.com/watch?v=7Eegww-atzU}
 \item
-  \textcite{faktor2007Traditional}, p.~58
+  \citet{faktor2007Traditional}, p.~58
 \end{itemize}
 
 \hypertarget{ux30cfux30ebux30c1ux30e7ux30fc-ux30b4ux30fcux30df-ux8349-ux10eeux10d0ux10e0ux10e9ux10dd-ux9732-ux445ux430ux440ux447ux43e}{%
@@ -5728,7 +5636,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 харчо)}\label{ux30cfux30ebux30c1ux30e7ux30fc-ux30b4ux30fcux30df-ux8349-ux10eeux10d0ux10e0ux10e9ux10dd-ux9732-ux445ux430ux440ux447ux43e}}
 
 ジョージアのスープ. どちらかというと材料調達の難易度が高い
-(図\ref{fig:kharcho-finished}). \textcite{boumei}
+(図\ref{fig:kharcho-finished}). \citet{boumei}
 で紹介されているレシピは豊富な種類の果物やスパイスを使用しているが,
 ここではもう少し簡単に,
 かつジョージアでよく見られる鶏肉を使用したレシピを提案する
@@ -5802,8 +5710,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   カイエンヌパウダー
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-33}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-33}}
+\hypertarget{ux4f5cux308aux65b9-32}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-32}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5850,8 +5758,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   最後に果汁をふりかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-32}{%
-\subsection{補足}\label{ux88dcux8db3-32}}
+\hypertarget{ux88dcux8db3-31}{%
+\subsection{補足}\label{ux88dcux8db3-31}}
 
 ロシアでも広く知られているが, ジョージア本来のもととは多少異なるようだ.
 ロシアでは牛肉, ジョージアでは鶏肉を使うことが多い.
@@ -5870,8 +5778,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 
 沸騰して跳ねることがあるため暑い日でも服を着て調理すべきである.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-30}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-30}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-29}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-29}}
 
 ジョージア語はほとんどわからないので見様見真似である
 
@@ -5890,7 +5798,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   Спасибо Шеф の動画 (ロシア語)
   \url{https://www.youtube.com/watch?v=mRybqZc_gZk}
 \item
-  \textcite{boumei} 10章
+  \citet{boumei} 10章
 \item
   CNN の記事
   \url{https://edition.cnn.com/travel/article/georgia-best-food-tbilisi/index.html}
@@ -5954,8 +5862,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 
 魚焼きグリル
 
-\hypertarget{ux4f5cux308aux65b9-34}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-34}}
+\hypertarget{ux4f5cux308aux65b9-33}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-33}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5984,8 +5892,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   グリルで焼く
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-33}{%
-\subsection{補足}\label{ux88dcux8db3-33}}
+\hypertarget{ux88dcux8db3-32}{%
+\subsection{補足}\label{ux88dcux8db3-32}}
 
 尾ヒレを取り,
 全身をかるく箸で押してほぐしてからえらの手前でちぎると背骨が抜けやすい.
@@ -6003,7 +5911,7 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
 \end{flushright}
 \end{quote}
 
-川魚を使ったスープ. \textcite{boumei} によると,
+川魚を使ったスープ. \citet{boumei} によると,
 川で釣った魚をその場で食べるためのレシピとのこと.
 基本的に彼らの記述に則したレシピ (図\ref{fig:ykha-finished}).
 
@@ -6068,8 +5976,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   (オプション) ディルの葉
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-35}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-35}}
+\hypertarget{ux4f5cux308aux65b9-34}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-34}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6102,23 +6010,23 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-34}{%
-\subsection{補足}\label{ux88dcux8db3-34}}
+\hypertarget{ux88dcux8db3-33}{%
+\subsection{補足}\label{ux88dcux8db3-33}}
 
-玉ねぎを入れる人も多いが, \textcite{boumei}
+玉ねぎを入れる人も多いが, \citet{boumei}
 ウハーは透き通ったスープであることが大切なので,
 スープが濁る玉ねぎは使うなと主張する. また, タラゴンやバジルなど,
 ハーブは種類が多ければ多いほどよいとも書いている.
 私は試したことがないが,
 ヴィクトリアショップではロシア製のウハー用ミックススパイスを扱っている\footnote{\url{https://victoriashop.jp/collections/\%E3\%82\%B9\%E3\%83\%91\%E3\%82\%A4\%E3\%82\%B9\%E9\%A1\%9E/products/\%E3\%82\%A6\%E3\%83\%8F\%E3\%83\%BC-\%E3\%83\%AD\%E3\%82\%B7\%E3\%82\%A2\%E9\%A2\%A8\%E9\%AD\%9A\%E3\%81\%AE\%E3\%82\%B9\%E3\%83\%BC\%E3\%83\%97-\%E3\%83\%9F\%E3\%83\%83\%E3\%82\%AF\%E3\%82\%B9\%E3\%82\%B9\%E3\%83\%91\%E3\%82\%A4\%E3\%82\%B9}}.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-31}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-31}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-30}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-30}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{boumei} Ch. 20
+  \citet{boumei} Ch. 20
 \end{itemize}
 
 \hypertarget{ux30b7ux30e3ux30ebux30c6ux30a3ux30d0ux30ebux30b7ux30e5ux30c1ux30e3ux30a4-ux7acb-ux161altibarux161ux10diai}{%
@@ -6175,8 +6083,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   (オプション) ジャガイモ 1個
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-36}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-36}}
+\hypertarget{ux4f5cux308aux65b9-35}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-35}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6191,8 +6099,8 @@ Dolması)}\label{ux30c9ux30ebux30deux306eux4e09ux59c9ux59b9-ux4e9cux585e-uxfcuxe
   ゆで卵, ふかし芋, 刻んだディルの葉や万能ねぎを添える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-35}{%
-\subsection{補足}\label{ux88dcux8db3-35}}
+\hypertarget{ux88dcux8db3-34}{%
+\subsection{補足}\label{ux88dcux8db3-34}}
 
 リトアニア語で「冷たいボルシチ」という意味だが,
 ロシアではあまり食べられていないようだ\footnote{ただしロシアにもボトヴィニヤやオクローシカといった多様な冷製スープのレシピが存在するので,
@@ -6201,13 +6109,13 @@ chłodnik\index{chłodni|see{シャルティバルシュチャイ}}, ベラル�
 халаднік\index{халаднік|see{シャルティバルシュチャイ}}, ウクライナの
 холодник \index{холодник|see{シャルティバルシュチャイ}}もほぼ同じ料理.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-32}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-32}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-31}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-31}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{OginoNumano2017} p.14
+  \citet{OginoNumano2017} p.14
 \item
   (たぶんリトアニア語, 英語字幕)
   \url{https://www.youtube.com/watch?v=sL8Q05qt56c}
@@ -6260,8 +6168,8 @@ másle)
 
 オーブンがあると良いが, なければフライパンや魚焼きグリルで代用する
 
-\hypertarget{ux4f5cux308aux65b9-37}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-37}}
+\hypertarget{ux4f5cux308aux65b9-36}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-36}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6286,8 +6194,8 @@ másle)
   輪切りにしたレモンやパセリを乗せて盛り付ける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-36}{%
-\subsection{補足}\label{ux88dcux8db3-36}}
+\hypertarget{ux88dcux8db3-35}{%
+\subsection{補足}\label{ux88dcux8db3-35}}
 
 茹でたジャガイモとともに食べることが多い.
 
@@ -6295,13 +6203,13 @@ másle)
 
 ニンニクの欠片を入れてもよいかもしれない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-33}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-33}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-32}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-32}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{faktor2007Traditional} p.24
+  \citet{faktor2007Traditional} p.24
 \item
   \url{https://www.youtube.com/watch?v=RNjsLl5w5-E}
 \end{itemize}
@@ -6371,8 +6279,8 @@ másle)
   小麦粉
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-38}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-38}}
+\hypertarget{ux4f5cux308aux65b9-37}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-37}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6399,21 +6307,21 @@ másle)
   パセリや薄く輪切りにした玉ねぎを添えても良い
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-37}{%
-\subsection{補足}\label{ux88dcux8db3-37}}
+\hypertarget{ux88dcux8db3-36}{%
+\subsection{補足}\label{ux88dcux8db3-36}}
 
 定番の隠し味として, ビールを入れる,
 あるいは肉をビールにつけて柔らかくするというものがある.
 
 広く普及している料理なので作り方のバリエーションが多い.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-34}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-34}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-33}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-33}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{faktor2007Traditional} p.50
+  \citet{faktor2007Traditional} p.50
 \item
   \url{https://www.toprecepty.cz/recept/4007-klasicky-hospodsky-gulas-vidensky/}
 \end{itemize}
@@ -6535,8 +6443,8 @@ másle)
   野菜をすりおろす器具
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-39}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-39}}
+\hypertarget{ux4f5cux308aux65b9-38}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-38}}
 
 まず肉と野菜を煮込んでブイヨンを作ってから,
 改めて肉と野菜を入れ直して作る.
@@ -6632,8 +6540,8 @@ másle)
   スープ皿などに盛り付け, 上から薬味をふりかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-38}{%
-\subsection{補足}\label{ux88dcux8db3-38}}
+\hypertarget{ux88dcux8db3-37}{%
+\subsection{補足}\label{ux88dcux8db3-37}}
 
 黒パンやサーロ, ウォッカ/ホリルカとともに食べるとよい.
 
@@ -6650,8 +6558,8 @@ másle)
 缶詰や真空パックのビーツも加熱処理済みであるためどうしても色彩に劣ってしまう.
 なるべく生のビーツを入手したい.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-35}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-35}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-34}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-34}}
 
 \begin{itemize}
 \item
@@ -6667,7 +6575,7 @@ másle)
   『ナスチャンネル』のロシア式の料理動画 (日本語音声)
   \url{https://www.youtube.com/watch?v=5mXOepWrzGc}
 \item
-  \textcite{OginoNumano2017} pp.~36-37
+  \citet{OginoNumano2017} pp.~36-37
 \end{itemize}
 
 \hypertarget{ux30b7ux30c1ux30fc-ux9732-ux449ux438}{%
@@ -6752,8 +6660,8 @@ másle)
   できれば土鍋も欲しい
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-40}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-40}}
+\hypertarget{ux4f5cux308aux65b9-39}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-39}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6793,21 +6701,21 @@ másle)
   キノコの塩漬けなどを添えて食べる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-39}{%
-\subsection{補足}\label{ux88dcux8db3-39}}
+\hypertarget{ux88dcux8db3-38}{%
+\subsection{補足}\label{ux88dcux8db3-38}}
 
 ゲニス\&ワイリによれば,
 「シチーはスプーンが立つほど具だくさんにするのが良い」とのこと.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-36}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-36}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-35}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-35}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{OginoNumano2017} p.~25
+  \citet{OginoNumano2017} p.~25
 \item
-  \textcite{boumei} Ch. 3
+  \citet{boumei} Ch. 3
 \end{itemize}
 
 \hypertarget{ux30bdux30eaux30e3ux30f3ux30abux30beux30ebux30e4ux30f3ux30ab-ux5b87ux9732-ux441ux43eux43bux44fux43dux43aux430ux72ec-soljanka}{%
@@ -6879,27 +6787,27 @@ Soljanka)
   サワークリーム
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-41}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-41}}
+\hypertarget{ux4f5cux308aux65b9-40}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-40}}
 
 以下を参考に
 
 \url{https://speakerdeck.com/ktgrstsh/how-to-make-solyanka}
 
-\hypertarget{ux88dcux8db3-40}{%
-\subsection{補足}\label{ux88dcux8db3-40}}
+\hypertarget{ux88dcux8db3-39}{%
+\subsection{補足}\label{ux88dcux8db3-39}}
 
 ゾルヤンカも概ね同じであるが, パプリカを入れることが多い.
 さらにキュウリの塩漬けはピクルスに置き換わっている.
 ロシアのスープ料理によく見られる香草も振りかけないことが多い.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-37}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-37}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-36}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-36}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{boumei} Ch. 6
+  \citet{boumei} Ch. 6
 \item
   \url{https://young-germany.jp/2019/04/ddr4/}
 \item
@@ -6946,15 +6854,15 @@ Soljanka)
   サワークリーム
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-42}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-42}}
+\hypertarget{ux4f5cux308aux65b9-41}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-41}}
 
 TODO
 
-\hypertarget{ux88dcux8db3-41}{%
-\subsection{補足}\label{ux88dcux8db3-41}}
+\hypertarget{ux88dcux8db3-40}{%
+\subsection{補足}\label{ux88dcux8db3-40}}
 
-\textcite{OginoNumano2017} によればキノコのカーシャ,
+\citet{OginoNumano2017} によればキノコのカーシャ,
 または炊き込みご飯とも相性が良い.
 
 \begin{figure}
@@ -6966,13 +6874,13 @@ TODO
 \caption{キノコのカーシャとの盛り合わせ}\label{fig:bef-stroganov-rice}
 \end{figure}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-38}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-38}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-37}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-37}}
 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{OginoNumano2017} pp.~42-43
+  \citet{OginoNumano2017} pp.~42-43
 \end{itemize}
 
 \hypertarget{ux771fux306eux3046ux3069ux3093ux8c46ux8150-ux6c5fux6238}{%
@@ -7045,8 +6953,8 @@ TODO
   豆腐を崩さずに熱湯からすくうための大きめの器具
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-43}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-43}}
+\hypertarget{ux4f5cux308aux65b9-42}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-42}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7067,8 +6975,8 @@ TODO
   うどんのようにつけ汁や薬味とともに食べる
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-42}{%
-\subsection{補足}\label{ux88dcux8db3-42}}
+\hypertarget{ux88dcux8db3-41}{%
+\subsection{補足}\label{ux88dcux8db3-41}}
 
 『豆腐百珍』にはところてんの突き出しを湯の中に浸けて豆腐を細く切れとあるが,
 崩れさえしなければ方法はなんでもいいと思われる.
@@ -7076,8 +6984,8 @@ TODO
 真のうどん豆腐から派生する料理も『豆腐百珍』にいくつか挙げられている.
 ここでは冬の料理に挙げたが冷やして食べるものは紹介されていないため未知数である.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-39}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-39}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-38}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-38}}
 
 \begin{itemize}
 \tightlist
@@ -7150,8 +7058,8 @@ TODO
   水またはブイヨン, または豆の茹で汁
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-44}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-44}}
+\hypertarget{ux4f5cux308aux65b9-43}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-43}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7188,15 +7096,15 @@ TODO
   塩胡椒で味を調える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-43}{%
-\subsection{補足}\label{ux88dcux8db3-43}}
+\hypertarget{ux88dcux8db3-42}{%
+\subsection{補足}\label{ux88dcux8db3-42}}
 
 ひもじさを演出したい場合は豆やベーコンを少なくする.
 
 現代的には Čočka na kyselo となり, 目玉焼きを乗せたりする.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-40}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-40}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-39}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-39}}
 
 \begin{itemize}
 \tightlist
@@ -7220,7 +7128,7 @@ TODO
 
 }
 
-\caption{すりつぶしたレンズ豆}\label{fig:unnamed-chunk-50}
+\caption{すりつぶしたレンズ豆}\label{fig:unnamed-chunk-49}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7274,8 +7182,8 @@ TODO
   ポテトマッシャー
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-45}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-45}}
+\hypertarget{ux4f5cux308aux65b9-44}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-44}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7302,8 +7210,8 @@ TODO
   豆を加え, よく潰す
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-41}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-41}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-40}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-40}}
 
 \begin{itemize}
 \tightlist
@@ -7349,8 +7257,8 @@ TODO
 
 小さめのフライパン
 
-\hypertarget{ux4f5cux308aux65b9-46}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-46}}
+\hypertarget{ux4f5cux308aux65b9-45}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-45}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7379,16 +7287,16 @@ TODO
   両面を焼いたら取りだす
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-44}{%
-\subsection{補足}\label{ux88dcux8db3-44}}
+\hypertarget{ux88dcux8db3-43}{%
+\subsection{補足}\label{ux88dcux8db3-43}}
 
 いわゆるホットケーキのような膨らましたものではなく, British pancake
 と呼ばれるタイプと同じでクレープみたいな薄いものである.
 どうやら古代ローマの時代からあるらしい. 製法もいたってシンプルなので,
 チェコに限らず古代から中世にかけてのヨーロッパ世界では至るところで見られたのではないかと想像する.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-42}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-42}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-41}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-41}}
 
 \begin{itemize}
 \tightlist
@@ -7430,7 +7338,7 @@ TODO
 
 }
 
-\caption{中世のロールパン}\label{fig:unnamed-chunk-54}
+\caption{中世のロールパン}\label{fig:unnamed-chunk-53}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7480,8 +7388,8 @@ TODO
   オーブン, またはオーブントースター
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-47}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-47}}
+\hypertarget{ux4f5cux308aux65b9-46}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-46}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7546,16 +7454,16 @@ TODO
 \caption{焼く直前}\label{fig:bread-roll-before-bake}
 \end{figure}
 
-\hypertarget{ux88dcux8db3-45}{%
-\subsection{補足}\label{ux88dcux8db3-45}}
+\hypertarget{ux88dcux8db3-44}{%
+\subsection{補足}\label{ux88dcux8db3-44}}
 
 元はハンガリーの料理であるらしい.
 
 油かすは背脂からラードを精製する際に発生する.
 もちろん余った脂身を炙って作ってもいい.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-43}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-43}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-42}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-42}}
 
 \begin{itemize}
 \tightlist
@@ -7583,7 +7491,7 @@ COVID-19 に対する効果は明らかになっていない.
 
 }
 
-\caption{「ソーセージ」}\label{fig:unnamed-chunk-56}
+\caption{「ソーセージ」}\label{fig:unnamed-chunk-55}
 \end{figure}
 
 \begin{tabular}[t]{rl}
@@ -7614,8 +7522,8 @@ COVID-19 に対する効果は明らかになっていない.
   バター 適量
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-48}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-48}}
+\hypertarget{ux4f5cux308aux65b9-47}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-47}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7640,8 +7548,8 @@ COVID-19 に対する効果は明らかになっていない.
   接している面が焼けたら少しづつ転がし他の面も焼く
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-44}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-44}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-43}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-43}}
 
 \begin{itemize}
 \tightlist
@@ -7715,8 +7623,8 @@ COVID-19 に対する効果は明らかになっていない.
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-49}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-49}}
+\hypertarget{ux4f5cux308aux65b9-48}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-48}}
 
 ドーナツ
 
@@ -7768,14 +7676,14 @@ COVID-19 に対する効果は明らかになっていない.
 
 ポリッジの上にドーナツを乗せると良いだろう.
 
-\hypertarget{ux88dcux8db3-46}{%
-\subsection{補足}\label{ux88dcux8db3-46}}
+\hypertarget{ux88dcux8db3-45}{%
+\subsection{補足}\label{ux88dcux8db3-45}}
 
 日本のパン粉は粗いので袋にいれて叩くなどして粒を細かくしてから使うと良い.
 しかし当然ながら小麦粉よりは目が粗いので,
 あまりきめの細かい生地にはならない.
 
-りんごのポリッジは \textcite{Ju2018} pp.~78-79
+りんごのポリッジは \citet{Ju2018} pp.~78-79
 に類似したイングランドのレシピが見られる.
 
 \hypertarget{ux53c2ux8003ux6587ux732e-1}{%
@@ -7787,7 +7695,7 @@ COVID-19 に対する効果は明らかになっていない.
   Random Innkeeper の動画
   \url{https://www.youtube.com/watch?v=J4iEFjWsMqM}
 \item
-  \textcite{Ju2018}
+  \citet{Ju2018}
 \end{itemize}
 
 \hypertarget{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plecluxedk}{%
@@ -7843,8 +7751,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   固いものを細かく粉砕するグラインダー
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-50}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-50}}
+\hypertarget{ux4f5cux308aux65b9-49}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-49}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7894,8 +7802,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   天日干しか, オーブンで焼いて固める
 \end{enumerate}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-45}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-45}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-44}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-44}}
 
 \begin{itemize}
 \tightlist
@@ -7945,8 +7853,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   追加の砂糖
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-51}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-51}}
+\hypertarget{ux4f5cux308aux65b9-50}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-50}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7973,8 +7881,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   砂糖をまぶす
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-47}{%
-\subsection{補足}\label{ux88dcux8db3-47}}
+\hypertarget{ux88dcux8db3-46}{%
+\subsection{補足}\label{ux88dcux8db3-46}}
 
 火加減を間違えると固まりにくくなるが, 適切な方法はわからない.
 
@@ -7983,8 +7891,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 小豆とか甘い豆をつかうとうまくなるかもしれないが,
 中世ヨーロッパにはたぶん小豆はない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-46}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-46}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-45}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-45}}
 
 \begin{itemize}
 \tightlist
@@ -7997,10 +7905,10 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
 \section{(予定)
 4食のポリッジ}\label{ux4e88ux5b9a-4ux98dfux306eux30ddux30eaux30c3ux30b8}}
 
-\textcite{feyfrlikova2015Kuchyne} p.~66 がたぶん元ネタ
+\citet{feyfrlikova2015Kuchyne} p.~66 がたぶん元ネタ
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-47}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-47}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-46}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-46}}
 
 \begin{itemize}
 \tightlist
@@ -8008,7 +7916,7 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   Random Innkeeper の動画
   \url{https://www.youtube.com/watch?v=J4iEFjWsMqM}
 \item
-  \textcite{feyfrlikova2015Kuchyne}
+  \citet{feyfrlikova2015Kuchyne}
 \end{itemize}
 
 \hypertarget{ux8c5aux8089ux306eux30d3ux30fcux30ebux30bdux30fcux30b9ux548cux3048-vepux159ovina-divokuxe1-ux6377-16ux4e16ux7d00}{%
@@ -8077,8 +7985,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   豚を茹でるのと並行してソースを作るため, 鍋が2つあるとよい
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-52}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-52}}
+\hypertarget{ux4f5cux308aux65b9-51}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-51}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8101,15 +8009,15 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-48}{%
-\subsection{補足}\label{ux88dcux8db3-48}}
+\hypertarget{ux88dcux8db3-47}{%
+\subsection{補足}\label{ux88dcux8db3-47}}
 
 本来のレシピではソースの材料はビール, 酢,
 パンしか言及されていなかったが,
 それだけではとうてい食べられたものではないため上記のスパイスで味付けしている.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-48}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-48}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-47}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-47}}
 
 \begin{itemize}
 \tightlist
@@ -8167,8 +8075,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   砂糖
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-53}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-53}}
+\hypertarget{ux4f5cux308aux65b9-52}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-52}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8207,14 +8115,14 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   全て皿に盛り付ける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-49}{%
-\subsection{補足}\label{ux88dcux8db3-49}}
+\hypertarget{ux88dcux8db3-48}{%
+\subsection{補足}\label{ux88dcux8db3-48}}
 
 味の濃い食材がないため,
 鶏肉の下茹で時には十分に塩を入れて味付けしておく.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-49}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-49}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-48}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-48}}
 
 \begin{itemize}
 \tightlist
@@ -8300,8 +8208,8 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   オーブン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-54}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-54}}
+\hypertarget{ux4f5cux308aux65b9-53}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-53}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8347,13 +8255,13 @@ pleclík)}\label{ux30d7ux30ecux30c3ux30c4ux30a7ux30eb-ux6377-15ux4e16ux7d00-plec
   鶏肉を切り分け, 上からソースをかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-50}{%
-\subsection{補足}\label{ux88dcux8db3-50}}
+\hypertarget{ux88dcux8db3-49}{%
+\subsection{補足}\label{ux88dcux8db3-49}}
 
 オーブンがないのでかなり小さな鶏で試してみたが, ほとんど入らなかった.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-50}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-50}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-49}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-49}}
 
 \begin{itemize}
 \tightlist
@@ -8445,8 +8353,8 @@ slepičí s černou omáčkou)
   複数の鍋
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-55}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-55}}
+\hypertarget{ux4f5cux308aux65b9-54}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-54}}
 
 ミートローフの作り方
 
@@ -8499,14 +8407,14 @@ slepičí s černou omáčkou)
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-51}{%
-\subsection{補足}\label{ux88dcux8db3-51}}
+\hypertarget{ux88dcux8db3-50}{%
+\subsection{補足}\label{ux88dcux8db3-50}}
 
 鶏肉に一度火を通してからひき肉にするため, 十分細かくないと崩れやすい.
 よって手作業の場合は覚悟すること.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-51}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-51}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-50}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-50}}
 
 \begin{itemize}
 \tightlist
@@ -8592,8 +8500,8 @@ Pečeně hovězí po Uhersku)
   裏ごし器
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-56}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-56}}
+\hypertarget{ux4f5cux308aux65b9-55}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-55}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8633,15 +8541,15 @@ Pečeně hovězí po Uhersku)
   牛肉にソースをかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-52}{%
-\subsection{補足}\label{ux88dcux8db3-52}}
+\hypertarget{ux88dcux8db3-51}{%
+\subsection{補足}\label{ux88dcux8db3-51}}
 
-\textcite{feyfrlikova2015Kuchyne} pp.~80-81
+\citet{feyfrlikova2015Kuchyne} pp.~80-81
 にこのレシピの現代語訳が記載されている.
 疫病に関する本に記載されていたレシピの1つであるという.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-52}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-52}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-51}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-51}}
 
 \begin{itemize}
 \tightlist
@@ -8649,7 +8557,7 @@ Pečeně hovězí po Uhersku)
   Random Innkeeper の動画
   \url{https://www.youtube.com/watch?v=QnSHjogWAMA}
 \item
-  \textcite{feyfrlikova2015Kuchyne}
+  \citet{feyfrlikova2015Kuchyne}
 \end{itemize}
 
 \hypertarget{ux30cfux30f3ux30acux30eaux30fcux98a8ux30edux30fcux30b9ux30c8ux30d3ux30fcux30d5-2-ux6377-16ux4e16ux7d00-hovux11bzie-po-uhersku}{%
@@ -8709,8 +8617,8 @@ Hovězie po Uhersku)
   ストレイナー/裏ごし器
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-57}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-57}}
+\hypertarget{ux4f5cux308aux65b9-56}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-56}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8754,8 +8662,8 @@ Hovězie po Uhersku)
   ローストビーフを切り分け, ソースをかけ, リンゴを添える
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-53}{%
-\subsection{補足}\label{ux88dcux8db3-53}}
+\hypertarget{ux88dcux8db3-52}{%
+\subsection{補足}\label{ux88dcux8db3-52}}
 
 日本の家庭にはローストビーフを作れるオーブンがないことが多い.
 オーブントースターや魚焼きグリルで代用すると,
@@ -8765,8 +8673,8 @@ Hovězie po Uhersku)
 
 なぜリンゴを添えるのかはよくわからない.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-53}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-53}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-52}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-52}}
 
 \begin{itemize}
 \tightlist
@@ -8837,8 +8745,8 @@ TODO: 画像
   オーブン
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-58}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-58}}
+\hypertarget{ux4f5cux308aux65b9-57}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-57}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8886,17 +8794,17 @@ TODO: 画像
   肉を切り分け, ソースをかける
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-54}{%
-\subsection{補足}\label{ux88dcux8db3-54}}
+\hypertarget{ux88dcux8db3-53}{%
+\subsection{補足}\label{ux88dcux8db3-53}}
 
 メースは当時最も高価な部類に入るスパイスであるので,
-ロールプレイがしたい人は注意. なお \textcite{feyfrlikova2015Kuchyne}
+ロールプレイがしたい人は注意. なお \citet{feyfrlikova2015Kuchyne}
 によれば当時の一般的な都市の住居にはすでにオーブンが備わっていたため\footnote{これはビデオゲーム
   ``Kingdom Come: Deliverance'' でも視覚的に再現されている},
 こちらを気にする必要はないと思われる.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-54}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-54}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-53}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-53}}
 
 \begin{itemize}
 \tightlist
@@ -8956,8 +8864,8 @@ TODO: 画像
   砂糖 大さじ1
 \end{itemize}
 
-\hypertarget{ux4f5cux308aux65b9-59}{%
-\subsection{作り方}\label{ux4f5cux308aux65b9-59}}
+\hypertarget{ux4f5cux308aux65b9-58}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-58}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8990,13 +8898,13 @@ TODO: 画像
   \end{itemize}
 \end{enumerate}
 
-\hypertarget{ux88dcux8db3-55}{%
-\subsection{補足}\label{ux88dcux8db3-55}}
+\hypertarget{ux88dcux8db3-54}{%
+\subsection{補足}\label{ux88dcux8db3-54}}
 
 赤ワインは蒸発しやすいので蓋をするなどして対処する.
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-55}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-55}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-54}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-54}}
 
 \begin{itemize}
 \tightlist
@@ -9027,8 +8935,8 @@ TODO: 画像
 \caption{現代モラヴィア風}\label{fig:roast-duck-cz-moravia}
 \end{figure}
 
-\hypertarget{ux53c2ux8003ux8cc7ux6599-56}{%
-\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-56}}
+\hypertarget{ux53c2ux8003ux8cc7ux6599-55}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-55}}
 
 \begin{itemize}
 \tightlist
@@ -9087,10 +8995,162 @@ TODO: 画像
   サフラン
 \end{itemize}
 
+\hypertarget{ux4f5cux308aux65b9-59}{%
+\subsection{作り方}\label{ux4f5cux308aux65b9-59}}
+
+参照動画を参考にせよ
+
+\hypertarget{ux53c2ux8003ux8cc7ux6599-56}{%
+\subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-56}}
+
+\begin{itemize}
+\tightlist
+\item
+  Random Innkeeper の動画 (日本語字幕あり)
+  \url{https://www.youtube.com/watch?v=CcjKye3use8}
+\end{itemize}
+
+\hypertarget{kcd-ux306eux30b7ux30c1ux30e5ux30fc}{%
+\section{KCD のシチュー}\label{kcd-ux306eux30b7ux30c1ux30e5ux30fc}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth,height=1\textheight,keepaspectratio]{img/KCD-stew/finished} 
+
+}
+
+\caption{15世紀にグラーシュはない}\label{fig:kcd-stew}
+\end{figure}
+
+\begin{tabular}[t]{rl}
+\toprule
+ & 難易度\\
+\midrule
+材料調達 & {\fontspec{Noto Sans CJK JP} ★★★★☆ }\\
+調理 & {\fontspec{Noto Sans CJK JP} ★★★☆☆ }\\
+\bottomrule
+\end{tabular}
+
+ゲーム \href{}{Kingdom Come: Deliverance} に登場する謎のシチュー.
+チェコの伝統料理グラーシュに似ているが,
+現代のグラーシュはトマトやパプリカを使うため15世紀には存在しなかった.
+
+これは正確には当時の文献にあったものではないが,
+当時の文献に着想を得たものであるという.
+
+\hypertarget{ux6750ux6599-41}{%
+\subsection{材料}\label{ux6750ux6599-41}}
+
+\begin{itemize}
+\tightlist
+\item
+  牛ブリスケット
+
+  \begin{itemize}
+  \tightlist
+  \item
+    なければ煮込み用のスネ肉でもよい
+  \end{itemize}
+\item
+  根パセリ
+\item
+  ニンジン
+\item
+  セロリアック
+\item
+  玉ねぎ
+\item
+  赤ワイン
+\item
+  白パン
+\item
+  ラード
+\item
+  塩
+\item
+  ブイヨン
+\item
+  リンゴ
+
+  \begin{itemize}
+  \tightlist
+  \item
+    リンゴ酢を使っても良い
+  \end{itemize}
+\item
+  メース
+\item
+  ショウガ
+
+  \begin{itemize}
+  \tightlist
+  \item
+    乾燥粉末がなければすりおろす
+  \end{itemize}
+\item
+  胡椒
+\item
+  (オプション) ラベージの葉
+\end{itemize}
+
 \hypertarget{ux4f5cux308aux65b9-60}{%
 \subsection{作り方}\label{ux4f5cux308aux65b9-60}}
 
-参照動画を参考にせよ
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  根菜と林檎全てみじん切りにする
+\item
+  牛肉を 2cm 大に切る
+\item
+  鍋にラードを溶かし, 牛肉に焼き目を付ける
+\item
+  表面がよく焦げ茶色になったら取り出し, 代わりに玉ねぎ以外の根菜を炒める
+\item
+  火が通ってきたら玉ねぎと林檎も入れる
+\item
+  軽く焦げ付く (カラメル化する) まで弱火でじっくり炒める.
+\item
+  ショウガ, メース. 胡椒, 塩を加えてよく混ぜる
+\item
+  ワインを注ぎ, 蒸発するまで混ぜる
+\item
+  水気が飛んだら肉を再度入れる
+\item
+  肉が水没する程度までブイヨンを注ぐ
+\item
+  蓋をして2時間ほど煮込む
+
+  \begin{itemize}
+  \tightlist
+  \item
+    肉が柔らかくなるまで
+  \end{itemize}
+\item
+  この間にフライパンでパンを乾煎りする
+
+  \begin{itemize}
+  \tightlist
+  \item
+    たぶん普通にトースターでもやってもよい
+  \end{itemize}
+\item
+  鍋にラベージの葉を入れる
+\item
+  鍋にパンを崩して入れる
+\end{enumerate}
+
+\hypertarget{ux88dcux8db3-55}{%
+\subsection{補足}\label{ux88dcux8db3-55}}
+
+参考動画では塩ひとつまみ (a pinch of \ldots) と言っているが,
+実際には小さじ2杯かそれより多いくらいがちょうどよい
+
+日本では根パセリとセロリアックが入手しづらい.
+セロリアックはセロリの茎でも良いかもしれないが,
+根パセリは代わりのきく食材が思いつかない.
+パースニップは見た目こそ似ているが風味は全く異なる.
 
 \hypertarget{ux53c2ux8003ux8cc7ux6599-57}{%
 \subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-57}}
@@ -9099,7 +9159,7 @@ TODO: 画像
 \tightlist
 \item
   Random Innkeeper の動画 (日本語字幕あり)
-  \url{https://www.youtube.com/watch?v=CcjKye3use8}
+  \url{https://www.youtube.com/watch?v=zqc4iQrE-FQ}
 \end{itemize}
 
 \hypertarget{ux30cfux30c3ux30b7ux30e5ux30c9ux30ecux30d0ux30fc-ux6377-15ux4e16ux7d00}{%
@@ -9127,8 +9187,8 @@ TODO: 画像
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-41}{%
-\subsection{材料}\label{ux6750ux6599-41}}
+\hypertarget{ux6750ux6599-42}{%
+\subsection{材料}\label{ux6750ux6599-42}}
 
 \begin{itemize}
 \item
@@ -9257,8 +9317,8 @@ slaninami)}\label{ux30e1ux30ebux30ebux30fcux30b5ux306eux30d9ux30fcux30b3ux30f3ux
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-42}{%
-\subsection{材料}\label{ux6750ux6599-42}}
+\hypertarget{ux6750ux6599-43}{%
+\subsection{材料}\label{ux6750ux6599-43}}
 
 \begin{itemize}
 \tightlist
@@ -9316,7 +9376,7 @@ slaninami)}\label{ux30e1ux30ebux30ebux30fcux30b5ux306eux30d9ux30fcux30b3ux30f3ux
 なお, 日本国内の市販ベーコンは味が薄く脂身も少ないため,
 塩を余分に加えたほうが良いかもしれない.
 
-\textcite{Ju2018} p.~23 でも中世イギリスのタラ料理が言及されている.
+\citet{Ju2018} p.~23 でも中世イギリスのタラ料理が言及されている.
 
 \hypertarget{ux53c2ux8003ux8cc7ux6599-59}{%
 \subsection{参考資料}\label{ux53c2ux8003ux8cc7ux6599-59}}
@@ -9326,7 +9386,7 @@ slaninami)}\label{ux30e1ux30ebux30ebux30fcux30b5ux306eux30d9ux30fcux30b3ux30f3ux
 \item
   Random Innkeeper \url{https://www.youtube.com/watch?v=pQthdIYfRR0}
 \item
-  \textcite{Ju2018}
+  \citet{Ju2018}
 \end{itemize}
 
 \hypertarget{ux30c8ux30a5ux30d5ux30fc-ux30a2ux30c3ux30abux30c9-ux30d0ux30d3ux30edux30f3ux7b2c1ux738bux671dux6642ux4ee3-ux12305ux12314ux12311}{%
@@ -9361,11 +9421,11 @@ slaninami)}\label{ux30e1ux30ebux30ebux30fcux30b5ux306eux30d9ux30fcux30b3ux30f3ux
 \begin{itemize}
 \tightlist
 \item
-  \textcite{Damerow2012SumerianBT}
+  \citet{Damerow2012SumerianBT}
 \item
-  \textcite{GojkoEtAl2019-blog}
+  \citet{GojkoEtAl2019-blog}
 \item
-  \textcite{GojkoEtAl2019}
+  \citet{GojkoEtAl2019}
 \item
   これらを元にした自作記録
   \url{https://under-identified.hatenablog.com/entry/2020/08/01/213350}
@@ -9389,8 +9449,8 @@ slaninami)}\label{ux30e1ux30ebux30ebux30fcux30b5ux306eux30d9ux30fcux30b3ux30f3ux
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-43}{%
-\subsection{材料}\label{ux6750ux6599-43}}
+\hypertarget{ux6750ux6599-44}{%
+\subsection{材料}\label{ux6750ux6599-44}}
 
 \begin{itemize}
 \tightlist
@@ -9443,8 +9503,13 @@ Sauerkraut)\index{sauerkraut|see{ザワークラウト}}}{ザワークラウト 
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-44}{%
-\subsection{材料}\label{ux6750ux6599-44}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-45}{%
+\subsection{材料}\label{ux6750ux6599-45}}
 
 \begin{itemize}
 \tightlist
@@ -9558,7 +9623,7 @@ Sauerkraut)\index{sauerkraut|see{ザワークラウト}}}{ザワークラウト 
 \begin{itemize}
 \tightlist
 \item
-  \textcite{katz2012Art}
+  \citet{katz2012Art}
 \item
   日本語の解説付きの作成例
   \url{https://www.youtube.com/watch?v=uTgx3Gcixcc}
@@ -9589,8 +9654,13 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-45}{%
-\subsection{材料}\label{ux6750ux6599-45}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-46}{%
+\subsection{材料}\label{ux6750ux6599-46}}
 
 \begin{itemize}
 \tightlist
@@ -9639,6 +9709,14 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 \item
   鍋に水, 塩, 砂糖, オールスパイス, 胡椒, 月桂樹の葉を入れ沸騰させる
 \item
+  ソーセージの皮をむき, 割る. または輪切りにする
+
+  \begin{itemize}
+  \tightlist
+  \item
+    日本の市販のソーセージは小さいので半分に割るくらいがよいと思われる
+  \end{itemize}
+\item
   瓶にスライスしたパプリカと玉ねぎ, そして残りの材料を詰め込む
 \item
   \begin{enumerate}
@@ -9663,7 +9741,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 \aruby{utpenci}{ウトペンツィ} は複数形で, \aruby{utpenec}{ウトペネツ}
 は単数形. 意味は 「溺死体」
 
-現地では špekáček というソーセージを使用することが多い.
+現地では špekáček というソーセージを使用することが多いらしい.
+参考動画でも大きめのソーセージを4本に割っている
 
 図\ref{fig:utopenci-finished}
 は玉ねぎやパプリカを多く入れているが「溺死体」という名前が示すように,
@@ -9676,6 +9755,8 @@ Utopenci)\index{utopenec|see{ウトペネツ}}\index{utopenci|see{ウトペネ�
 
 \begin{itemize}
 \tightlist
+\item
+  動画: \url{https://www.youtube.com/watch?v=niRxxO8NSHM}
 \item
   古典的なレシピ
   \url{https://www.toprecepty.cz/recept/39156-utopenci-klasika/}
@@ -9749,8 +9830,13 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-46}{%
-\subsection{材料}\label{ux6750ux6599-46}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-47}{%
+\subsection{材料}\label{ux6750ux6599-47}}
 
 \begin{itemize}
 \tightlist
@@ -9882,8 +9968,15 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-47}{%
-\subsection{材料}\label{ux6750ux6599-47}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください.
+
+特にこのレシピは生で大丈夫な理由がよくわかりません.
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-48}{%
+\subsection{材料}\label{ux6750ux6599-48}}
 
 \begin{itemize}
 \tightlist
@@ -9919,9 +10012,9 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 
 謎
 
-\hypertarget{ux30adux30e0ux30c1-ux97d3-uxae40uxce58}{%
-\section{キムチ (韓:
-김치)}\label{ux30adux30e0ux30c1-ux97d3-uxae40uxce58}}
+\hypertarget{ux30adux30e0ux30c1-ux97d3}{%
+\section{\texorpdfstring{キムチ (韓:
+{\fontspec{Noto Sans CJK JP}김치})}{キムチ (韓: )}}\label{ux30adux30e0ux30c1-ux97d3}}
 
 \begin{tabular}[t]{rl}
 \toprule
@@ -9932,8 +10025,13 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-48}{%
-\subsection{材料}\label{ux6750ux6599-48}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-49}{%
+\subsection{材料}\label{ux6750ux6599-49}}
 
 \begin{itemize}
 \tightlist
@@ -10031,8 +10129,8 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-49}{%
-\subsection{材料}\label{ux6750ux6599-49}}
+\hypertarget{ux6750ux6599-50}{%
+\subsection{材料}\label{ux6750ux6599-50}}
 
 \begin{itemize}
 \tightlist
@@ -10097,7 +10195,7 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \begin{itemize}
 \tightlist
 \item
-  \textcite{Jing1992}
+  \citet{Jing1992}
 \end{itemize}
 
 \hypertarget{ux6ce1ux8fa3ux6912ux6ce1ux59dc-ux4e2d}{%
@@ -10116,8 +10214,13 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
 \bottomrule
 \end{tabular}
 
-\hypertarget{ux6750ux6599-50}{%
-\subsection{材料}\label{ux6750ux6599-50}}
+\begin{infobox}{important}
+発酵・熟成食品は衛生環境に注意して作成してください
+
+\end{infobox}
+
+\hypertarget{ux6750ux6599-51}{%
+\subsection{材料}\label{ux6750ux6599-51}}
 
 \begin{itemize}
 \tightlist
@@ -10191,16 +10294,15 @@ spek\index{spek|see{ベーコン}})}{ベーコン(bacon; 独: spek)}}\label{ux30
   当時のヨーロッパには生の生姜はほとんどなく,
   もっぱら乾燥させた粉末だったと思われる.
 \item
-  華北の文化が主だろうが, \textcite{zuien}
-  の記述にも中華料理のヒントがある
+  華北の文化が主だろうが, \citet{zuien} の記述にも中華料理のヒントがある
 \end{itemize}
 
 
 % --- bibliography settings ---
+% bibtex (natbib) mode
+  \addcontentsline{toc}{chapter}{\bibname}
+  \bibliography{Cooking.bib}
 
-% biblatex mode
-\printbibliography[title=参考文献,heading=bibintoc]
-% --- bibliography settings ends ---
 
 
 \printindex

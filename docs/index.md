@@ -1,19 +1,25 @@
 ---
 title: "ザ・クックブック"
 author: 'ill-identified^[twitter ID: \@ill-identified]'
-date: "最終更新時刻 2021-04-17 00:43:57, 初公開: 2021/4/1"
+date: "最終更新時刻 2021/07/03, 初公開: 2021/04/01"
 site: bookdown::bookdown_site
 description: ""
-documentclass: ltjsreport
+documentclass: bxjsreport
 classoption: a4paper
 link-citations: true
 linkcolor: blue
 citecolor: blue
 urlcolor: magenta
 bibliography: Cooking.bib
+biblio-style: jecon-custom
 pagestyle: fancy
 github-repo: "Gedevan-Aleksizde/cookbook"
 url: 'https://github.com/Gedevan-Aleksizde/cookbook'
+mainfont: DejaVu Serif
+sansfont: DejaVu Sans
+jfontpreset: noto-otf
+header-includes:
+  - \newjfontfamily\fallbacking{DejaVu Sans}
 ---
 
 
@@ -136,7 +142,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 ジョジョ四部のあれ. ペペロンチーノよりも手間を加えて美味しくしたいときに.
 
 <div class="figure" style="text-align: center">
-<img src="img/puttanesca/finished.jpg" alt="娼婦風スパゲッティ" width="2419" />
+<img src="img/puttanesca/finished.jpg" alt="娼婦風スパゲッティ"  />
 <p class="caption">(\#fig:finished-puttanesca)娼婦風スパゲッティ</p>
 </div>
 
@@ -210,7 +216,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 ソ連時代に流行した大衆料理. 名前の通りソ連海軍のメニューが発祥と言われている.
 
 <div class="figure" style="text-align: center">
-<img src="img/makaroni-po-flotski/finished.jpg" alt="海軍風パスタ" width="2341" />
+<img src="img/makaroni-po-flotski/finished.jpg" alt="海軍風パスタ"  />
 <p class="caption">(\#fig:finished-makaroni-po-flotski)海軍風パスタ</p>
 </div>
 
@@ -367,7 +373,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 炒鶏蛋とも. 卵と西紅柿 (トマト) を炒めただけ. なおトマトは番茄ともいう (主に台湾で使われる表現?). 王剛のレシピのうち最も簡単な「怠け者のレシピ」に基づいたレシピを紹介する. 麺に乗せて食べても良い(図\@ref(fig:finished-friedtomatoegg)).
 
 <div class="figure" style="text-align: center">
-<img src="img/friedtomatoegg/finished.jpg" alt="西紅柿炒鶏蛋麺" width="2419" />
+<img src="img/friedtomatoegg/finished.jpg" alt="西紅柿炒鶏蛋麺"  />
 <p class="caption">(\#fig:finished-friedtomatoegg)西紅柿炒鶏蛋麺</p>
 </div>
 
@@ -409,7 +415,7 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
 7. 好みの固さになるまで加熱する
 
 <div class="figure" style="text-align: center">
-<img src="img/friedtomatoegg/cooking.jpg" alt="スクランブルエッグに近い状態" width="2016" />
+<img src="img/friedtomatoegg/cooking.jpg" alt="スクランブルエッグに近い状態"  />
 <p class="caption">(\#fig:cooking-friedtomatoegg)スクランブルエッグに近い状態</p>
 </div>
 
@@ -426,80 +432,12 @@ url: 'https://github.com/Gedevan-Aleksizde/cookbook'
   * 中華鍋で丁寧に作る場合の解説 (日本語) <iframe width="640" height="480" src="https://www.youtube.com/embed/-7vw-sHGtDY" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   * 水を足してスープにしている「西红柿鸡蛋面」 <iframe width="640" height="480" src="https://www.youtube.com/embed/PtAhBml14Uw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## シャクシュカ (中近東) {#shakushka}
-
-中近東および北アフリカで見られる料理. 西紅柿炒鶏蛋同様トマトと卵の料理だが, 唐辛子ソースのハリッサやオリーブオイルを加えるのでもう少し豪華になる (図\@ref(fig:shakushuka-finished)).
-
-<div class="figure" style="text-align: center">
-<img src="img/shakushka/finished.jpg" alt="シャクシュカの例" width="2016" />
-<p class="caption">(\#fig:shakushuka-finished)シャクシュカの例</p>
-</div>
-
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:right;">  </th>
-   <th style="text-align:left;"> 難易度 </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 材料調達 </td>
-   <td style="text-align:left;"> ★★★☆☆ </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 調理 </td>
-   <td style="text-align:left;"> ★☆☆☆☆ </td>
-  </tr>
-</tbody>
-</table>
-
-### 材料 (2食分)
-
-* 卵 4個
-* ホールトマト缶 1個 (400g)
-* ニンニク
-* 玉ねぎ
-* オリーブオイル
-* ハリッサ 大さじ1-2杯
-  * なければ以下を少しづつ加える
-  * 唐辛子
-  * コリアンダーシード
-  * クミンシード
-  * パプリカパウダー
-* 塩・胡椒
-* オリーブの実 (種抜き) 数個
-* コリアンダーの葉
-  * イタリアンパセリでも良い
-
-### 作り方
-
-1. 玉ねぎとニンニクをみじん切りにする
-1. フライパンにオリーブオイルをひき, 玉ねぎとニンニクを火が通るまで炒める
-1. トマトとハリッサを入れ, よくかき混ぜる
-1. トマトに火が通って余計な水分が減り, 柔らかくなるま煮込む
-1. 卵を投入する
-    * トマトペーストにくぼみを作ると均等に配置しやすい
-1. 目玉焼きの容量で, 蓋をして卵全体を蒸す
-1. 卵に十分に火が通ったら皿に盛り付ける
-1. 刻んだオリーブの実とコリアンダーの葉を散らす
-
-### 補足
-
-KALDI で売っているハリッサを使うと楽だが, ちょっと割高なので材料を直接入れても良い.
-
-### 参考資料
-
-* アラブ式シャクシュカ (アラビア語, 英語字幕) <iframe width="640" height="480" src="https://www.youtube.com/embed/aSTBwIeYBYk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-* (英語) <iframe width="640" height="480" src="https://www.youtube.com/embed/Iy3mUtlvw84" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-* モロッコ式シャクシュカ (英語)  <iframe width="640" height="480" src="https://www.youtube.com/embed/9z9UU10kM5c" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## シュクメルリ\index{シュクメルリ} (草: შქმერული\index{შქმერული|see{シュクメルリ}}) {#shkmerli}
 
 最近松屋の限定メニューになったので知名度が上がったが, 松屋ではなく本場ジョージアに近い (と思う) レシピを紹介する (図\@ref(fig:shkmerli-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/shkmerli/finished.jpg" alt="シュクメルリ" width="1594" />
+<img src="img/shkmerli/finished.jpg" alt="シュクメルリ"  />
 <p class="caption">(\#fig:shkmerli-finished)シュクメルリ</p>
 </div>
 
@@ -552,17 +490,17 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 11. 皿にソースと一緒に盛り付けてオプションのトッピングをする.
 
 <div class="figure" style="text-align: center">
-<img src="img/shkmerli/press.jpg" alt="重しをする" width="1739" />
+<img src="img/shkmerli/press.jpg" alt="重しをする"  />
 <p class="caption">(\#fig:shkmerli-press)重しをする</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/shkmerli/fried.jpg" alt="片面を焼いた直後 (胸は切除している)" width="1814" />
+<img src="img/shkmerli/fried.jpg" alt="片面を焼いた直後 (胸は切除している)"  />
 <p class="caption">(\#fig:shkmerli-fried)片面を焼いた直後 (胸は切除している)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/shkmerli/chopped.jpg" alt="適当に切り分ける" width="2696" />
+<img src="img/shkmerli/chopped.jpg" alt="適当に切り分ける"  />
 <p class="caption">(\#fig:shkmerli-chopped)適当に切り分ける</p>
 </div>
 
@@ -582,7 +520,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 パエリヤというとムール貝やエビをふんだんに使ったものを連想しがちだが, ここでは鶏肉がメインの比較的簡単な paella valenciana 風のレシピを紹介する.
 
 <div class="figure" style="text-align: center">
-<img src="img/paella/finished.jpg" alt="鶏肉のパエリア" width="1650" />
+<img src="img/paella/finished.jpg" alt="鶏肉のパエリア"  />
 <p class="caption">(\#fig:paella-finished)鶏肉のパエリア</p>
 </div>
 
@@ -679,7 +617,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 日本のオムレツ (フランス風) と違いしっかり焼き目をつけ, 固くする(図\@ref(fig:finished-tornilla)).
 
 <div class="figure" style="text-align: center">
-<img src="img/tortilla/finished.jpg" alt="スペイン風オムレツ" width="2270" />
+<img src="img/tortilla/finished.jpg" alt="スペイン風オムレツ"  />
 <p class="caption">(\#fig:finished-tornilla)スペイン風オムレツ</p>
 </div>
 
@@ -750,7 +688,7 @@ KALDI で売っているハリッサを使うと楽だが, ちょっと割高な
 名前はそのまま「ニンニク (のスープ)」と言う意味 (図\@ref(fig:cesnecka-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/cesnecka/finished.jpg" alt="チェスネチカ" width="1451" />
+<img src="img/cesnecka/finished.jpg" alt="チェスネチカ"  />
 <p class="caption">(\#fig:cesnecka-finished)チェスネチカ</p>
 </div>
 
@@ -871,7 +809,7 @@ TODO: 画像
 唐辛子まみれの鶏の唐揚 (図\@ref(fig:laziji-finished)). 『中華一番!』にもあるように, 唐辛子は食べなくてもいい.
 
 <div class="figure" style="text-align: center">
-<img src="img/laziji/finished.jpg" alt="辣子鶏" width="2011" />
+<img src="img/laziji/finished.jpg" alt="辣子鶏"  />
 <p class="caption">(\#fig:laziji-finished)辣子鶏</p>
 </div>
 
@@ -970,17 +908,17 @@ TODO: 画像
 16. これもよくかき混ぜる
 
 <div class="figure" style="text-align: center">
-<img src="img/laziji/ingredients.jpg" alt="揚げる直前の材料" width="2419" />
+<img src="img/laziji/ingredients.jpg" alt="揚げる直前の材料"  />
 <p class="caption">(\#fig:laziji-ingredients)揚げる直前の材料</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/laziji/fried.jpg" alt="揚げる量に対して十分な大きさの中華鍋を用意すること" width="2254" />
+<img src="img/laziji/fried.jpg" alt="揚げる量に対して十分な大きさの中華鍋を用意すること"  />
 <p class="caption">(\#fig:laziji-fried)揚げる量に対して十分な大きさの中華鍋を用意すること</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/laziji/fry-with-chille.jpg" alt="焦げ付かないよう絶えず鍋を振る" width="2419" />
+<img src="img/laziji/fry-with-chille.jpg" alt="焦げ付かないよう絶えず鍋を振る"  />
 <p class="caption">(\#fig:laziji-fry-wtih-chille)焦げ付かないよう絶えず鍋を振る</p>
 </div>
 
@@ -1106,7 +1044,7 @@ TODO: 画像
 水煮という名に反して赤黒い液体で煮込まれた四川料理 (図\@ref(fig:finished-mizuni)).
 
 <div class="figure" style="text-align: center">
-<img src="img/mizuni/finished.jpg" alt="水煮肉片" width="1793" />
+<img src="img/mizuni/finished.jpg" alt="水煮肉片"  />
 <p class="caption">(\#fig:finished-mizuni)水煮肉片</p>
 </div>
 
@@ -1201,7 +1139,7 @@ TODO: 画像
 国内メーカーのインスタント食品と比べると味の濃さも油っこさも段違いである.
 
 <div class="figure" style="text-align: center">
-<img src="img/mabo/finished.jpg" alt="麻婆豆腐" width="1707" />
+<img src="img/mabo/finished.jpg" alt="麻婆豆腐"  />
 <p class="caption">(\#fig:finished-mabo)麻婆豆腐</p>
 </div>
 
@@ -1455,7 +1393,7 @@ TODO: 画像
 いわゆる「よだれ鶏」\index{よだれ鶏|see{口水鶏}}日本で出回っているものはちょっと辛い棒々鶏 (棒々鶏も本場のものは辛い) みたいなのが多いが, 本場では赤黒いソースをかけた見るからに辛そうな料理である (図\@ref(fig:yodare-finished)). 
 
 <div class="figure" style="text-align: center">
-<img src="img/yodare/finished.jpg" alt="モモ肉の口水鶏" width="2419" />
+<img src="img/yodare/finished.jpg" alt="モモ肉の口水鶏"  />
 <p class="caption">(\#fig:yodare-finished)モモ肉の口水鶏</p>
 </div>
 
@@ -1504,7 +1442,7 @@ TODO: 画像
 鶏を1羽丸ごと茹でる場合は, 十分に大きな寸胴鍋を用意しないと均等に加熱できない(図\@ref(fig:yodare-smaller-pot))
 
 <div class="figure" style="text-align: center">
-<img src="img/yodare/smaller.jpg" alt="鍋が小さいと完全に入り切らない" width="2011" />
+<img src="img/yodare/smaller.jpg" alt="鍋が小さいと完全に入り切らない"  />
 <p class="caption">(\#fig:yodare-smaller-pot)鍋が小さいと完全に入り切らない</p>
 </div>
 
@@ -1513,10 +1451,12 @@ TODO: 画像
 鶏の下処理
 
 1. 鍋で湯を沸かす
-2. 臭い取りのため生姜, ネギ, 料理酒を入れる
-3. 鶏肉を入れ, 茹でる
+1. 鶏を下茹でし, 灰汁を取る
+1. 鶏を取り出し湯を捨て, 再度湯を沸かす
+1. 臭い取りのため生姜, ネギ, 料理酒を入れる
+1. 鶏肉を入れ, 茹でる
     * 沸騰してから10分くらい?
-4. 肉を取り出し, 粗熱をとる
+1. 肉を取り出し, 粗熱をとる
     * 冷水で冷ましても良い
 
 ソースを作る
@@ -1533,6 +1473,8 @@ TODO: 画像
 3. お好みでネギやコリアンダーの葉をふりかける
 
 ### 補足
+
+灰汁をとるのに2度茹でるのが面倒で, 灰汁が気にならないなら一度目から下味つけをしてもよい
 
 生の唐辛子の入手が難しいなら, 泡辣椒でもよい.
 
@@ -1599,7 +1541,7 @@ TODO
 チェコの伝統的なファストフード. ジャガイモのかき揚げ.
 
 <div class="figure" style="text-align: center">
-<img src="img/bramborak/finished.jpg" alt="ブランボラーク" width="2419" />
+<img src="img/bramborak/finished.jpg" alt="ブランボラーク"  />
 <p class="caption">(\#fig:bramborak-finished)ブランボラーク</p>
 </div>
 
@@ -1660,7 +1602,7 @@ TODO
 7. やけどしないように食べる
 
 <div class="figure" style="text-align: center">
-<img src="img/bramborak/dough.jpg" alt="揚げる直前" width="2419" />
+<img src="img/bramborak/dough.jpg" alt="揚げる直前"  />
 <p class="caption">(\#fig:bramborak-dough)揚げる直前</p>
 </div>
 
@@ -1743,7 +1685,7 @@ TODO
 餃子と似ているがひき肉を入れることはあまりない. 最もポピュラーな Pierogi Ruskie と  Pierogi kapustą i grzybami (ザワークラウトとキノコのピエロギ) の例を紹介する.
 
 <div class="figure" style="text-align: center">
-<img src="img/pierogi/finished.jpg" alt="ピエロギ" width="2419" />
+<img src="img/pierogi/finished.jpg" alt="ピエロギ"  />
 <p class="caption">(\#fig:finished-pierogi)ピエロギ</p>
 </div>
 
@@ -1888,7 +1830,7 @@ TODO: 画像
 小籠包に似たジョージア料理. 餃子や小籠包より一回り大きく, 皮が厚い.
 
 <div class="figure" style="text-align: center">
-<img src="img/khinkali/finished.jpg" alt="ヒンカリ" width="2456" />
+<img src="img/khinkali/finished.jpg" alt="ヒンカリ"  />
 <p class="caption">(\#fig:khinkali-finished)ヒンカリ</p>
 </div>
 
@@ -1962,22 +1904,22 @@ TODO: 画像
 9. 数分で浮かんでくるので取りだす (図\@ref(fig:khinkali-boiling))
 
 <div class="figure" style="text-align: center">
-<img src="img/khinkali/minced.jpg" alt="野菜とともにミンチにする" width="2419" />
+<img src="img/khinkali/minced.jpg" alt="野菜とともにミンチにする"  />
 <p class="caption">(\#fig:khinkali-minced)野菜とともにミンチにする</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/khinkali/pre-boil.jpg" alt="茹でる直前" width="2419" />
+<img src="img/khinkali/pre-boil.jpg" alt="茹でる直前"  />
 <p class="caption">(\#fig:khinkali-pre-boil)茹でる直前</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/khinkali/wrapping.jpg" alt="包んでいる途中" width="3024" />
+<img src="img/khinkali/wrapping.jpg" alt="包んでいる途中"  />
 <p class="caption">(\#fig:khinkali-wrapping)包んでいる途中</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/khinkali/boiling.jpg" alt="ローレルは必須ではない" width="2419" />
+<img src="img/khinkali/boiling.jpg" alt="ローレルは必須ではない"  />
 <p class="caption">(\#fig:khinkali-boiling)ローレルは必須ではない</p>
 </div>
 
@@ -2016,12 +1958,11 @@ TODO: 画像
 </tbody>
 </table>
 
-## ラグマン (ウイグル: `{`{=latex}ﻟﻪﯕﻤﻪﻦ`}`{=latex})\index{うどん!ラグマン}
-
-ウイグル族をはじめ中央アジア各所で見られる料理. 中国語の「拉麺」の由来と考えられる. 日本のラーメンと違い, 本来の語義通り手延べ麺であることが特徴. スープに漬けるものもあれば, 「混ぜそば」「焼きそば」風のものもあるが, 今回は簡単な混ぜそば風のものにする.
+## ラグマン (ウイグル: `{\fallbacking ﻟﻪﯕﻤﻪﻦ}`{=latex})\index{うどん!ラグマン}
+ウイグル族をはじめ中央アジア各所で見られる料理. 中国語の「拉麺」の由来説がある^[日本語のラーメンは拉麺説以外に異説があるらしいが詳しくは知らない.]. 日本のラーメンと違い, 本来の語義通り手延べ麺であることが特徴. スープに漬けるものもあれば, 「混ぜそば」「焼きそば」風のものもあるが, 今回は簡単な混ぜそば風のものにする.
 
 <div class="figure" style="text-align: center">
-<img src="img/laghman/finished.jpg" alt="ラグマン" width="2419" />
+<img src="img/laghman/finished.jpg" alt="ラグマン"  />
 <p class="caption">(\#fig:laghman-finished)ラグマン</p>
 </div>
 
@@ -2105,7 +2046,7 @@ TODO: 画像
   * もう一度水を入れて, 三度目の沸騰で取りだすやり方もあるらしい
 
 <div class="figure" style="text-align: center">
-<img src="img/laghman/spiral.jpg" alt="作成中の麺" width="1613" />
+<img src="img/laghman/spiral.jpg" alt="作成中の麺"  />
 <p class="caption">(\#fig:laghman-spiral)作成中の麺</p>
 </div>
 
@@ -2137,7 +2078,7 @@ TODO: 画像
 オシュ (Osh) とも. おそらくピラフと起源を同じにする, ウズベキスタン周辺の中央アジア起源の料理だが, ソ連時代にロシアに普及した. 真面目に作ろうとすると, 材料と器具の調達の点で炒飯やピラフより大変である. ウズベキスタン国内でもタシケント式, サマルカンド式, フェルガナ式, ブハラ式など地域によって差異がある. 東北地方の芋煮会めいてコミュニティで共同して作る習慣があるので一度に大量に作る前提のレシピになっている. (現地にはプロフを作るための専用施設もある) ロシアではスタローバヤの定番料理のため, 大衆向けの安価な食事というイメージらしい.
 
 <div class="figure" style="text-align: center">
-<img src="img/palov/finished.jpg" alt="プロフとアチク=チュチュク" width="2419" />
+<img src="img/palov/finished.jpg" alt="プロフとアチク=チュチュク"  />
 <p class="caption">(\#fig:finished-palov)プロフとアチク=チュチュク</p>
 </div>
 
@@ -2240,7 +2181,7 @@ TODO: 画像
 南インドの豆のドーナツ. 映画『バーフバリ』で一瞬ドーナツみたいな料理が皿に山盛りになってるシーンがあったので気になって調べたら見つけた.
 
 <div class="figure" style="text-align: center">
-<img src="img/medu-vada/finished.jpg" alt="メドゥ・ワダ" width="2016" />
+<img src="img/medu-vada/finished.jpg" alt="メドゥ・ワダ"  />
 <p class="caption">(\#fig:medu-vada-finished)メドゥ・ワダ</p>
 </div>
 
@@ -2337,7 +2278,7 @@ TODO: 画像
 北米のバーベキュー料理の一種. じっくり火を通してほぐした豚の肩肉.
 
 <div class="figure" style="text-align: center">
-<img src="img/pulled-pork/finished.jpg" alt="プルドポークバーガー" width="2026" />
+<img src="img/pulled-pork/finished.jpg" alt="プルドポークバーガー"  />
 <p class="caption">(\#fig:pulled-pork-finished)プルドポークバーガー</p>
 </div>
 
@@ -2471,7 +2412,7 @@ TODO: 画像
 内部にゆで卵やソーセージ, ピクルスを詰め込んだ大きめのミートボール.「スペイン風」とあるが, チェコの料理である.
 
 <div class="figure" style="text-align: center">
-<img src="img/spanelsky-ptacek/finished.jpg" alt="「スペイン風」ミートボール, クネドリークと米を添えて" width="2419" />
+<img src="img/spanelsky-ptacek/finished.jpg" alt="「スペイン風」ミートボール, クネドリークと米を添えて"  />
 <p class="caption">(\#fig:spanelsky-ptacek-finished)「スペイン風」ミートボール, クネドリークと米を添えて</p>
 </div>
 
@@ -2529,7 +2470,7 @@ TODO: 画像
 1. クネドリークまたは米と合わせて食べる
 
 <div class="figure" style="text-align: center">
-<img src="img/spanelsky-ptacek/tied.jpg" alt="タコ糸, マスタードを塗る" width="2016" />
+<img src="img/spanelsky-ptacek/tied.jpg" alt="タコ糸, マスタードを塗る"  />
 <p class="caption">(\#fig:spanelsky-ptacek-tied)タコ糸, マスタードを塗る</p>
 </div>
 
@@ -2555,7 +2496,7 @@ TODO: 画像
 \index{ガルプツィ|see{ゴウォンプキ}}
 
 <div class="figure" style="text-align: center">
-<img src="img/golabki/finished.jpg" alt="ゴウォンプキ" width="2117" />
+<img src="img/golabki/finished.jpg" alt="ゴウォンプキ"  />
 <p class="caption">(\#fig:finished-golabki)ゴウォンプキ</p>
 </div>
 
@@ -2619,7 +2560,7 @@ TODO: 画像
 キムチチムの調理自体は簡単だが, よく発酵したキムチの入手または作成が大変である. キムチの自作方法は別項参照.
 
 <div class="figure" style="text-align: center">
-<img src="img/kimchichim/finished.jpg" alt="キムチチム" width="2254" />
+<img src="img/kimchichim/finished.jpg" alt="キムチチム"  />
 <p class="caption">(\#fig:kimchichim-finished)キムチチム</p>
 </div>
 
@@ -2683,7 +2624,7 @@ TODO: 画像
     * だいたい角煮と同じ要領で良い
 
 <div class="figure" style="text-align: center">
-<img src="img/kimchichim/pot.jpg" alt="煮込む直前" width="2419" />
+<img src="img/kimchichim/pot.jpg" alt="煮込む直前"  />
 <p class="caption">(\#fig:kimchichim-pot)煮込む直前</p>
 </div>
 
@@ -2701,7 +2642,7 @@ TODO: 画像
 作り方で, 以前ブログで言及したものと同じ
 
 <div class="figure" style="text-align: center">
-<img src="img/kotlet-kiev/finished.jpg" alt="キエフ風カツレツとポテトピューレ" width="2419" />
+<img src="img/kotlet-kiev/finished.jpg" alt="キエフ風カツレツとポテトピューレ"  />
 <p class="caption">(\#fig:finished-kotlet-kiev)キエフ風カツレツとポテトピューレ</p>
 </div>
 
@@ -2799,7 +2740,7 @@ TODO: 画像
 ## ドルマの三姉妹 (亜塞: Üç-Bacı Dolması)
 
 <div class="figure" style="text-align: center">
-<img src="img/dolma/dolma-finished.jpg" alt="ドルマの三姉妹" width="1411" />
+<img src="img/dolma/dolma-finished.jpg" alt="ドルマの三姉妹"  />
 <p class="caption">(\#fig:dolma-finished)ドルマの三姉妹</p>
 </div>
 
@@ -2872,7 +2813,7 @@ TODO: 画像
 おそらく最も難しいのは羊の挽き肉を入手または作成することだろう. それ以外は原始的な調理器具でも対処できる.  多くの場合, トマトとピーマンを事前に加熱する必要はない. 特にトマトはもろく崩れやすくなるため注意 (図\@ref(fig:dolma-failed)). 荻野のドルマのレシピで紹介されているように, 米を入れたり, 茄子も中をくり抜いたりする動画も見られた.
 
 <div class="figure" style="text-align: center">
-<img src="img/dolma/dolma-failed.jpg" alt="加熱のし過ぎでトマトが崩れる" width="2016" />
+<img src="img/dolma/dolma-failed.jpg" alt="加熱のし過ぎでトマトが崩れる"  />
 <p class="caption">(\#fig:dolma-failed)加熱のし過ぎでトマトが崩れる</p>
 </div>
 
@@ -2889,7 +2830,7 @@ TODO: 画像
 要するに煮凝り (図\@ref(fig:huspenina-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/huspenina/finished.jpg" alt="フスペニナ" width="1512" />
+<img src="img/huspenina/finished.jpg" alt="フスペニナ"  />
 <p class="caption">(\#fig:huspenina-finished)フスペニナ</p>
 </div>
 
@@ -2976,7 +2917,7 @@ TODO: 画像
 ジョージアのスープ. どちらかというと材料調達の難易度が高い (図\@ref(fig:kharcho-finished)). @boumei で紹介されているレシピは豊富な種類の果物やスパイスを使用しているが, ここではもう少し簡単に, かつジョージアでよく見られる鶏肉を使用したレシピを提案する
 
 <div class="figure" style="text-align: center">
-<img src="img/kharcho/finished.jpg" alt="羊肉のハルチョーとゴーミ" width="2016" />
+<img src="img/kharcho/finished.jpg" alt="羊肉のハルチョーとゴーミ"  />
 <p class="caption">(\#fig:kharcho-finished)羊肉のハルチョーとゴーミ</p>
 </div>
 
@@ -3077,7 +3018,7 @@ TODO: 画像
 鮎といえば6月だがいまは天然物が貴重でスーパーで売ってるのはだいたい養殖物なのであまり関係ない気もする.
 
 <div class="figure" style="text-align: center">
-<img src="img/ayu/finished.jpg" alt="鮎の塩焼き" width="1920" />
+<img src="img/ayu/finished.jpg" alt="鮎の塩焼き"  />
 <p class="caption">(\#fig:ayu-finished)鮎の塩焼き</p>
 </div>
 
@@ -3139,7 +3080,7 @@ TODO: 画像
 川魚を使ったスープ. @boumei によると, 川で釣った魚をその場で食べるためのレシピとのこと. 基本的に彼らの記述に則したレシピ (図\@ref(fig:ykha-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/ukha/finished.jpg" alt="鮭のウハー" width="1440" />
+<img src="img/ukha/finished.jpg" alt="鮭のウハー"  />
 <p class="caption">(\#fig:ykha-finished)鮭のウハー</p>
 </div>
 
@@ -3205,7 +3146,7 @@ TODO: 画像
 ボルシチに似ているが肉を使わない, 冷たい料理.「液体のサラダ」とでもいうべき料理(図\@ref(fig:saltibarsciai-finished))
 
 <div class="figure" style="text-align: center">
-<img src="img/saltibarsciai/finished.jpg" alt="ふかし芋入りのシャルティバルシュチャイ" width="1024" />
+<img src="img/saltibarsciai/finished.jpg" alt="ふかし芋入りのシャルティバルシュチャイ"  />
 <p class="caption">(\#fig:saltibarsciai-finished)ふかし芋入りのシャルティバルシュチャイ</p>
 </div>
 
@@ -3262,7 +3203,7 @@ TODO: 画像
 図\@ref(fig:trout-finished) のようにレモンの薄切りを乗せることが多い.
 
 <div class="figure" style="text-align: center">
-<img src="img/trout/finished.jpg" alt="ザワークラウトは不要だった" width="1222" />
+<img src="img/trout/finished.jpg" alt="ザワークラウトは不要だった"  />
 <p class="caption">(\#fig:trout-finished)ザワークラウトは不要だった</p>
 </div>
 
@@ -3333,7 +3274,7 @@ TODO: 画像
 もとはハンガリー料理のグヤーシュ guyás だが, これが元になったチェコ料理のほうが本家より有名になっている. 現地でも様々な作り方があるため, このレシピが唯一の正統なものではないことに注意する (どのラーメンが正しいか論争するようなもの).
 
 <div class="figure" style="text-align: center">
-<img src="img/gulas/finished.jpg" alt="牛肉のグラーシュ" width="1280" />
+<img src="img/gulas/finished.jpg" alt="牛肉のグラーシュ"  />
 <p class="caption">(\#fig:finished-gulas)牛肉のグラーシュ</p>
 </div>
 
@@ -3411,7 +3352,7 @@ TODO: 画像
 である. 脂っこさと煮込んだ野菜の甘味が重要なのはおそらく両国共通. ここではクロポテンコのレシピに近いものを紹介する (図\@ref(fig:finished-borscht)).
 
 <div class="figure" style="text-align: center">
-<img src="img/borscht/finished.jpg" alt="スペアリブのボルシチ" width="2400" />
+<img src="img/borscht/finished.jpg" alt="スペアリブのボルシチ"  />
 <p class="caption">(\#fig:finished-borscht)スペアリブのボルシチ</p>
 </div>
 
@@ -3519,7 +3460,7 @@ TODO: 画像
 ボルシチより古い歴史があると言われるロシア料理. 以前公開したスライドと同じ.
 
 <div class="figure" style="text-align: center">
-<img src="img/schi/finished.jpg" alt="シチーその他" width="1613" />
+<img src="img/schi/finished.jpg" alt="シチーその他"  />
 <p class="caption">(\#fig:schi-finished)シチーその他</p>
 </div>
 
@@ -3594,7 +3535,7 @@ TODO: 画像
 ロシア (ウクライナ) 発祥のスープ (図\@ref(fig:solyanka-finished)) と東ドイツローカライズされたもの.
 
 <div class="figure" style="text-align: center">
-<img src="img/solyanka/finished.jpg" alt="ロシア風ソリャンカ" width="2016" />
+<img src="img/solyanka/finished.jpg" alt="ロシア風ソリャンカ"  />
 <p class="caption">(\#fig:solyanka-finished)ロシア風ソリャンカ</p>
 </div>
 
@@ -3659,7 +3600,7 @@ https://speakerdeck.com/ktgrstsh/how-to-make-solyanka
 名前がロシアっぽくないのは当時のロシアの貴族階級がフランスかぶれだったためか. 
 
 <div class="figure" style="text-align: center">
-<img src="img/bef-stroganov/finished.jpg" alt="ビーフストロガノフとライ麦パン" width="2419" />
+<img src="img/bef-stroganov/finished.jpg" alt="ビーフストロガノフとライ麦パン"  />
 <p class="caption">(\#fig:finished-bef-stroganov)ビーフストロガノフとライ麦パン</p>
 </div>
 
@@ -3698,7 +3639,7 @@ TODO
 @OginoNumano2017 によればキノコのカーシャ, または炊き込みご飯とも相性が良い.
 
 <div class="figure" style="text-align: center">
-<img src="img/bef-stroganov/rice.jpg" alt="キノコのカーシャとの盛り合わせ" width="2016" />
+<img src="img/bef-stroganov/rice.jpg" alt="キノコのカーシャとの盛り合わせ"  />
 <p class="caption">(\#fig:bef-stroganov-rice)キノコのカーシャとの盛り合わせ</p>
 </div>
 
@@ -3711,7 +3652,7 @@ TODO
 18世紀の『豆腐百珍』で100品目に紹介されている料理.
 
 <div class="figure" style="text-align: center">
-<img src="img/udon-tofu/finished.jpg" alt="実際のレシピよりかなり手抜きしている" width="2016" />
+<img src="img/udon-tofu/finished.jpg" alt="実際のレシピよりかなり手抜きしている"  />
 <p class="caption">(\#fig:udon-tofu)実際のレシピよりかなり手抜きしている</p>
 </div>
 
@@ -3790,7 +3731,7 @@ TODO
 ……実際には大量の豆を使った濃厚な料理なのでさほどひもじさは感じない.
 
 <div class="figure" style="text-align: center">
-<img src="img/lentil-soup/finished.jpg" alt="レンズ豆のスープ" width="2419" />
+<img src="img/lentil-soup/finished.jpg" alt="レンズ豆のスープ"  />
 <p class="caption">(\#fig:finished-lentil-soup)レンズ豆のスープ</p>
 </div>
 
@@ -3856,8 +3797,8 @@ TODO
 スープよりも固形物が多いので満腹感がある. アレンジ版も同時に紹介する.
 
 <div class="figure" style="text-align: center">
-<img src="img/mashed-lentil/finished.jpg" alt="すりつぶしたレンズ豆" width="1716" />
-<p class="caption">(\#fig:unnamed-chunk-50)すりつぶしたレンズ豆</p>
+<img src="img/mashed-lentil/finished.jpg" alt="すりつぶしたレンズ豆"  />
+<p class="caption">(\#fig:unnamed-chunk-49)すりつぶしたレンズ豆</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -3999,8 +3940,8 @@ TODO
 かなり脂っこいパン
 
 <div class="figure" style="text-align: center">
-<img src="img/roll-bread/finished.jpg" alt="中世のロールパン" width="857" />
-<p class="caption">(\#fig:unnamed-chunk-54)中世のロールパン</p>
+<img src="img/roll-bread/finished.jpg" alt="中世のロールパン"  />
+<p class="caption">(\#fig:unnamed-chunk-53)中世のロールパン</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -4062,7 +4003,7 @@ TODO
     * オーブンがないなら体感で努力する
 
 <div class="figure" style="text-align: center">
-<img src="img/roll-bread/bred_roll_dough.jpg" alt="焼く直前" width="955" />
+<img src="img/roll-bread/bred_roll_dough.jpg" alt="焼く直前"  />
 <p class="caption">(\#fig:bread-roll-before-bake)焼く直前</p>
 </div>
 
@@ -4085,8 +4026,8 @@ COVID-19 に対する効果は明らかになっていない.
 中世の料理書に「ソーセージ」という名前で掲載されているレシピ. しかし肉を一切使わない.
 
 <div class="figure" style="text-align: center">
-<img src="img/sausage/finished.jpg" alt="「ソーセージ」" width="2016" />
-<p class="caption">(\#fig:unnamed-chunk-56)「ソーセージ」</p>
+<img src="img/sausage/finished.jpg" alt="「ソーセージ」"  />
+<p class="caption">(\#fig:unnamed-chunk-55)「ソーセージ」</p>
 </div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -4136,7 +4077,7 @@ COVID-19 に対する効果は明らかになっていない.
 この料理は šišky と表現されているため, 辞書的には「団子」「ダンプリング」である(図\@ref(fig:breadcrumbs-dumpling-finished)). しかし, バターで焼き上げる工程があるためここでは「ドーナツ」と書いた.
 
 <div class="figure" style="text-align: center">
-<img src="img/breadcrumbs-dumplings/finished.jpg" alt="パン粉のドーナツと林檎のポリッジ" width="1559" />
+<img src="img/breadcrumbs-dumplings/finished.jpg" alt="パン粉のドーナツと林檎のポリッジ"  />
 <p class="caption">(\#fig:breadcrumbs-dumpling-finished)パン粉のドーナツと林檎のポリッジ</p>
 </div>
 
@@ -4216,7 +4157,7 @@ COVID-19 に対する効果は明らかになっていない.
 現代のドイツやオーストリアのものとはかなり違う中世のレシピ (図\@ref(fig:pleclik-finished)). イーストも苛性ソーダも使用しない. グラインダーが無いと重労働なのでもう作りたくない.
 
 <div class="figure" style="text-align: center">
-<img src="img/preclik/finished.jpg" alt="中世のプレッツェル" width="1817" />
+<img src="img/preclik/finished.jpg" alt="中世のプレッツェル"  />
 <p class="caption">(\#fig:pleclik-finished)中世のプレッツェル</p>
 </div>
 
@@ -4276,7 +4217,7 @@ COVID-19 に対する効果は明らかになっていない.
 すぐ崩れるので難しい上にぶっちゃけうまくない.
 
 <div class="figure" style="text-align: center">
-<img src="img/pea-ball/finished.jpg" alt="最大限うまそうに見せた様子" width="1131" />
+<img src="img/pea-ball/finished.jpg" alt="最大限うまそうに見せた様子"  />
 <p class="caption">(\#fig:pea-ball-finished)最大限うまそうに見せた様子</p>
 </div>
 
@@ -4344,7 +4285,7 @@ COVID-19 に対する効果は明らかになっていない.
 おそらく酒場で古くなったビールやパンを再利用するレシピとのこと. 発泡酒ではなくビールを使おう.
 
 <div class="figure" style="text-align: center">
-<img src="img/beer-pork/finished.jpg" alt="豚肉のビールソース和え" width="1200" />
+<img src="img/beer-pork/finished.jpg" alt="豚肉のビールソース和え"  />
 <p class="caption">(\#fig:beer-pork-finished)豚肉のビールソース和え</p>
 </div>
 
@@ -4406,7 +4347,7 @@ COVID-19 に対する効果は明らかになっていない.
 ## 鶏肉とブラックソース kuře v černé jíše (捷, 15世紀)
 
 <div class="figure" style="text-align: center">
-<img src="img/chicken-dark-sauce/finished.jpg" alt="鶏肉とブラックソース" width="640" />
+<img src="img/chicken-dark-sauce/finished.jpg" alt="鶏肉とブラックソース"  />
 <p class="caption">(\#fig:chicken-dark-sauce-finished)鶏肉とブラックソース</p>
 </div>
 
@@ -4475,7 +4416,7 @@ COVID-19 に対する効果は明らかになっていない.
 例によって「ハンガリー風」という名の中世チェコ料理. 現在の同名の料理はパプリカやトマトを使った赤いソースで鶏肉を煮込んだものだが, 当時のヨーロッパにはトマトはない.
 
 <div class="figure" style="text-align: center">
-<img src="img/hungarian-chicken/finished.jpg" alt="かなり小さい鶏で料理した" width="2419" />
+<img src="img/hungarian-chicken/finished.jpg" alt="かなり小さい鶏で料理した"  />
 <p class="caption">(\#fig:hungarian-chicken-finished)かなり小さい鶏で料理した</p>
 </div>
 
@@ -4551,7 +4492,7 @@ COVID-19 に対する効果は明らかになっていない.
 肉挽き器が発明されたのは19世紀であり, それ以前のひき肉は包丁で念入りに叩くという重労働の産物であった. しかしこの料理は挽き肉を使い, 見た目にもこだわった贅沢な料理である (図\@ref(fig:sekanina-slepici)).
 
 <div class="figure" style="text-align: center">
-<img src="img/sekanina/finished.jpg" alt="鶏肉のローフ (崩れている)" width="875" />
+<img src="img/sekanina/finished.jpg" alt="鶏肉のローフ (崩れている)"  />
 <p class="caption">(\#fig:sekanina-slepici)鶏肉のローフ (崩れている)</p>
 </div>
 
@@ -4635,7 +4576,7 @@ COVID-19 に対する効果は明らかになっていない.
 チェコの文献に見られる最も古いレシピの1つ. ハンガリーに同じ料理があったのかは不明 (図\@ref(fig:hungraian-beef15)).
 
 <div class="figure" style="text-align: center">
-<img src="img/hungarian-beef15/finished.jpg" alt="ハンガリー風牛肉" width="2016" />
+<img src="img/hungarian-beef15/finished.jpg" alt="ハンガリー風牛肉"  />
 <p class="caption">(\#fig:hungraian-beef15)ハンガリー風牛肉</p>
 </div>
 
@@ -4708,7 +4649,7 @@ COVID-19 に対する効果は明らかになっていない.
 これもチェコの料理. 現代的なローストビーフとあまり変わらない味付けであり, 現代人にとってのハードルは低いと思われる (図\@ref(fig:hungarian-beef16)).
 
 <div class="figure" style="text-align: center">
-<img src="img/hungarian-beef16/finished.jpg" alt="ハンガリー風ローストビーフ" width="1200" />
+<img src="img/hungarian-beef16/finished.jpg" alt="ハンガリー風ローストビーフ"  />
 <p class="caption">(\#fig:hungarian-beef16)ハンガリー風ローストビーフ</p>
 </div>
 
@@ -4846,7 +4787,7 @@ TODO: 画像
 牛肉をワインに浸けて煮込み, 鹿肉のように赤黒くする料理. ジビエを食べられるのは森を所有していた貴族たちだったので, 狩猟権のない富裕層が牛肉を楽しむために作られたレシピなのかもしれない.
 
 <div class="figure" style="text-align: center">
-<img src="img/venison-beef/finished.jpg" alt="鹿肉風牛肉" width="1200" />
+<img src="img/venison-beef/finished.jpg" alt="鹿肉風牛肉"  />
 <p class="caption">(\#fig:venison-beef-finished)鹿肉風牛肉</p>
 </div>
 
@@ -4907,12 +4848,12 @@ TODO: 画像
 ## (予定) ローストダック (捷, 15世紀)
 
 <div class="figure" style="text-align: center">
-<img src="img/roast-duck-cz/finished.jpg" alt="中世風" width="2016" />
+<img src="img/roast-duck-cz/finished.jpg" alt="中世風"  />
 <p class="caption">(\#fig:roast-duck-cz-finished)中世風</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/roast-duck-cz/moravsky.jpg" alt="現代モラヴィア風" width="2016" />
+<img src="img/roast-duck-cz/moravsky.jpg" alt="現代モラヴィア風"  />
 <p class="caption">(\#fig:roast-duck-cz-moravia)現代モラヴィア風</p>
 </div>
 
@@ -4926,7 +4867,7 @@ TODO: 画像
 現代のチェコでもウサギ料理はそれなりにポピュラーである.
 
 <div class="figure" style="text-align: center">
-<img src="img/kralik-medieval//finished.jpg" alt="穴ウサギでもいい" width="1513" />
+<img src="img/kralik-medieval//finished.jpg" alt="穴ウサギでもいい"  />
 <p class="caption">(\#fig:hare-finished)穴ウサギでもいい</p>
 </div>
 
@@ -4970,12 +4911,94 @@ TODO: 画像
 
 * Random Innkeeper の動画 (日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/CcjKye3use8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## KCD のシチュー
+
+<div class="figure" style="text-align: center">
+<img src="img/KCD-stew/finished.jpg" alt="15世紀にグラーシュはない"  />
+<p class="caption">(\#fig:kcd-stew)15世紀にグラーシュはない</p>
+</div>
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;">  </th>
+   <th style="text-align:left;"> 難易度 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 材料調達 </td>
+   <td style="text-align:left;"> ★★★★☆ </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 調理 </td>
+   <td style="text-align:left;"> ★★★☆☆ </td>
+  </tr>
+</tbody>
+</table>
+
+ゲーム [Kingdom Come: Deliverance]() に登場する謎のシチュー. チェコの伝統料理グラーシュに似ているが, 現代のグラーシュはトマトやパプリカを使うため15世紀には存在しなかった.
+
+これは正確には当時の文献にあったものではないが, 当時の文献に着想を得たものであるという.
+
+### 材料
+
+* 牛ブリスケット
+    * なければ煮込み用のスネ肉でもよい
+* 根パセリ
+* ニンジン
+* セロリアック
+* 玉ねぎ
+* 赤ワイン
+* 白パン
+* ラード
+* 塩
+* ブイヨン
+* リンゴ
+    * リンゴ酢を使っても良い
+* メース
+* ショウガ
+    * 乾燥粉末がなければすりおろす
+* 胡椒
+* (オプション) ラベージの葉
+
+### 作り方
+
+1. 根菜と林檎全てみじん切りにする
+1. 牛肉を 2cm 大に切る
+1. 鍋にラードを溶かし, 牛肉に焼き目を付ける
+1. 表面がよく焦げ茶色になったら取り出し, 代わりに玉ねぎ以外の根菜を炒める
+1. 火が通ってきたら玉ねぎと林檎も入れる
+1. 軽く焦げ付く (カラメル化する) まで弱火でじっくり炒める.
+1. ショウガ, メース. 胡椒, 塩を加えてよく混ぜる
+1. ワインを注ぎ, 蒸発するまで混ぜる
+1. 水気が飛んだら肉を再度入れる
+1. 肉が水没する程度までブイヨンを注ぐ
+1. 蓋をして2時間ほど煮込む
+    * 肉が柔らかくなるまで
+1. この間にフライパンでパンを乾煎りする
+    * たぶん普通にトースターでもやってもよい
+1. 鍋にラベージの葉を入れる
+1. 鍋にパンを崩して入れる
+
+
+### 補足
+
+参考動画では塩ひとつまみ (a pinch of ...) と言っているが, 実際には小さじ2杯かそれより多いくらいがちょうどよい 
+
+日本では根パセリとセロリアックが入手しづらい. セロリアックはセロリの茎でも良いかもしれないが, 根パセリは代わりのきく食材が思いつかない. パースニップは見た目こそ似ているが風味は全く異なる.
+
+### 参考資料
+
+* Random Innkeeper の動画 (日本語字幕あり) <iframe width="640" height="480" src="https://www.youtube.com/embed/zqc4iQrE-FQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## ハッシュドレバー (捷, 15世紀)
 
 「見た目はひどいが, 味は良い」レバーの臭みが苦手な人におすすめ. 多少見た目を改善したレシピも紹介する
 
 <div class="figure" style="text-align: center">
-<img src="img/liver-hash/finished.jpg" alt="見た目に難がある" width="3317" />
+<img src="img/liver-hash/finished.jpg" alt="見た目に難がある"  />
 <p class="caption">(\#fig:finished-liver-hash)見た目に難がある</p>
 </div>
 
@@ -5050,7 +5073,7 @@ TODO: 画像
 イギリス由来の料理のため, 海の魚を使用している. メルルーサを使うのが本来のレシピだが, 今回は入手できなかったためスケトウダラでアレンジした (図\@ref(fig:stiku-s-slaninami-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/stiku-s-slaninami/finished.jpg" alt="タラのベーコン煮" width="2016" />
+<img src="img/stiku-s-slaninami/finished.jpg" alt="タラのベーコン煮"  />
 <p class="caption">(\#fig:stiku-s-slaninami-finished)タラのベーコン煮</p>
 </div>
 
@@ -5110,7 +5133,7 @@ TODO: 画像
 古代メソポタミア料理. 材料調達の難易度がかなり高い.
 
 <div class="figure" style="text-align: center">
-<img src="img/mesopotamia/finished.jpg" alt="トゥ・フー" width="1884" />
+<img src="img/mesopotamia/finished.jpg" alt="トゥ・フー"  />
 <p class="caption">(\#fig:mesopotamia-finished)トゥ・フー</p>
 </div>
 
@@ -5209,6 +5232,12 @@ TODO: 画像
 </tbody>
 </table>
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
+
 ### 材料
 
 * キャベツ 1玉 (1.2-1.5 kg程度)
@@ -5259,7 +5288,7 @@ TODO: 画像
 ソーセージと野菜を乳酸発酵させたチェコの伝統食品 (図\@ref(fig:utopenci-finished)).
 
 <div class="figure" style="text-align: center">
-<img src="img/utopenci/finished.jpg" alt="瓶に詰めたウトペネツ" width="1512" />
+<img src="img/utopenci/finished.jpg" alt="瓶に詰めたウトペネツ"  />
 <p class="caption">(\#fig:utopenci-finished)瓶に詰めたウトペネツ</p>
 </div>
 
@@ -5281,6 +5310,12 @@ TODO: 画像
   </tr>
 </tbody>
 </table>
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 
@@ -5305,6 +5340,8 @@ TODO: 画像
 ### 作り方
 
 1. 鍋に水, 塩, 砂糖, オールスパイス, 胡椒, 月桂樹の葉を入れ沸騰させる
+1. ソーセージの皮をむき, 割る. または輪切りにする
+    * 日本の市販のソーセージは小さいので半分に割るくらいがよいと思われる
 1. 瓶にスライスしたパプリカと玉ねぎ, そして残りの材料を詰め込む
 1. (1) の熱湯の粗熱が取れたら瓶に注ぎ, 蓋をする
 1. 冷暗所で乳酸発酵するまで寝かせる
@@ -5314,7 +5351,7 @@ TODO: 画像
 
 `<ruby>utpenci<rp>(</rp><rt>ウトペンツィ</rt><rp>)</rp></ruby>`{=html} は複数形で, `<ruby>utpenec<rp>(</rp><rt>ウトペネツ</rt><rp>)</rp></ruby>`{=html} は単数形. 意味は 「溺死体」
 
-現地では špekáček というソーセージを使用することが多い.
+現地では špekáček というソーセージを使用することが多いらしい. 参考動画でも大きめのソーセージを4本に割っている
 
 図\@ref(fig:utopenci-finished) は玉ねぎやパプリカを多く入れているが「溺死体」という名前が示すように, 本来は肉がメインである.
 
@@ -5322,6 +5359,7 @@ TODO: 画像
 
 ### 参考資料
 
+* 動画: https://www.youtube.com/watch?v=niRxxO8NSHM
 * 古典的なレシピ https://www.toprecepty.cz/recept/39156-utopenci-klasika/
 
 ## (TODO) キノコの塩漬け (露)
@@ -5394,7 +5432,7 @@ TODO: 画像
 塩とスパイスをまぶして熟成させる乾式と, ソミュール液に漬ける湿式がある. 湿式のほうが簡単.
 
 <div class="figure" style="text-align: center">
-<img src="img/bacon/finished.jpg" alt="ベーコン" width="2419" />
+<img src="img/bacon/finished.jpg" alt="ベーコン"  />
 <p class="caption">(\#fig:finished-bacon)ベーコン</p>
 </div>
 
@@ -5416,6 +5454,12 @@ TODO: 画像
   </tr>
 </tbody>
 </table>
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 
@@ -5483,6 +5527,14 @@ TODO: 画像
 </tbody>
 </table>
 
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください.
+
+特にこのレシピは生で大丈夫な理由がよくわかりません.
+
+:::
+
 ### 材料
 
 * 背脂
@@ -5503,7 +5555,7 @@ TODO: 画像
 謎
 
 
-## キムチ (韓: 김치)
+## キムチ (韓: `{\fontspec{Noto Sans CJK JP}김치}`{=latex})
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5523,6 +5575,12 @@ TODO: 画像
   </tr>
 </tbody>
 </table>
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 
@@ -5675,6 +5733,12 @@ TODO: 画像
   </tr>
 </tbody>
 </table>
+
+:::{.infobox .important data-latex="{important}"}
+
+発酵・熟成食品は衛生環境に注意して作成してください
+
+:::
 
 ### 材料
 
