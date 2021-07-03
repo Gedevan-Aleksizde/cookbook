@@ -70,6 +70,14 @@ embed_video <- function(id, prefix_embed = "https://www.youtube.com/embed/", pre
     knitr::asis_output(paste0(prefix_normal, id))
   }
 }
+
+knitr::knit_hooks$set(optipng = knitr::hook_optipng)
+knitr::opts_hooks$set(
+  fig.cap = function(options){
+    options$optpng <- '-o7'
+    return(options)
+  }
+)
 ```
 
 
