@@ -909,7 +909,7 @@ display_difficulty(5, 3)
 
 ## KCD のシチュー
 
-```{r hare-finished, fig.cap="15世紀にグラーシュはない"}
+```{r kcd-stew, fig.cap="15世紀にグラーシュはない"}
 knitr::include_graphics("img/KCD-stew/finished.jpg")
 ```
 
