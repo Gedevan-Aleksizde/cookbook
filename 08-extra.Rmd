@@ -264,7 +264,7 @@ display_difficulty(2, 1)
 謎
 
 
-## キムチ (韓: `{\fontspec{Noto Sans CJK JP}김치}`{=latex})
+## キムチ (韓: 김치)
 
 ```{r}
 display_difficulty(4, 3)
