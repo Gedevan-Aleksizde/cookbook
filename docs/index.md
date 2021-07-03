@@ -5555,7 +5555,7 @@ TODO: 画像
 謎
 
 
-## キムチ (韓: `{\fontspec{Noto Sans CJK JP}김치}`{=latex})
+## キムチ (韓: 김치)
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
