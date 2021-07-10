@@ -20,6 +20,8 @@ sansfont: DejaVu Sans
 jfontpreset: noto-otf
 header-includes:
   - \newjfontfamily\fallbacking{DejaVu Sans}
+  - \newcommand{\ragman}{{\fallbacking ﻟﻪﯕﻤﻪﻦ}}
+
 ---
 
 ```{r setup, include=FALSE}
@@ -110,6 +112,8 @@ knitr::opts_hooks$set(
 * 「作り方」も文字通り使い方で, 基本的には時系列に沿って手順を記載している. 簡単な注意事項なども補足することがある.
 * 「補足」はレシピ全般に関する参考情報や, 他のセクションに書くには長すぎる注意事項などを書いている.
 * 「参考資料」は文字通り
+
+いろいろな国の伝統料理を紹介しているが, これがどの程度「伝統的」あるいは「正統」なものなのかについては, 参考にしている資料以上の信頼性はないことを断っておく.
 
 ## 凡例 {-}
 
