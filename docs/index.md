@@ -4723,9 +4723,12 @@ COVID-19 に対する効果は明らかになっていない.
 
 ## ラム肉のセージソース和え (捷, 15世紀)
 
-当時の羊肉は富裕層でなくても食べる機会が多かったそうなので, 庶民の食事の1つだったのかもしれない.
+当時の羊肉は富裕層でなくても食べる機会が多かったそうなので, 庶民の食事の1つだったのかもしれない (図\@ref(fig:lamb-sage-finished)).
 
-TODO: 画像
+<div class="figure" style="text-align: center">
+<img src="img/lamb-sage/finished.jpg" alt="ラム肉のセージソース和え"  />
+<p class="caption">(\#fig:lamb-sage-finished)ラム肉のセージソース和え</p>
+</div>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>

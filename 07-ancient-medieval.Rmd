@@ -761,9 +761,11 @@ display_difficulty(4, 3)
 
 ## ラム肉のセージソース和え (捷, 15世紀)
 
-当時の羊肉は富裕層でなくても食べる機会が多かったそうなので, 庶民の食事の1つだったのかもしれない.
+当時の羊肉は富裕層でなくても食べる機会が多かったそうなので, 庶民の食事の1つだったのかもしれない (図\@ref(fig:lamb-sage-finished)).
 
-TODO: 画像
+```{r lamb-sage-finished, fig.cap="ラム肉のセージソース和え"}
+knitr::include_graphics("img/lamb-sage/finished.jpg")
+```
 
 ```{r}
 display_difficulty(4, 2)
