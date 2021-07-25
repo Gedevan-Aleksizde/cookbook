@@ -1,6 +1,6 @@
 ---
 title: "ザ・クックブック"
-author: 'ill-identified^[twitter ID: \@ill-identified]'
+author: '片桐 智志 (Katagiri, Satoshi, ill-identified^[twitter ID: \@ill-identified])'
 date: "最終更新時刻 `r format(Sys.time(), '%Y/%m/%d')`, 初公開: 2021/04/01"
 site: bookdown::bookdown_site
 description: ""
